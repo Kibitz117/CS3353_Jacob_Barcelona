@@ -3,30 +3,31 @@
 //
 #include "Sort.h"
 //Loads the file into a vector to be used to sort or
-std::vector<int> Sort::Load(std::string fileName) {
+void Sort::Load(std::string fileName,std::vector<int>&array) {
     std::fstream dataFile;
-    std::vector<int>array;
     dataFile.open(fileName);
     std::string line;
     int num;
-    while(dataFile.good())
+    if(!dataFile)
     {
-        std::getline(dataFile,line);
+        std::cout<<"No good";
+    }
+    while(std::getline(dataFile,line))
+    {
         num=std::atoi(line.c_str());
         array.push_back(num);
     }
     dataFile.close();
-    for(int i=0;i<array.size();i++)
-    {
-        std::cout<<array[i];
-    }
-    return array;
+
 }
 void Sort::Execute() {
 
 }
-void Sort::Display() {
-
+void Sort::Display(std::vector<int>array) {
+    for(int i=0;i<array.size();i++)
+    {
+        std::cout<<array[i]+" ";
+    }
 }
 void Sort::Stats() {
 

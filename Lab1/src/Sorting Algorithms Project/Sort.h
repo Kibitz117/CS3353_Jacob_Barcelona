@@ -9,9 +9,9 @@
 #include <fstream>
 class Sort:public Algorithm{
 public:
-virtual std::vector<int> Load(std::string);
+virtual void  Load(std::string,std::vector<int>&);
 virtual void Execute();
-virtual void Display();
+virtual void Display(std::vector<int>);
 virtual void Stats();
 virtual void Select();
 virtual void Save();

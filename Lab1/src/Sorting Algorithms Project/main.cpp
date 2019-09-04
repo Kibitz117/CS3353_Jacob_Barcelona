@@ -1,8 +1,10 @@
 //
 // Created by jakeb on 9/4/2019.
 //
-#include <Sort.cpp>
+#include <Sort.h>
 int main(){
     Sort algo;
-    algo.Load("DataSet");
+    std::vector<int>array;
+    algo.Load("C:\\Algorithms\\Lab1\\src\\Sorting Algorithms Project\\DataSet",array);
+    algo.Display(array);
 }

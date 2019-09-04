@@ -6,7 +6,6 @@ CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj: ../Sort.cpp
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj: ../Sort.h
 
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: .././Algorithm.h
-CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: .././Sort.cpp
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: .././Sort.h
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: ../main.cpp
 

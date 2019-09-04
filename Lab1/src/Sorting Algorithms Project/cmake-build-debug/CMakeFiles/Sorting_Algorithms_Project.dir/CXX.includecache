@@ -12,10 +12,6 @@ vector
 iostream
 -
 
-.././Sort.cpp
-Sort.h
-.././Sort.h
-
 .././Sort.h
 Algorithm.h
 .././Algorithm.h
@@ -39,6 +35,6 @@ fstream
 -
 
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/main.cpp
-Sort.cpp
+Sort.h
 -
 
