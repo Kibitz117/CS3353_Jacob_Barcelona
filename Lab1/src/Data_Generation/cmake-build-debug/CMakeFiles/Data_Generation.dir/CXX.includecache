@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
+iostream
+-
+cstdlib
+-
+vector
+-
+ctime
+-
+algorithm
+-
+fstream
+-
+
+C:/Algorithms/Lab1/src/Data_Generation/main.cpp
+iostream
+-
+DataSetCreator.h
+C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
+

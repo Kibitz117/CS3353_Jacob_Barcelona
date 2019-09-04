@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+.././Algorithm.h
+vector
+-
+iostream
+-
+
+.././Sort.cpp
+Sort.h
+.././Sort.h
+
+.././Sort.h
+Algorithm.h
+.././Algorithm.h
+fstream
+-
+
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Algorithm.h
+vector
+-
+iostream
+-
+
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.cpp
+Sort.h
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
+
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
+Algorithm.h
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Algorithm.h
+fstream
+-
+
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/main.cpp
+Sort.cpp
+-
+
