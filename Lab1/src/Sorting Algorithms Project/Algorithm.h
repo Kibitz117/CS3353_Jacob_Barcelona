@@ -7,14 +7,15 @@
 
 #include <vector>
 #include <iostream>
+#include<algorithm>
 class Algorithm{
 public:
 virtual void Load(std::string,std::vector<int>&)=0;
     virtual void Execute()=0;
-    virtual void Display(std::vector<int>)=0;
+    virtual void Display(std::vector<int>&)=0;
     virtual void Stats()=0;
     virtual void Select()=0;
-    virtual void Save()=0;
+    virtual void Save(std::string,std::vector<int>)=0;
     virtual void Configure()=0;
 
 };

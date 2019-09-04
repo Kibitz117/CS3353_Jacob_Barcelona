@@ -23,10 +23,10 @@ void Sort::Load(std::string fileName,std::vector<int>&array) {
 void Sort::Execute() {
 
 }
-void Sort::Display(std::vector<int>array) {
+void Sort::Display(std::vector<int>&array) {
     for(int i=0;i<array.size();i++)
     {
-        std::cout<<array[i]+" ";
+        std::cout<<array[i]<<" ";
     }
 }
 void Sort::Stats() {
@@ -35,8 +35,15 @@ void Sort::Stats() {
 void Sort::Select() {
 
 }
-void Sort::Save() {
-
+void Sort::Save(std::string path,std::vector<int>array) {
+    std::ofstream out;
+    out.open(path);
+    for(int i=0;i<array.size();i++)
+    {
+        int x=array[i];
+        out<<x<<std::endl;
+    }
+    out.close();
 }
 void Sort::Configure() {
 

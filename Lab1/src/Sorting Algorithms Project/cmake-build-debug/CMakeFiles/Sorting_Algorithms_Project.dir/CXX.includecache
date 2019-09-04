@@ -6,22 +6,12 @@
 
 #IncludeRegexTransform: 
 
-.././Algorithm.h
-vector
--
-iostream
--
-
-.././Sort.h
-Algorithm.h
-.././Algorithm.h
-fstream
--
-
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/Algorithm.h
 vector
 -
 iostream
+-
+algorithm
 -
 
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.cpp
@@ -29,12 +19,8 @@ Sort.h
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
 
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
-Algorithm.h
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/Algorithm.h
 fstream
 -
-
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/main.cpp
-Sort.h
--
+Algorithm.h
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Algorithm.h
 
