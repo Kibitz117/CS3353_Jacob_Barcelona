@@ -4,6 +4,7 @@
 
 #include <ctime>
 #include "DataSetCreator.h"
+//Creates a data set based on the taken size and randomizes the integers
 std::vector<int> DataSetCreator::random(int size) {
      std::vector<int>array;
     srand((unsigned)time(0));
@@ -14,11 +15,13 @@ std::vector<int> DataSetCreator::random(int size) {
     return array;
 
 }
+//Creates a data set based on the taken size and puts the integers in reverse order
 std::vector<int> DataSetCreator::reverse(int size) {
     std::vector<int>array=this->random(size);
     std::sort(array.rbegin(),array.rend());
     return array;
 }
+//Creates a data set based on the taken size and sorts 30% of the array
 std::vector<int> DataSetCreator::partiallyRandom(int size) {
     std::vector<int>array=this->random(size);
     for(int i=0;i<array.size();i++)
@@ -53,6 +56,7 @@ std::vector<int> DataSetCreator::TwentyPercentUnique(int size) {
     return array;
 
 }
+//Takes a vector and creates an out file
 void DataSetCreator::dataFile(std::vector<int> array) {
     std::ofstream out;
     out.open("DataSet");
