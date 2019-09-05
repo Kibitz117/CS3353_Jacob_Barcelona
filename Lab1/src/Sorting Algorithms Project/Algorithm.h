@@ -11,7 +11,7 @@
 class Algorithm{
 public:
 virtual void Load(std::string,std::vector<int>&)=0;
-    virtual void Execute()=0;
+    virtual void Execute(std::string)=0;
     virtual void Display(std::vector<int>&)=0;
     virtual void Stats()=0;
     virtual void Select()=0;

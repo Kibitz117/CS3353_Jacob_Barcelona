@@ -10,14 +10,21 @@
 class Sort:public Algorithm{
 public:
 virtual void  Load(std::string,std::vector<int>&);
-virtual void Execute();
+virtual void Execute(int);//Running switch statement
 virtual void Display(std::vector<int>&);
 virtual void Stats();
-virtual void Select();
-virtual void Save();
+virtual void Select(void*);//Select active algorithm
+virtual void Save(std::string,std::vector<int>);
 virtual void Configure();
+//virtual void sort_Array();
 private:
  void (*SortAlgo)(std::vector<int>);
+ enum SORTING_ALGO{
+     Bubble=0,
+     Merge,
+     Insert,
+     END
+ };
 
 
 };
