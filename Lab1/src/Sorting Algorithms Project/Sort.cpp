@@ -22,7 +22,7 @@ void Sort::Load(std::string fileName,std::vector<int>&array) {
 }
 void Sort::Execute(void*fptr) {
     //This would dereference the function pointer correct?
-    //this.*(fptr)();
+    this.*(fptr)();
 }
 void Sort::Display(std::vector<int>&array) {
     for(int i=0;i<array.size();i++)

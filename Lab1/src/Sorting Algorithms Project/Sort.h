@@ -10,10 +10,10 @@
 class Sort:public Algorithm{
 public:
 virtual void  Load(std::string,std::vector<int>&);
-virtual void Execute(int);//Running switch statement
+virtual void Execute(void*);//Running switch statement
 virtual void Display(std::vector<int>&);
 virtual void Stats();
-virtual void Select(void*);//Select active algorithm
+virtual void Select(int)//Select active algorithm
 virtual void Save(std::string,std::vector<int>);
 virtual void Configure();
 //virtual void sort_Array();
