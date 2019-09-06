@@ -21,7 +21,6 @@ void Sort::Load(std::string fileName) {
 
 }
 void Sort::Execute() {
-    //This would dereference the function pointer correct?
     (SortAlgo)(array);
 }
 void Sort::Display()
@@ -37,7 +36,7 @@ void Sort::Stats() {
 void Sort::Select(int i) {
     if(i==Bubble)
     {
-        //How to do this without circular inclusion
+        //Why isn't this line working?
         SortAlgo=&(Sort_Algos::bubble_Sort);
         Execute();
     }

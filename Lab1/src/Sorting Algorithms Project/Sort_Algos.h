@@ -33,7 +33,17 @@ public:
     template <typename T>
     static void insertion_Sort(T &data)
     {
-        
+        for(int i=1;i<data.size();i++)
+        {
+            int x=data[i];
+            int a=i-1;
+            while(a>=0&&data[a]>x)
+            {
+                data[a+1]=data[a];
+                a--;
+            }
+            data[a+1]=x;
+        }
     }
 
 private:
