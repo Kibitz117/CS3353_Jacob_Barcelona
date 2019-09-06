@@ -57,15 +57,14 @@ std::vector<int> DataSetCreator::TwentyPercentUnique(int size) {
 
 }
 //Takes a vector and creates an out file
-void DataSetCreator::dataFile(std::vector<int> array) {
+void DataSetCreator::dataFile(std::vector<int> array,int a) {
     std::ofstream out;
-    out.open("DataSet");
-    for(int i=0;i<array.size();i++)
-    {
-        int x=array[i];
-        out<<x<<std::endl;
-    }
-    out.close();
 
-
+        out.open("DataSet"+std::to_string(a));
+        for(int i=0;i<array.size();i++)
+        {
+            int x=array[i];
+            out<<x<<std::endl;
+        }
+        out.close();
 }

@@ -17,7 +17,7 @@ public:
     std::vector<int>reverse(int);
     std::vector<int>partiallyRandom(int);
     std::vector<int>TwentyPercentUnique(int);
-    void dataFile(std::vector<int>);
+    void dataFile(std::vector<int>,int i);
 private:
 };
 
