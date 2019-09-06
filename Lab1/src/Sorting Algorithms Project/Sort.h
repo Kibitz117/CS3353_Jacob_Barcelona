@@ -17,7 +17,7 @@ virtual void Select(int);//Select active algorithm
 virtual void Save(std::string);
 virtual void Configure();
 private:
- void(*SortAlgo)(std::vector<int> data);
+ void(*SortAlgo)(std::vector<int> &data);
  std::vector<int>array;
  enum SORTING_ALGO{
      Bubble=0,

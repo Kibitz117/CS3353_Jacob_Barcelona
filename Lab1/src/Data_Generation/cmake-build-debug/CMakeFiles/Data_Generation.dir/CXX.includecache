@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.cpp
-ctime
--
-DataSetCreator.h
-C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
-
 C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
 iostream
 -
@@ -27,8 +21,6 @@ fstream
 -
 
 C:/Algorithms/Lab1/src/Data_Generation/main.cpp
-iostream
--
 DataSetCreator.h
 C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
 

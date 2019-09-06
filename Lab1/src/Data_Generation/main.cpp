@@ -1,7 +1,6 @@
 //
 // Created by jakeb on 9/3/2019.
 //
-#include <iostream>
 #include "DataSetCreator.h"
 int main()
 {

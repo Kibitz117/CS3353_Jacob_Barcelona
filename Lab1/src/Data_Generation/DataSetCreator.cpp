@@ -2,7 +2,6 @@
 // Created by jakeb on 9/3/2019.
 //
 
-#include <ctime>
 #include "DataSetCreator.h"
 //Creates a data set based on the taken size and randomizes the integers
 std::vector<int> DataSetCreator::random(int size) {

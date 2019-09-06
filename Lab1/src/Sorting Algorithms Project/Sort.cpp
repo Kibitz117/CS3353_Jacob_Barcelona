@@ -37,7 +37,7 @@ void Sort::Select(int i) {
     if(i==Bubble)
     {
         //Why isn't this line working?
-        SortAlgo=&(Sort_Algos::bubble_Sort);
+        SortAlgo= &Sort_Algos::bubble_Sort;
         Execute();
     }
     else if(i==Insert)
