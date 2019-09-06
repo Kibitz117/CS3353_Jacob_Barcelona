@@ -5,20 +5,20 @@
 #ifndef SRC_SORT_H
 #define SRC_SORT_H
 #include <fstream>
-//Circular inclusion
+#include "Sort_Algos.h"
 #include "Algorithm.h"
 class Sort:public Algorithm{
 public:
-virtual void  Load(std::string,std::vector<int>&);
-virtual void Execute(void*);//Running switch statement
-virtual void Display(std::vector<int>&);
+virtual void  Load(std::string);
+virtual void Execute();//Running switch statement
+virtual void Display();
 virtual void Stats();
-virtual void Select(int)//Select active algorithm
-virtual void Save(std::string,std::vector<int>);
+virtual void Select(int);//Select active algorithm
+virtual void Save(std::string);
 virtual void Configure();
-//virtual void sort_Array();
 private:
- void (*SortAlgo)(std::vector<int>);
+ void(*SortAlgo)(std::vector<int> data);
+ std::vector<int>array;
  enum SORTING_ALGO{
      Bubble=0,
      Merge,

@@ -5,12 +5,12 @@
 #ifndef SORTING_ALGORITHMS_PROJECT_SORT_ALGOS_H
 #define SORTING_ALGORITHMS_PROJECT_SORT_ALGOS_H
 
-#include "Sort.h"
 
-class Sort_Algos: public Sort {
+
+class Sort_Algos {
 public:
    template <typename T>
-    void bubble_Sort (T &data) {
+   static void bubble_Sort (T &data) {
         bool sorted;
 
         for(int i=0;i<data.size();i++)
@@ -30,9 +30,16 @@ public:
 
         }
     }
+    template <typename T>
+    static void insertion_Sort(T &data)
+    {
+        
+    }
+
+private:
     template<typename T>
 //swaps the elements specified
-    void swap(T *a, T *b)
+    static void swap(T *a, T *b)
     {
         T temp=*a;
         *a=*b;

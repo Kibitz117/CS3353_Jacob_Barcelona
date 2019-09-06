@@ -3,7 +3,7 @@
 //
 #include "Sort.h"
 //Loads the file into a vector to be used to sort or
-void Sort::Load(std::string fileName,std::vector<int>&array) {
+void Sort::Load(std::string fileName) {
     std::fstream dataFile;
     dataFile.open(fileName);
     std::string line;
@@ -20,12 +20,12 @@ void Sort::Load(std::string fileName,std::vector<int>&array) {
     dataFile.close();
 
 }
-void Sort::Execute(void*fptr) {
+void Sort::Execute() {
     //This would dereference the function pointer correct?
-    this.*(fptr)();
+    (SortAlgo)(array);
 }
-void Sort::Display(std::vector<int>&array) {
-    for(int i=0;i<array.size();i++)
+void Sort::Display()
+{   for(int i=0;i<array.size();i++)
     {
         std::cout<<array[i]<<" ";
     }
@@ -33,13 +33,13 @@ void Sort::Display(std::vector<int>&array) {
 void Sort::Stats() {
 
 }
-//Is something like this correct? Also how would I contunially switch between algos?
+//Selects the sorting algorithm based off the selected Algorithm
 void Sort::Select(int i) {
     if(i==Bubble)
     {
-        //How to do this without circular inclusion?
-        //this->SortAlgo=&Sort_Algos::bubble_sort;
-        Execute(this->SortAlgo);
+        //How to do this without circular inclusion
+        SortAlgo=&(Sort_Algos::bubble_Sort);
+        Execute();
     }
     else if(i==Insert)
     {
@@ -51,7 +51,7 @@ void Sort::Select(int i) {
     }
 
 }
-void Sort::Save(std::string path,std::vector<int>array) {
+void Sort::Save(std::string path) {
     std::ofstream out;
     out.open(path);
     for(int i=0;i<array.size();i++)

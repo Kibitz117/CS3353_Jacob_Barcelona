@@ -1,7 +1,7 @@
 //
 // Created by jakeb on 9/4/2019.
 //
-#include "Sort_Algos.h"
+#include "Sort.h"
 int main(){
     Sort algo;
     std::vector<int>array;
