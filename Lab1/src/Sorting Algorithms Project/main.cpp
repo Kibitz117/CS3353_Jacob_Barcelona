@@ -5,7 +5,7 @@
 int main(){
     Sort algo;
     std::vector<int>array;
-    algo.Load("C:\\Algorithms\\Lab1\\src\\Sorting Algorithms Project\\DataSet",array);
+    algo.Load("DataFiles/PartiallyRandom(10)",array);
     algo.Display(array);
     //auto (Sort::)
     std::cout<<std::endl;
