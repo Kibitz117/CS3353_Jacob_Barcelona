@@ -10,7 +10,7 @@
 class Sort_Algos {
 public:
    template <typename T>
-   static void bubble_Sort (std::vector<int> &data);
+   static void bubble_Sort (std::vector<int> data);
 
     template <typename T>
     static void insertion_Sort(T &data)
