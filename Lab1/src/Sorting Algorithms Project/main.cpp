@@ -5,10 +5,9 @@
 int main(){
     Sort algo;
     std::vector<int>array;
-    algo.Load("DataFiles/PartiallyRandom(10)",array);
-    algo.Display(array);
+    algo.Load("DataFiles/PartiallyRandom(10)");
+    algo.Select(1);
+    algo.Display();
     //auto (Sort::)
-    std::cout<<std::endl;
-    algo.Display(array);
 
 }

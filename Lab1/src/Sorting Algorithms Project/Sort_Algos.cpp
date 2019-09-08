@@ -3,7 +3,10 @@
 //
 
 #include "Sort_Algos.h"
-void Sort_Algos::bubble_Sort(std::vector<int> data) {
+Sort_Algos::Sort_Algos() {
+
+}
+void Sort_Algos::bubble_Sort(std::vector<int> &data) {
         bool sorted;
 
         for(int i=0;i<data.size();i++)
