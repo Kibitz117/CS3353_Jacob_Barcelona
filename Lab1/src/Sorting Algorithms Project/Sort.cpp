@@ -37,7 +37,13 @@ void Sort::Stats(int algo) {
         case Merge:std::cout<<"Merge Sort";
         case Insert:std::cout<<"Insertion Sort";
     }
+    //Start time of algorithm
     auto start_time = std::chrono::high_resolution_clock::now();
+    Select(algo);
+    //End time of algorithm
+    auto end_time = std::chrono::high_resolution_clock::now();
+    std::cout<<"Time for"<<10000<<" items"<<std::endl;
+    std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count() << "ns" << std::endl;
 
 
 
