@@ -1,6 +1,7 @@
 //
 // Created by jakeb on 9/4/2019.
 //
+#include <chrono>
 #include "Sort.h"
 //Loads the file into a vector to be used to sort or
 void Sort::Load(std::string fileName) {
@@ -29,7 +30,17 @@ void Sort::Display()
         std::cout<<array[i]<<" ";
     }
 }
-void Sort::Stats() {
+void Sort::Stats(int algo) {
+    switch(int)
+    {
+        case Bubble:std::cout<<"Bubble Sort";
+        case Merge:std::cout<<"Merge Sort";
+        case Insert:std::cout<<"Insertion Sort";
+    }
+    auto start_time = std::chrono::high_resolution_clock::now();
+
+
+
 
 }
 //Selects the sorting algorithm based off the selected Algorithm

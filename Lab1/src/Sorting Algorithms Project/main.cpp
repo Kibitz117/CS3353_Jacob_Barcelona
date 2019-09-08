@@ -4,7 +4,6 @@
 #include "Sort.h"
 int main(){
     Sort algo;
-    std::vector<int>array;
     algo.Load("DataFiles/PartiallyRandom(10)");
     algo.Select(1);
     algo.Display();

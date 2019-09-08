@@ -12,7 +12,7 @@ public:
 virtual void  Load(std::string);
 virtual void Execute();//Running switch statement
 virtual void Display();
-virtual void Stats();
+virtual void Stats(int algo);
 virtual void Select(int);//Select active algorithm
 virtual void Save(std::string);
 virtual void Configure();
