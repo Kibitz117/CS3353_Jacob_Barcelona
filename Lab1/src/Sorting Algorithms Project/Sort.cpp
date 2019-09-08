@@ -31,7 +31,7 @@ void Sort::Display()
     }
 }
 void Sort::Stats(int algo) {
-    switch(int)
+    switch(algo)
     {
         case Bubble:std::cout<<"Bubble Sort";
         case Merge:std::cout<<"Merge Sort";
