@@ -23,8 +23,6 @@ void Sort::Load(std::string fileName) {
 }
 void Sort::Execute() {
     (SortAlgo)(array);
-//    Sort_Algos algos;
-//    algos.bubble_Sort(array);
 }
 void Sort::Display()
 {   for(int i=0;i<array.size();i++)
@@ -50,10 +48,6 @@ void Sort::Stats(int algo) {
     auto end_time = std::chrono::high_resolution_clock::now();
     std::cout<<std::endl<<"Time for "<<array.size()<<" items"<<std::endl;
     std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count() << "ns" << std::endl;
-
-
-
-
 }
 //Selects the sorting algorithm based off the selected Algorithm
 void Sort::Select(int i) {
@@ -70,7 +64,8 @@ void Sort::Select(int i) {
     }
     else
     {
-
+        SortAlgo=&Sort_Algos::merge_Sort;
+        Execute();
     }
 
 }

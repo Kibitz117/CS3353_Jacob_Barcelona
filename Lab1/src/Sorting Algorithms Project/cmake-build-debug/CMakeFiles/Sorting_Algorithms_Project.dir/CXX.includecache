@@ -16,10 +16,6 @@ algorithm
 chrono
 -
 
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.cpp
-Sort.h
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
-
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
 fstream
 -
@@ -31,4 +27,8 @@ C:/Algorithms/Lab1/src/Sorting Algorithms Project/Algorithm.h
 C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort_Algos.h
 vector
 -
+
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/main.cpp
+Sort.h
+C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h
 
