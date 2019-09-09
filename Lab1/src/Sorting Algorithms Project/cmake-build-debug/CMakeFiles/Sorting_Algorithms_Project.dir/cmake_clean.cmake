@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj"
   "CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj"
+  "CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj"
   "Sorting_Algorithms_Project.pdb"
   "Sorting_Algorithms_Project.exe"
   "Sorting_Algorithms_Project.exe.manifest"

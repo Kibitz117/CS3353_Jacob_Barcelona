@@ -149,6 +149,33 @@ Sort.cpp.s:
 	$(MAKE) -f CMakeFiles\Sorting_Algorithms_Project.dir\build.make CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.s
 .PHONY : Sort.cpp.s
 
+Sort_Algos.obj: Sort_Algos.cpp.obj
+
+.PHONY : Sort_Algos.obj
+
+# target to build an object file
+Sort_Algos.cpp.obj:
+	$(MAKE) -f CMakeFiles\Sorting_Algorithms_Project.dir\build.make CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj
+.PHONY : Sort_Algos.cpp.obj
+
+Sort_Algos.i: Sort_Algos.cpp.i
+
+.PHONY : Sort_Algos.i
+
+# target to preprocess a source file
+Sort_Algos.cpp.i:
+	$(MAKE) -f CMakeFiles\Sorting_Algorithms_Project.dir\build.make CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.i
+.PHONY : Sort_Algos.cpp.i
+
+Sort_Algos.s: Sort_Algos.cpp.s
+
+.PHONY : Sort_Algos.s
+
+# target to generate assembly for a file
+Sort_Algos.cpp.s:
+	$(MAKE) -f CMakeFiles\Sorting_Algorithms_Project.dir\build.make CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.s
+.PHONY : Sort_Algos.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... Sort.obj
 	@echo ... Sort.i
 	@echo ... Sort.s
+	@echo ... Sort_Algos.obj
+	@echo ... Sort_Algos.i
+	@echo ... Sort_Algos.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

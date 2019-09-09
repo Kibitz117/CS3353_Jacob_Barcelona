@@ -9,6 +9,7 @@
 #include "Algorithm.h"
 class Sort:public Algorithm{
 public:
+    Sort(){};
 virtual void  Load(std::string);
 virtual void Execute();//Running switch statement
 virtual void Display();

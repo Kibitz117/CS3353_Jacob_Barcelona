@@ -91,6 +91,12 @@
 		<Unit filename="C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort.h">
 			<Option target="Sorting_Algorithms_Project"/>
 		</Unit>
+		<Unit filename="C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort_Algos.cpp">
+			<Option target="Sorting_Algorithms_Project"/>
+		</Unit>
+		<Unit filename="C:/Algorithms/Lab1/src/Sorting Algorithms Project/Sort_Algos.h">
+			<Option target="Sorting_Algorithms_Project"/>
+		</Unit>
 		<Unit filename="C:/Algorithms/Lab1/src/Sorting Algorithms Project/main.cpp">
 			<Option target="Sorting_Algorithms_Project"/>
 		</Unit>

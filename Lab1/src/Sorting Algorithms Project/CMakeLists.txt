@@ -9,4 +9,6 @@ add_executable(Sorting_Algorithms_Project
         Algorithm.h
         main.cpp
         Sort.cpp
+        Sort.h
+        Sort_Algos.cpp
         Sort.h)

@@ -23,7 +23,8 @@ void Sort::Load(std::string fileName) {
 }
 void Sort::Execute() {
     (SortAlgo)(array);
-    //Sort_Algos::bubble_Sort(array);
+//    Sort_Algos algos;
+//    algos.bubble_Sort(array);
 }
 void Sort::Display()
 {   for(int i=0;i<array.size();i++)
