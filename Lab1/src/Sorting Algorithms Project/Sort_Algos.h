@@ -9,7 +9,8 @@
 #include <vector>
 class Sort_Algos {
 public:
-    Sort_Algos();
+    Sort_Algos(){};
+    ~Sort_Algos(){};
    static void bubble_Sort (std::vector<int> &data);
 
     template <typename T>

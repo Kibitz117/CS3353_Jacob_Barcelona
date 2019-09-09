@@ -1,7 +1,7 @@
 //
 // Created by jakeb on 9/4/2019.
 //
-#include <chrono>
+
 #include "Sort.h"
 //Loads the file into a vector to be used to sort or
 void Sort::Load(std::string fileName) {
@@ -23,6 +23,7 @@ void Sort::Load(std::string fileName) {
 }
 void Sort::Execute() {
     (SortAlgo)(array);
+    //Sort_Algos::bubble_Sort(array);
 }
 void Sort::Display()
 {   for(int i=0;i<array.size();i++)
