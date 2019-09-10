@@ -1,4 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Algorithms\Lab1\src\Sorting Algorithms Project"
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Algorithms/Lab1/src/Sorting Algorithms Project/cmake-build-debug
+CMakeLists.txt not found in C:\Algorithms\Lab1\src\Sorting Algorithms Project Select CMakeLists.txt file...

@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Algorithms\Lab1\src\Sorting Algorithms Project"
+CMAKE_SOURCE_DIR = C:\Algorithms\lab1\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug"
+CMAKE_BINARY_DIR = C:\Algorithms\lab1\src\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Sorting_Algorithms_Project.dir/depend.make
@@ -59,44 +59,44 @@ include CMakeFiles/Sorting_Algorithms_Project.dir/flags.make
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: CMakeFiles/Sorting_Algorithms_Project.dir/flags.make
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: CMakeFiles/Sorting_Algorithms_Project.dir/includes_CXX.rsp
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Sorting_Algorithms_Project.dir\main.cpp.obj -c "C:\Algorithms\Lab1\src\Sorting Algorithms Project\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\lab1\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Sorting_Algorithms_Project.dir\main.cpp.obj -c C:\Algorithms\lab1\src\main.cpp
 
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Algorithms\Lab1\src\Sorting Algorithms Project\main.cpp" > CMakeFiles\Sorting_Algorithms_Project.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\lab1\src\main.cpp > CMakeFiles\Sorting_Algorithms_Project.dir\main.cpp.i
 
 CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Algorithms\Lab1\src\Sorting Algorithms Project\main.cpp" -o CMakeFiles\Sorting_Algorithms_Project.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\lab1\src\main.cpp -o CMakeFiles\Sorting_Algorithms_Project.dir\main.cpp.s
 
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj: CMakeFiles/Sorting_Algorithms_Project.dir/flags.make
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj: CMakeFiles/Sorting_Algorithms_Project.dir/includes_CXX.rsp
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj: ../Sort.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort.cpp.obj -c "C:\Algorithms\Lab1\src\Sorting Algorithms Project\Sort.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\lab1\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort.cpp.obj -c C:\Algorithms\lab1\src\Sort.cpp
 
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Algorithms\Lab1\src\Sorting Algorithms Project\Sort.cpp" > CMakeFiles\Sorting_Algorithms_Project.dir\Sort.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\lab1\src\Sort.cpp > CMakeFiles\Sorting_Algorithms_Project.dir\Sort.cpp.i
 
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Algorithms\Lab1\src\Sorting Algorithms Project\Sort.cpp" -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\lab1\src\Sort.cpp -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort.cpp.s
 
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj: CMakeFiles/Sorting_Algorithms_Project.dir/flags.make
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj: CMakeFiles/Sorting_Algorithms_Project.dir/includes_CXX.rsp
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj: ../Sort_Algos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort_Algos.cpp.obj -c "C:\Algorithms\Lab1\src\Sorting Algorithms Project\Sort_Algos.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\lab1\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort_Algos.cpp.obj -c C:\Algorithms\lab1\src\Sort_Algos.cpp
 
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Algorithms\Lab1\src\Sorting Algorithms Project\Sort_Algos.cpp" > CMakeFiles\Sorting_Algorithms_Project.dir\Sort_Algos.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\lab1\src\Sort_Algos.cpp > CMakeFiles\Sorting_Algorithms_Project.dir\Sort_Algos.cpp.i
 
 CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Algorithms\Lab1\src\Sorting Algorithms Project\Sort_Algos.cpp" -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort_Algos.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\lab1\src\Sort_Algos.cpp -o CMakeFiles\Sorting_Algorithms_Project.dir\Sort_Algos.cpp.s
 
 # Object files for target Sorting_Algorithms_Project
 Sorting_Algorithms_Project_OBJECTS = \
@@ -114,7 +114,7 @@ Sorting_Algorithms_Project.exe: CMakeFiles/Sorting_Algorithms_Project.dir/build.
 Sorting_Algorithms_Project.exe: CMakeFiles/Sorting_Algorithms_Project.dir/linklibs.rsp
 Sorting_Algorithms_Project.exe: CMakeFiles/Sorting_Algorithms_Project.dir/objects1.rsp
 Sorting_Algorithms_Project.exe: CMakeFiles/Sorting_Algorithms_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Sorting_Algorithms_Project.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Algorithms\lab1\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Sorting_Algorithms_Project.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Sorting_Algorithms_Project.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/Sorting_Algorithms_Project.dir/clean:
 .PHONY : CMakeFiles/Sorting_Algorithms_Project.dir/clean
 
 CMakeFiles/Sorting_Algorithms_Project.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Algorithms\Lab1\src\Sorting Algorithms Project" "C:\Algorithms\Lab1\src\Sorting Algorithms Project" "C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug" "C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug" "C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug\CMakeFiles\Sorting_Algorithms_Project.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Algorithms\lab1\src C:\Algorithms\lab1\src C:\Algorithms\lab1\src\cmake-build-debug C:\Algorithms\lab1\src\cmake-build-debug C:\Algorithms\lab1\src\cmake-build-debug\CMakeFiles\Sorting_Algorithms_Project.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Sorting_Algorithms_Project.dir/depend
 

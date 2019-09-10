@@ -1,3 +1,0 @@
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Algorithms/Lab1/src/Sorting Algorithms Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

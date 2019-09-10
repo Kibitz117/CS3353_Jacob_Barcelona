@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f44e0ac7-67bb-4088-b916-1488296d330e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sorting Algorithms Project.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Algorithm.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sort.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sort.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sort_Algos.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sort_Algos.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeRCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdC/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.5/CompilerIdCXX/a.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/Sort.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/Sort_Algos.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/includes_CXX.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/linklibs.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/main.cpp.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/objects1.rsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Sorting_Algorithms_Project.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/PartiallyRandom(10)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/PartiallyRandom(10,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/PartiallyRandom(100,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/PartiallyRandom(1000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Random(10)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Random(10,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Random(100,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Random(1000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Reverse(10)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Reverse(10,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Reverse(100,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Reverse(1000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Twenty%(10)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Twenty%(10,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Twenty%(100,000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DataFiles/Twenty%(1000)" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Sorting_Algorithms_Project.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Sorting_Algorithms_Project.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Algorithms\Lab1\src\Sorting Algorithms Project\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QNML0uWrYChTqesghBeegKnaaj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Algorithms\Lab1\src\Sorting Algorithms Project\cmake-build-debug" />
+      <recent name="C:\Algorithms\Lab1\src\Sorting Algorithms Project" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f44e0ac7-67bb-4088-b916-1488296d330e" name="Default Changelist" comment="" />
+      <created>1567606540472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567606540472</updated>
+      <workItem from="1567606542044" duration="825000" />
+      <workItem from="1567607427876" duration="359000" />
+      <workItem from="1567607791412" duration="46000" />
+      <workItem from="1567607899259" duration="1609000" />
+      <workItem from="1567609934871" duration="23446000" />
+      <workItem from="1567956868549" duration="32988000" />
+      <workItem from="1568137439359" duration="478000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

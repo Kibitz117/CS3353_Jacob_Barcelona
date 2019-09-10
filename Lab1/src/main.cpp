@@ -21,10 +21,10 @@ int main(){
             std::cout<<std::endl<<std::endl;
         }
     }
-//Figure out how to loop through files/put in vectors
-//Do Merge Sort
 //See if it can be more OOP
-
-
+//Save off statistics
+//Time in execute
+//Loop through all number of elements
+//Put Sorting Algorithm Project in src
 
 }
