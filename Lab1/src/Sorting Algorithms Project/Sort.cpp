@@ -9,38 +9,37 @@ void Sort::Load(std::string fileName) {
     dataFile.open(fileName);
     std::string line;
     int num;
-    if(!dataFile)
-    {
-        std::cout<<"No good";
+    if(!dataFile) {
+        std::cout << "No good";
     }
     while(std::getline(dataFile,line))
     {
         num=std::atoi(line.c_str());
         array.push_back(num);
     }
+
     dataFile.close();
 
 }
+//Executes function assigned to the SortAlgo pointer
 void Sort::Execute() {
     (SortAlgo)(array);
 }
+//Displays the private data member array
 void Sort::Display()
 {   for(int i=0;i<array.size();i++)
     {
         std::cout<<array[i]<<" ";
     }
+
 }
+//Clears the private data member array
+void Sort::Clear() {
+    this->array.clear();
+}
+//Prints the statistics on a SortAlgo (Speed,#items, algo name)
 void Sort::Stats(int algo) {
-    switch(algo)
-    {
-        case Bubble:std::cout<<"Bubble Sort";
-        break;
-        case Merge:std::cout<<"Merge Sort";
-        break;
-        case Insert:std::cout<<"Insertion Sort";
-        break;
-        default:std::cout<<"None";
-    }
+
     //Start time of algorithm
     auto start_time = std::chrono::high_resolution_clock::now();
     Select(algo);
@@ -55,20 +54,28 @@ void Sort::Select(int i) {
     {
         //Why isn't this line working?
         SortAlgo= &Sort_Algos::bubble_Sort;
+        std::cout<<"Bubble Sort"<<std::endl;
         Execute();
     }
     else if(i==Insert)
     {
         SortAlgo= &Sort_Algos::insertion_Sort;
+        std::cout<<"Insertion Sort"<<std::endl;
+        Execute();
+    }
+    else if(i==Merge)
+    {
+        SortAlgo=&Sort_Algos::merge_Sort;
+        std::cout<<"Merge Sort"<<std::endl;
         Execute();
     }
     else
     {
-        SortAlgo=&Sort_Algos::merge_Sort;
-        Execute();
+        std::cout<<"ERROR No Sort Selected"<<std::endl;
     }
 
 }
+//Saves the private data member array to an out file specified by the parameter
 void Sort::Save(std::string path) {
     std::ofstream out;
     out.open(path);

@@ -3,7 +3,8 @@ project(Sorting_Algorithms_Project)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(.)
+include_directories(.
+        cmake-build-debug/DataFiles)
 
 add_executable(Sorting_Algorithms_Project
         Algorithm.h
@@ -11,4 +12,5 @@ add_executable(Sorting_Algorithms_Project
         Sort.cpp
         Sort.h
         Sort_Algos.cpp
-        Sort.h)
+        Sort.h
+        )
