@@ -7,8 +7,6 @@ int main(){
     //Loop through these array
     std::string filetypes[4]{"PartiallyRandom","Random","Reverse","Twenty%"};
     std::string num_Data[4]{"(10)","(1000)","(10,000)","(100,000)"};
-    int files=0;
-    std::string path="";
     //Algorithms
     for(int i=0;i<3;i++)
     {
@@ -17,10 +15,8 @@ int main(){
         {
             for(int a=0;a<4;a++)
             {
-                files++;
                 algo.Load("DataFiles/"+filetypes[x]+num_Data[a]);
                 algo.Select(i);
-                algo.Stats(i);
                 algo.Save("Sorted",i,filetypes[x]+num_Data[a]);
                 algo.Clear();
             }
