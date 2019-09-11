@@ -8,33 +8,33 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug"/>
+				<Option working_dir="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug"/>
+				<Option working_dir="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Data_Generation">
-				<Option output="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Data_Generation.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug"/>
+				<Option output="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Data_Generation.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Algorithms/Lab1/src/Data_Generation/."/>
+					<Add directory="C:/Algorithms/lab1/src/Data_Generation/."/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
@@ -43,20 +43,20 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Data_Generation"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Data_Generation"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Data_Generation/fast">
-				<Option output="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Data_Generation.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug"/>
+				<Option output="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Data_Generation.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:/Algorithms/Lab1/src/Data_Generation/."/>
+					<Add directory="C:/Algorithms/lab1/src/Data_Generation/."/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
@@ -65,33 +65,33 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Data_Generation/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 Data_Generation/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug"/>
+				<Option working_dir="C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.cpp">
+		<Unit filename="C:/Algorithms/lab1/src/Data_Generation/DataSetCreator.cpp">
 			<Option target="Data_Generation"/>
 		</Unit>
-		<Unit filename="C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h">
+		<Unit filename="C:/Algorithms/lab1/src/Data_Generation/DataSetCreator.h">
 			<Option target="Data_Generation"/>
 		</Unit>
-		<Unit filename="C:/Algorithms/Lab1/src/Data_Generation/main.cpp">
+		<Unit filename="C:/Algorithms/lab1/src/Data_Generation/main.cpp">
 			<Option target="Data_Generation"/>
 		</Unit>
-		<Unit filename="C:/Algorithms/Lab1/src/Data_Generation/CMakeLists.txt">
+		<Unit filename="C:/Algorithms/lab1/src/Data_Generation/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

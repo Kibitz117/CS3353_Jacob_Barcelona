@@ -15,12 +15,13 @@ virtual void Execute();//Running switch statement
 virtual void Display();
 virtual void Stats(int algo);
 virtual void Select(int);//Select active algorithm
-virtual void Save(std::string);
+virtual void Save(std::string,int,std::string);
 virtual void Configure();
 void Clear();
 private:
 void(*SortAlgo)(std::vector<int>&)=nullptr;
  std::vector<int>array;
+ float time;
  enum SORTING_ALGO{
      Bubble=0,
      Insert,

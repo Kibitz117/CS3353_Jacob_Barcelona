@@ -16,7 +16,7 @@ public:
     virtual void Display()=0;
     virtual void Stats(int)=0;
     virtual void Select(int)=0;
-    virtual void Save(std::string)=0;
+    virtual void Save(std::string,int,std::string)=0;
     virtual void Configure()=0;
 
 };

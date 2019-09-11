@@ -23,7 +23,12 @@ void Sort::Load(std::string fileName) {
 }
 //Executes function assigned to the SortAlgo pointer
 void Sort::Execute() {
+    //Start time of algorithm
+    auto start_time = std::chrono::high_resolution_clock::now();
     (SortAlgo)(array);
+    auto end_time = std::chrono::high_resolution_clock::now();
+    time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
+
 }
 //Displays the private data member array
 void Sort::Display()
@@ -40,13 +45,9 @@ void Sort::Clear() {
 //Prints the statistics on a SortAlgo (Speed,#items, algo name)
 void Sort::Stats(int algo) {
 
-    //Start time of algorithm
-    auto start_time = std::chrono::high_resolution_clock::now();
-    Select(algo);
-    //End time of algorithm
-    auto end_time = std::chrono::high_resolution_clock::now();
     std::cout<<std::endl<<"Time for "<<array.size()<<" items"<<std::endl;
-    std::cout << std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count() << "ns" << std::endl;
+    std::cout << time << "ns" << std::endl;
+    time=0;
 }
 //Selects the sorting algorithm based off the selected Algorithm
 void Sort::Select(int i) {
@@ -76,8 +77,30 @@ void Sort::Select(int i) {
 
 }
 //Saves the private data member array to an out file specified by the parameter
-void Sort::Save(std::string path) {
+void Sort::Save(std::string path,int i,std::string filename) {
     std::ofstream out;
+    path+=filename;
+    if(i==Bubble)
+    {
+        path+="BubbleSort";
+        out<<"Bubble Sort"<<std::endl;
+        out<<filename<<std::endl;
+
+    }
+    else if(i==Insert)
+    {
+        path+="InsertionSort";
+        out<<"Insertion Sort"<<std::endl;
+        out<<filename<<std::endl;
+
+    }
+    else if(i==Merge)
+    {
+        path+="MergeSort";
+        out<<"Merge Sort"<<std::endl;
+        out<<filename<<std::endl;
+
+    }
     out.open(path);
     for(int i=0;i<array.size();i++)
     {

@@ -24,12 +24,12 @@ std::vector<int> DataSetCreator::reverse(int size) {
 std::vector<int> DataSetCreator::partiallyRandom(int size) {
     std::vector<int>array=this->random(size);
 
-    for(int i=0;i<array.size()*.3;i++)
-    {
+    for(int i=0;i<array.size()*.3;i++) {
 
-        if(array[i]>array[i+1]) {
+        if (array[i] > array[i + 1]) {
             std::swap(array[i], array[i + 1]);
         }
+    }
     return array;
 }
 //Creates a vector with 20% unique data values, with reamining 80% being duplicates in random order
@@ -39,7 +39,7 @@ std::vector<int> DataSetCreator::TwentyPercentUnique(int size) {
     srand((unsigned)time(0));
     for(int i=0;i<unique;i++)
     {
-        array.push_back(rand()%100);
+        array.push_back(rand()%size);
     }
     for(int i=0;i<(size-unique);i++)
     {

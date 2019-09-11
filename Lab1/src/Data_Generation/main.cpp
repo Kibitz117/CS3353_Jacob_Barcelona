@@ -6,8 +6,8 @@ int main()
 {
     DataSetCreator collect;
     std::vector<int> array;
-//    array=collect.random(10);
-//    collect.dataFile(array,1);
+    array=collect.random(10);
+    collect.dataFile(array,1);
     array=collect.random(1000);
     collect.dataFile(array,2);
     array=collect.random(10000);

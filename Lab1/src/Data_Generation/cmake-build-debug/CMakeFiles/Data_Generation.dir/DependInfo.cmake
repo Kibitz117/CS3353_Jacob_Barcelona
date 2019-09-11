@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.cpp" "C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/CMakeFiles/Data_Generation.dir/DataSetCreator.cpp.obj"
-  "C:/Algorithms/Lab1/src/Data_Generation/main.cpp" "C:/Algorithms/Lab1/src/Data_Generation/cmake-build-debug/CMakeFiles/Data_Generation.dir/main.cpp.obj"
+  "C:/Algorithms/lab1/src/Data_Generation/DataSetCreator.cpp" "C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/CMakeFiles/Data_Generation.dir/DataSetCreator.cpp.obj"
+  "C:/Algorithms/lab1/src/Data_Generation/main.cpp" "C:/Algorithms/lab1/src/Data_Generation/cmake-build-debug/CMakeFiles/Data_Generation.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

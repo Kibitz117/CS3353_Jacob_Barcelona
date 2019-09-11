@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
+C:/Algorithms/lab1/src/Data_Generation/DataSetCreator.h
 iostream
 -
 cstdlib
@@ -20,7 +20,7 @@ algorithm
 fstream
 -
 
-C:/Algorithms/Lab1/src/Data_Generation/main.cpp
+C:/Algorithms/lab1/src/Data_Generation/main.cpp
 DataSetCreator.h
-C:/Algorithms/Lab1/src/Data_Generation/DataSetCreator.h
+C:/Algorithms/lab1/src/Data_Generation/DataSetCreator.h
 
