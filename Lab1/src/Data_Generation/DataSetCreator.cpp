@@ -20,13 +20,13 @@ std::vector<int> DataSetCreator::reverse(int size) {
     std::sort(array.rbegin(),array.rend());
     return array;
 }
-//Creates a data set based on the taken size and sorts 30% of the array
+//Creates a data set based on the taken size and randomizes 30% of the array
 std::vector<int> DataSetCreator::partiallyRandom(int size) {
-    std::vector<int>array=this->random(size);
+    std::vector<int>array=std::sort(array.rbegin(),array.rend());
 
     for(int i=0;i<array.size()*.3;i++) {
 
-        if (array[i] > array[i + 1]) {
+        if (array[i] < array[i + 1]) {
             std::swap(array[i], array[i + 1]);
         }
     }
