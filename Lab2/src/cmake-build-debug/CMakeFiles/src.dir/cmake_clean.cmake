@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/src.dir/main.cpp.obj"
+  "CMakeFiles/src.dir/Tree.cpp.obj"
+  "CMakeFiles/src.dir/Search.cpp.obj"
+  "CMakeFiles/src.dir/searching_Algos.cpp.obj"
+  "CMakeFiles/src.dir/LinkedList.cpp.obj"
+  "CMakeFiles/src.dir/Node.cpp.obj"
+  "CMakeFiles/src.dir/AdjList.cpp.obj"
   "src.pdb"
   "src.exe"
   "src.exe.manifest"

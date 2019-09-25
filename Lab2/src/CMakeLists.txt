@@ -3,4 +3,21 @@ project(src)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(src main.cpp)
+include_directories(.)
+
+add_executable(src
+        Algorithm.h
+        Tree.cpp
+        Tree.h
+        Search.cpp
+        Search.h
+        searching_Algos.cpp
+        searching_Algos.h
+        LinkedList.h
+        LinkedList.cpp
+        Node.h
+        Node.cpp
+        AdjList.cpp
+        AdjList.h)
+
+

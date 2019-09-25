@@ -122,32 +122,167 @@ src/fast:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/build
 .PHONY : src/fast
 
-main.obj: main.cpp.obj
+AdjList.obj: AdjList.cpp.obj
 
-.PHONY : main.obj
+.PHONY : AdjList.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+AdjList.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.obj
+.PHONY : AdjList.cpp.obj
 
-main.i: main.cpp.i
+AdjList.i: AdjList.cpp.i
 
-.PHONY : main.i
+.PHONY : AdjList.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/main.cpp.i
-.PHONY : main.cpp.i
+AdjList.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.i
+.PHONY : AdjList.cpp.i
 
-main.s: main.cpp.s
+AdjList.s: AdjList.cpp.s
 
-.PHONY : main.s
+.PHONY : AdjList.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/main.cpp.s
-.PHONY : main.cpp.s
+AdjList.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.s
+.PHONY : AdjList.cpp.s
+
+LinkedList.obj: LinkedList.cpp.obj
+
+.PHONY : LinkedList.obj
+
+# target to build an object file
+LinkedList.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.obj
+.PHONY : LinkedList.cpp.obj
+
+LinkedList.i: LinkedList.cpp.i
+
+.PHONY : LinkedList.i
+
+# target to preprocess a source file
+LinkedList.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.i
+.PHONY : LinkedList.cpp.i
+
+LinkedList.s: LinkedList.cpp.s
+
+.PHONY : LinkedList.s
+
+# target to generate assembly for a file
+LinkedList.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.s
+.PHONY : LinkedList.cpp.s
+
+Node.obj: Node.cpp.obj
+
+.PHONY : Node.obj
+
+# target to build an object file
+Node.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Node.cpp.obj
+.PHONY : Node.cpp.obj
+
+Node.i: Node.cpp.i
+
+.PHONY : Node.i
+
+# target to preprocess a source file
+Node.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Node.cpp.i
+.PHONY : Node.cpp.i
+
+Node.s: Node.cpp.s
+
+.PHONY : Node.s
+
+# target to generate assembly for a file
+Node.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Node.cpp.s
+.PHONY : Node.cpp.s
+
+Search.obj: Search.cpp.obj
+
+.PHONY : Search.obj
+
+# target to build an object file
+Search.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Search.cpp.obj
+.PHONY : Search.cpp.obj
+
+Search.i: Search.cpp.i
+
+.PHONY : Search.i
+
+# target to preprocess a source file
+Search.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Search.cpp.i
+.PHONY : Search.cpp.i
+
+Search.s: Search.cpp.s
+
+.PHONY : Search.s
+
+# target to generate assembly for a file
+Search.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Search.cpp.s
+.PHONY : Search.cpp.s
+
+Tree.obj: Tree.cpp.obj
+
+.PHONY : Tree.obj
+
+# target to build an object file
+Tree.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Tree.cpp.obj
+.PHONY : Tree.cpp.obj
+
+Tree.i: Tree.cpp.i
+
+.PHONY : Tree.i
+
+# target to preprocess a source file
+Tree.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Tree.cpp.i
+.PHONY : Tree.cpp.i
+
+Tree.s: Tree.cpp.s
+
+.PHONY : Tree.s
+
+# target to generate assembly for a file
+Tree.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Tree.cpp.s
+.PHONY : Tree.cpp.s
+
+searching_Algos.obj: searching_Algos.cpp.obj
+
+.PHONY : searching_Algos.obj
+
+# target to build an object file
+searching_Algos.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/searching_Algos.cpp.obj
+.PHONY : searching_Algos.cpp.obj
+
+searching_Algos.i: searching_Algos.cpp.i
+
+.PHONY : searching_Algos.i
+
+# target to preprocess a source file
+searching_Algos.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/searching_Algos.cpp.i
+.PHONY : searching_Algos.cpp.i
+
+searching_Algos.s: searching_Algos.cpp.s
+
+.PHONY : searching_Algos.s
+
+# target to generate assembly for a file
+searching_Algos.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/searching_Algos.cpp.s
+.PHONY : searching_Algos.cpp.s
 
 # Help Target
 help:
@@ -158,9 +293,24 @@ help:
 	@echo ... src
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... AdjList.obj
+	@echo ... AdjList.i
+	@echo ... AdjList.s
+	@echo ... LinkedList.obj
+	@echo ... LinkedList.i
+	@echo ... LinkedList.s
+	@echo ... Node.obj
+	@echo ... Node.i
+	@echo ... Node.s
+	@echo ... Search.obj
+	@echo ... Search.i
+	@echo ... Search.s
+	@echo ... Tree.obj
+	@echo ... Tree.i
+	@echo ... Tree.s
+	@echo ... searching_Algos.obj
+	@echo ... searching_Algos.i
+	@echo ... searching_Algos.s
 .PHONY : help
 
 
