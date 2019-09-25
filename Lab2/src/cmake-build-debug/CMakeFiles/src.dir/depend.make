@@ -4,26 +4,23 @@
 CMakeFiles/src.dir/AdjList.cpp.obj: ../AdjList.cpp
 CMakeFiles/src.dir/AdjList.cpp.obj: ../AdjList.h
 CMakeFiles/src.dir/AdjList.cpp.obj: ../LinkedList.h
-CMakeFiles/src.dir/AdjList.cpp.obj: ../Node.h
-CMakeFiles/src.dir/AdjList.cpp.obj: ../node.h
+
+CMakeFiles/src.dir/AdjMatrix.cpp.obj: ../AdjMatrix.cpp
+CMakeFiles/src.dir/AdjMatrix.cpp.obj: ../AdjMatrix.h
 
 CMakeFiles/src.dir/LinkedList.cpp.obj: ../LinkedList.cpp
 CMakeFiles/src.dir/LinkedList.cpp.obj: ../LinkedList.h
-CMakeFiles/src.dir/LinkedList.cpp.obj: ../node.h
-
-CMakeFiles/src.dir/Node.cpp.obj: ../Node.cpp
-CMakeFiles/src.dir/Node.cpp.obj: ../Node.h
 
 CMakeFiles/src.dir/Search.cpp.obj: ../Algorithm.h
 CMakeFiles/src.dir/Search.cpp.obj: ../Search.cpp
 CMakeFiles/src.dir/Search.cpp.obj: ../Search.h
 
-CMakeFiles/src.dir/Tree.cpp.obj: ../Node.h
 CMakeFiles/src.dir/Tree.cpp.obj: ../Tree.cpp
 CMakeFiles/src.dir/Tree.cpp.obj: ../Tree.h
 
+CMakeFiles/src.dir/searching_Algos.cpp.obj: ../AdjList.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../Algorithm.h
-CMakeFiles/src.dir/searching_Algos.cpp.obj: ../Node.h
+CMakeFiles/src.dir/searching_Algos.cpp.obj: ../LinkedList.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../Search.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../Tree.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../searching_Algos.cpp

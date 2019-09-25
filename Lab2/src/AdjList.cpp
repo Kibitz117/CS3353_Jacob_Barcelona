@@ -3,9 +3,13 @@
 //
 
 #include "AdjList.h"
-void AdjList::add_Edge(LinkedList<int> *new_List) {
-    adjacency_graph.push_back(new_List);
+void AdjList::add_Edge(AdjNode *new_List) {
+    list_Graph.push_back(new_List);
 }
-void AdjList::add_Node(int new_Node,int list_Row) {
-    adjacency_graph[list_Row].addToTail(new_Node);
+void AdjList::add_Node(int dest,int src) {
+    list_Graph[src]->potential_paths->addToTail(dest);
+}
+std::vector<AdjNode*>AdjList::getList()
+{
+    return  this->list_Graph;
 }

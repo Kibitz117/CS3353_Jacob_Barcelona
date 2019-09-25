@@ -26,3 +26,6 @@ void Tree::insertNode(TreeNode* par,int src) {
 std::vector<TreeNode*> Tree::getChildren(TreeNode*par) {
     return par->children;
 }
+void Tree::deleteTree() {
+    delete root;
+}

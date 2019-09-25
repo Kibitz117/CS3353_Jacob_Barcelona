@@ -149,6 +149,33 @@ AdjList.cpp.s:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.s
 .PHONY : AdjList.cpp.s
 
+AdjMatrix.obj: AdjMatrix.cpp.obj
+
+.PHONY : AdjMatrix.obj
+
+# target to build an object file
+AdjMatrix.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjMatrix.cpp.obj
+.PHONY : AdjMatrix.cpp.obj
+
+AdjMatrix.i: AdjMatrix.cpp.i
+
+.PHONY : AdjMatrix.i
+
+# target to preprocess a source file
+AdjMatrix.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjMatrix.cpp.i
+.PHONY : AdjMatrix.cpp.i
+
+AdjMatrix.s: AdjMatrix.cpp.s
+
+.PHONY : AdjMatrix.s
+
+# target to generate assembly for a file
+AdjMatrix.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjMatrix.cpp.s
+.PHONY : AdjMatrix.cpp.s
+
 LinkedList.obj: LinkedList.cpp.obj
 
 .PHONY : LinkedList.obj
@@ -175,33 +202,6 @@ LinkedList.s: LinkedList.cpp.s
 LinkedList.cpp.s:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.s
 .PHONY : LinkedList.cpp.s
-
-Node.obj: Node.cpp.obj
-
-.PHONY : Node.obj
-
-# target to build an object file
-Node.cpp.obj:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Node.cpp.obj
-.PHONY : Node.cpp.obj
-
-Node.i: Node.cpp.i
-
-.PHONY : Node.i
-
-# target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Node.cpp.i
-.PHONY : Node.cpp.i
-
-Node.s: Node.cpp.s
-
-.PHONY : Node.s
-
-# target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Node.cpp.s
-.PHONY : Node.cpp.s
 
 Search.obj: Search.cpp.obj
 
@@ -296,12 +296,12 @@ help:
 	@echo ... AdjList.obj
 	@echo ... AdjList.i
 	@echo ... AdjList.s
+	@echo ... AdjMatrix.obj
+	@echo ... AdjMatrix.i
+	@echo ... AdjMatrix.s
 	@echo ... LinkedList.obj
 	@echo ... LinkedList.i
 	@echo ... LinkedList.s
-	@echo ... Node.obj
-	@echo ... Node.i
-	@echo ... Node.s
 	@echo ... Search.obj
 	@echo ... Search.i
 	@echo ... Search.s

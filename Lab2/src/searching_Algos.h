@@ -6,11 +6,13 @@
 #define SEARCHING_SEARCHING_ALGOS_H
 
 #include "Tree.h"
-#include <list>
+#include "AdjList.h"
 #include "Search.h"
+#include <stack>
+#include "LinkedList.h"
 class searching_Algos {
 public:
-   std::string DFS_Iterative(int,int);
+   Tree& DFS_Iterative(int,int,AdjList);
    std::string DFS_Recursive();
    std::string BFS_Iterative();
 

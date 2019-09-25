@@ -15,24 +15,46 @@ vector
 -
 LinkedList.h
 C:/Algorithms/Lab2/src/LinkedList.h
-Node.h
-C:/Algorithms/Lab2/src/Node.h
 
-C:/Algorithms/Lab2/src/LinkedList.cpp
-LinkedList.h
-C:/Algorithms/Lab2/src/LinkedList.h
+C:/Algorithms/Lab2/src/Algorithm.h
+vector
+-
+iostream
+-
+algorithm
+-
+chrono
+-
 
 C:/Algorithms/Lab2/src/LinkedList.h
 stdio.h
 -
-node.h
-C:/Algorithms/Lab2/src/node.h
 iostream
 -
 stdexcept
 -
 
-C:/Algorithms/Lab2/src/Node.h
+C:/Algorithms/Lab2/src/Search.h
+Algorithm.h
+C:/Algorithms/Lab2/src/Algorithm.h
 
-C:/Algorithms/Lab2/src/node.h
+C:/Algorithms/Lab2/src/Tree.h
+vector
+-
+
+C:/Algorithms/Lab2/src/searching_Algos.cpp
+searching_Algos.h
+C:/Algorithms/Lab2/src/searching_Algos.h
+
+C:/Algorithms/Lab2/src/searching_Algos.h
+Tree.h
+C:/Algorithms/Lab2/src/Tree.h
+AdjList.h
+C:/Algorithms/Lab2/src/AdjList.h
+Search.h
+C:/Algorithms/Lab2/src/Search.h
+stack
+-
+LinkedList.h
+C:/Algorithms/Lab2/src/LinkedList.h
 

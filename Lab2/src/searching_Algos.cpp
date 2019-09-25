@@ -3,6 +3,15 @@
 //
 
 #include "searching_Algos.h"
-void searching_Algos::DFS(Tree g, int destination, bool searched[]) {
-if(g)
+Tree& searching_Algos::DFS_Iterative(int src, int dest,AdjList adj_Graph) {
+    std::stack<Node*>searching;
+    Tree path;
+    searching.push(adj_Graph.getList()[src]->adj_Node);
+    for(int i=0;i<adj_Graph.getList()[src]->potential_paths->getSize();i++)
+    {
+        searching.push(adj_Graph.getList()[src]->potential_paths[i].);
+    }
+
+
+    return path;
 }

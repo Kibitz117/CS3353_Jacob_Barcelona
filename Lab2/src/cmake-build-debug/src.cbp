@@ -88,6 +88,12 @@
 		<Unit filename="C:/Algorithms/Lab2/src/AdjList.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="C:/Algorithms/Lab2/src/AdjMatrix.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Algorithms/Lab2/src/AdjMatrix.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="C:/Algorithms/Lab2/src/Algorithm.h">
 			<Option target="src"/>
 		</Unit>
@@ -95,12 +101,6 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="C:/Algorithms/Lab2/src/LinkedList.h">
-			<Option target="src"/>
-		</Unit>
-		<Unit filename="C:/Algorithms/Lab2/src/Node.cpp">
-			<Option target="src"/>
-		</Unit>
-		<Unit filename="C:/Algorithms/Lab2/src/Node.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="C:/Algorithms/Lab2/src/Search.cpp">

@@ -112,24 +112,10 @@ CMakeFiles/src.dir/LinkedList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/LinkedList.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\LinkedList.cpp -o CMakeFiles\src.dir\LinkedList.cpp.s
 
-CMakeFiles/src.dir/Node.cpp.obj: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/Node.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
-CMakeFiles/src.dir/Node.cpp.obj: ../Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/src.dir/Node.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\Node.cpp.obj -c C:\Algorithms\Lab2\src\Node.cpp
-
-CMakeFiles/src.dir/Node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/Node.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab2\src\Node.cpp > CMakeFiles\src.dir\Node.cpp.i
-
-CMakeFiles/src.dir/Node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Node.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\Node.cpp -o CMakeFiles\src.dir\Node.cpp.s
-
 CMakeFiles/src.dir/AdjList.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/AdjList.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
 CMakeFiles/src.dir/AdjList.cpp.obj: ../AdjList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/src.dir/AdjList.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/src.dir/AdjList.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\AdjList.cpp.obj -c C:\Algorithms\Lab2\src\AdjList.cpp
 
 CMakeFiles/src.dir/AdjList.cpp.i: cmake_force
@@ -140,14 +126,28 @@ CMakeFiles/src.dir/AdjList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/AdjList.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\AdjList.cpp -o CMakeFiles\src.dir\AdjList.cpp.s
 
+CMakeFiles/src.dir/AdjMatrix.cpp.obj: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/AdjMatrix.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
+CMakeFiles/src.dir/AdjMatrix.cpp.obj: ../AdjMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/src.dir/AdjMatrix.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\AdjMatrix.cpp.obj -c C:\Algorithms\Lab2\src\AdjMatrix.cpp
+
+CMakeFiles/src.dir/AdjMatrix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/AdjMatrix.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab2\src\AdjMatrix.cpp > CMakeFiles\src.dir\AdjMatrix.cpp.i
+
+CMakeFiles/src.dir/AdjMatrix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/AdjMatrix.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\AdjMatrix.cpp -o CMakeFiles\src.dir\AdjMatrix.cpp.s
+
 # Object files for target src
 src_OBJECTS = \
 "CMakeFiles/src.dir/Tree.cpp.obj" \
 "CMakeFiles/src.dir/Search.cpp.obj" \
 "CMakeFiles/src.dir/searching_Algos.cpp.obj" \
 "CMakeFiles/src.dir/LinkedList.cpp.obj" \
-"CMakeFiles/src.dir/Node.cpp.obj" \
-"CMakeFiles/src.dir/AdjList.cpp.obj"
+"CMakeFiles/src.dir/AdjList.cpp.obj" \
+"CMakeFiles/src.dir/AdjMatrix.cpp.obj"
 
 # External object files for target src
 src_EXTERNAL_OBJECTS =
@@ -156,8 +156,8 @@ src.exe: CMakeFiles/src.dir/Tree.cpp.obj
 src.exe: CMakeFiles/src.dir/Search.cpp.obj
 src.exe: CMakeFiles/src.dir/searching_Algos.cpp.obj
 src.exe: CMakeFiles/src.dir/LinkedList.cpp.obj
-src.exe: CMakeFiles/src.dir/Node.cpp.obj
 src.exe: CMakeFiles/src.dir/AdjList.cpp.obj
+src.exe: CMakeFiles/src.dir/AdjMatrix.cpp.obj
 src.exe: CMakeFiles/src.dir/build.make
 src.exe: CMakeFiles/src.dir/linklibs.rsp
 src.exe: CMakeFiles/src.dir/objects1.rsp

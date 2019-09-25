@@ -6,7 +6,6 @@
 #define SEARCHING_GRAPH_H
 
 
-#include "Node.h"
 #include <vector>
 struct TreeNode{
     int data;
@@ -19,6 +18,7 @@ public:
     Tree();
     std::vector<TreeNode*> getChildren(TreeNode*);
     void insertNode(TreeNode*,int);
+    void deleteTree();
 
 private:
     TreeNode* root;

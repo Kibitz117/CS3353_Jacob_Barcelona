@@ -7,13 +7,20 @@
 
 #include <vector>
 #include "LinkedList.h"
-#include "Node.h"
+struct AdjNode{
+    int data;
+public:
+    LinkedList* potential_paths;
+    Node* adj_Node;
+};
 class AdjList {
 public:
     void add_Node(int,int list_Row);
-    void add_Edge(LinkedList<int>*);
+    void add_Edge(AdjNode*);
+    std::vector<AdjNode*> getList();
+
 private:
-    std::vector<LinkedList<int>>adjacency_graph;
+    std::vector<AdjNode*>list_Graph;
 };
 
 

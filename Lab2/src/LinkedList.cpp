@@ -8,7 +8,6 @@ LinkedList::LinkedList()
 {
     head=nullptr;
     tail=nullptr;
-    iter=nullptr;
     size=0;
 }
 //Destructor
@@ -20,7 +19,7 @@ LinkedList::~LinkedList()
         Node* erase;
         while(temp!=nullptr)
         {
-            erase=temp->getNext();
+            erase=temp->next;
             delete temp;
             temp=erase;
         }
@@ -30,13 +29,13 @@ LinkedList::~LinkedList()
 LinkedList::LinkedList(const LinkedList&rhs)
 {
 
-    head=tail=iter=nullptr;
+    head=tail=nullptr;
     size=0;
     Node*current=rhs.head;
     while(current!=nullptr)
     {
-        this->addToTail(current->getData());
-        current=current->getNext();
+        this->addToTail(current->data);
+        current=current->next;
     }
 
 
@@ -95,7 +94,8 @@ void LinkedList::insert(int data,int position)
             nextnode=current->next;
             count++;
         }
-        Node<T> *nodey=new Node<T>(data);
+        Node *nodey;
+        nodey->data=data;
         previous->next = nodey;
         nodey->next=current;
         nodey->prev=previous;
@@ -111,12 +111,12 @@ void LinkedList::insert(int data,int position)
 //Adds node at the tail of the linked list
 void LinkedList::addToTail(int data)
 {
-    Node*temp=new Node(data);
+    Node*temp;
+    temp->data=data;
     if(head==nullptr)
     {
         head=temp;
         tail=head;
-        iter=head;
     }
     else{
         tail->next=temp;
@@ -134,16 +134,54 @@ void LinkedList::addToHead(int data)
     //Checks if linked list if empty
     if(head==nullptr||tail==nullptr)
     {
-        head=new Node(data);
+        Node* newNode;
+        newNode->data=data;
+        head=newNode;
         tail=head;
-        iter=head;
     }
     else
     {
-        Node *newNode=new Node(data);
+        Node *newNode;
+        newNode->data=data;
         head->prev = newNode;
         head->prev->next=head;
         head=head->prev;
     }
     size++;
+}
+int LinkedList::getSize() {
+    return size;
+}
+//Finds the node of the value that is passed into the search function
+int LinkedList::search(int& val)
+{
+    int counter=0;
+    Node*curr=head;
+    while(curr!=nullptr){
+
+        if(curr->data==val)
+        {
+            return counter;
+        }
+        counter++;
+        curr=curr->next;
+    }
+
+    return -1;
+}
+//Accesses the data at a specific position of the linked list
+Node& LinkedList::operator[](int pos)const
+{
+    //if pos>size
+    Node*current=head;
+    while(current!=nullptr&&pos>0)
+    {
+        current=current->next;
+        pos--;
+    }
+    if(current!=nullptr)
+    {
+        return current->data;
+    }
+    throw std::out_of_range("Uh oh ya went out of range ¯\_(ツ)_/¯");
 }

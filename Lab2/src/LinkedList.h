@@ -5,10 +5,15 @@
 #ifndef SRC_LINKEDLIST_H
 #define SRC_LINKEDLIST_H
 #include <stdio.h>
-#include "node.h"
 #include <iostream>
 #include <stdexcept>
-
+struct Node{
+    Node *next;
+    Node *prev;
+public:
+    int data;
+    bool visited;
+};
 class LinkedList{
 
 public:
@@ -21,10 +26,11 @@ public:
     //Asignment operator
     int& operator[](int)const;
     LinkedList& operator=(const LinkedList&);
+    int search(int&val);
+    int getSize();
 private:
     Node *head;
     Node *tail;
-    Node *iter;//reset returns iterator to head and getnext returns value of next element methods for iterator
     int size;
 };
 
