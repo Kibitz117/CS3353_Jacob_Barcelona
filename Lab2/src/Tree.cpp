@@ -14,6 +14,7 @@ Tree::Tree(int r) {
     root = root_Node;
     depth = 0;
     total = 1;
+    relationships.insert(root_Node,root_Node);
 }
 
 TreeNode* Tree::find(int data) {
@@ -36,6 +37,7 @@ void Tree::insertNode(int par,int src) {
         //Do I need a find function
         new_Node->parent=par;
         new_Node->parent->children.push_back(new_Node);
+        relationships.insert(new_Node->parent,new_Node);
         total++;
 
 

@@ -27,7 +27,7 @@ private:
     TreeNode* root;
     int depth;
     int total;
-    std::map<int,TreeNode*>relationships;
+    std::map<TreeNode*,TreeNode*>relationships;
 };
 
 
