@@ -16,7 +16,7 @@ public:
 class AdjList {
 public:
     void add_Node(int,int list_Row);
-    void add_Edge(AdjNode*);
+    void add_Edge(int);
     std::vector<AdjNode*> getList();
 
 private:

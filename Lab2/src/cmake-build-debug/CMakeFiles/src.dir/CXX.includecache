@@ -26,6 +26,10 @@ algorithm
 chrono
 -
 
+C:/Algorithms/Lab2/src/LinkedList.cpp
+LinkedList.h
+C:/Algorithms/Lab2/src/LinkedList.h
+
 C:/Algorithms/Lab2/src/LinkedList.h
 stdio.h
 -
@@ -34,9 +38,25 @@ iostream
 stdexcept
 -
 
+C:/Algorithms/Lab2/src/Search.cpp
+sstream
+-
+Search.h
 C:/Algorithms/Lab2/src/Search.h
+
+C:/Algorithms/Lab2/src/Search.h
+fstream
+-
 Algorithm.h
 C:/Algorithms/Lab2/src/Algorithm.h
+searching_Algos.h
+C:/Algorithms/Lab2/src/searching_Algos.h
+AdjList.h
+C:/Algorithms/Lab2/src/AdjList.h
+
+C:/Algorithms/Lab2/src/Tree.cpp
+Tree.h
+C:/Algorithms/Lab2/src/Tree.h
 
 C:/Algorithms/Lab2/src/Tree.h
 vector

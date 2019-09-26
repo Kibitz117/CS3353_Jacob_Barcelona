@@ -3,7 +3,9 @@
 //
 
 #include "AdjList.h"
-void AdjList::add_Edge(AdjNode *new_List) {
+void AdjList::add_Edge(int new_Node) {
+    AdjNode *new_List;
+    new_List->data=new_Node;
     list_Graph.push_back(new_List);
 }
 void AdjList::add_Node(int dest,int src) {

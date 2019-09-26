@@ -4,8 +4,10 @@
 
 #ifndef SEARCHING_SEARCH_H
 #define SEARCHING_SEARCH_H
-
+#include <fstream>
 #include "Algorithm.h"
+#include "searching_Algos.h"
+#include "AdjList.h"
 class Search: public Algorithm{
 virtual void  Load(std::string);
 virtual void Execute();//Running switch statement

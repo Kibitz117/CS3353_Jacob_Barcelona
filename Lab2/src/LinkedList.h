@@ -24,7 +24,7 @@ public:
     void addToHead(int data);
     void insert(int data,int position);
     //Asignment operator
-    int& operator[](int)const;
+    Node* operator[](int)const;
     LinkedList& operator=(const LinkedList&);
     int search(int&val);
     int getSize();

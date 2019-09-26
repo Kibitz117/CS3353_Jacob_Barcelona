@@ -16,9 +16,11 @@ struct TreeNode{
 class Tree {
 public:
     Tree();
+    Tree(int);
     std::vector<TreeNode*> getChildren(TreeNode*);
-    void insertNode(TreeNode*,int);
+    void insertNode(int,int);
     void deleteTree();
+    TreeNode* find(int);
 
 private:
     TreeNode* root;

@@ -170,7 +170,7 @@ int LinkedList::search(int& val)
     return -1;
 }
 //Accesses the data at a specific position of the linked list
-Node& LinkedList::operator[](int pos)const
+Node* LinkedList::operator[](int pos)const
 {
     //if pos>size
     Node*current=head;
@@ -181,7 +181,7 @@ Node& LinkedList::operator[](int pos)const
     }
     if(current!=nullptr)
     {
-        return current->data;
+        return current;
     }
-    throw std::out_of_range("Uh oh ya went out of range ¯\_(ツ)_/¯");
+    throw std::out_of_range("Uh oh ya went out of range");
 }
