@@ -8,7 +8,7 @@ void AdjList::add_Edge(int new_Node) {
     new_List->data=new_Node;
     list_Graph.push_back(new_List);
 }
-void AdjList::add_Node(int dest,int src) {
+void AdjList::addNode(int dest,int src) {
     list_Graph[src]->potential_paths->addToTail(dest);
 }
 std::vector<AdjNode*>AdjList::getList()

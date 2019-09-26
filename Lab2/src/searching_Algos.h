@@ -5,6 +5,7 @@
 #ifndef SEARCHING_SEARCHING_ALGOS_H
 #define SEARCHING_SEARCHING_ALGOS_H
 
+#include "Graph.h"
 #include "Tree.h"
 #include "AdjList.h"
 #include "Search.h"

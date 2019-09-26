@@ -7,15 +7,16 @@
 
 #include <vector>
 #include "LinkedList.h"
+#include "Graph.h"
 struct AdjNode{
     int data;
 public:
     LinkedList* potential_paths;
     Node* adj_Node;
 };
-class AdjList {
+class AdjList: public Graph {
 public:
-    void add_Node(int,int list_Row);
+    void addNode(int,int list_Row);
     void add_Edge(int);
     std::vector<AdjNode*> getList();
 

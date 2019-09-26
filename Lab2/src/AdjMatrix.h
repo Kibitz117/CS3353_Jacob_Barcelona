@@ -5,8 +5,8 @@
 #ifndef SRC_ADJMATRIX_H
 #define SRC_ADJMATRIX_H
 
-
-class AdjMatrix {
+#include "Graph.h"
+class AdjMatrix: public Graph {
 public:
     void addNode(int x,int y,struct Node*);
 private:

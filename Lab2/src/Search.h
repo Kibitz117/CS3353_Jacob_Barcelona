@@ -9,6 +9,7 @@
 #include "searching_Algos.h"
 #include "AdjList.h"
 class Search: public Algorithm{
+public:
 virtual void  Load(std::string);
 virtual void Execute();//Running switch statement
 virtual void Display();
@@ -17,6 +18,8 @@ virtual void Select(int);//Select active algorithm
 virtual void Save(std::string,int,std::string);
 virtual void Configure();
 void Clear();
+private:
+    //void(*searching_Algos)(std::vector<int>&)=nullptr;
 };
 
 

@@ -3,6 +3,6 @@
 //
 
 #include "AdjMatrix.h"
-//void AdjMatrix::addNode(int x,int y,struct Node* new_Node) {
-//    this->matrix_graph[x][y]=new_Node;
-//}
+void AdjMatrix::addNode(int x,int y,struct Node* new_Node) {
+  this->matrix_graph[x][y]=new_Node;
+}
