@@ -6,15 +6,13 @@
 
 #IncludeRegexTransform: 
 
-C:/Algorithms/Lab2/src/AdjList.cpp
-AdjList.h
-C:/Algorithms/Lab2/src/AdjList.h
-
 C:/Algorithms/Lab2/src/AdjList.h
 vector
 -
 LinkedList.h
 C:/Algorithms/Lab2/src/LinkedList.h
+Graph.h
+C:/Algorithms/Lab2/src/Graph.h
 
 C:/Algorithms/Lab2/src/Algorithm.h
 vector
@@ -26,7 +24,7 @@ algorithm
 chrono
 -
 
-C:/Algorithms/Lab2/src/LinkedList.cpp
+C:/Algorithms/Lab2/src/Graph.h
 LinkedList.h
 C:/Algorithms/Lab2/src/LinkedList.h
 
@@ -59,6 +57,10 @@ Tree.h
 C:/Algorithms/Lab2/src/Tree.h
 
 C:/Algorithms/Lab2/src/Tree.h
+LinkedList.h
+C:/Algorithms/Lab2/src/LinkedList.h
+map
+-
 vector
 -
 
@@ -67,6 +69,8 @@ searching_Algos.h
 C:/Algorithms/Lab2/src/searching_Algos.h
 
 C:/Algorithms/Lab2/src/searching_Algos.h
+Graph.h
+C:/Algorithms/Lab2/src/Graph.h
 Tree.h
 C:/Algorithms/Lab2/src/Tree.h
 AdjList.h

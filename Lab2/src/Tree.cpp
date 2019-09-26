@@ -31,12 +31,7 @@ TreeNode* Tree::find(int data) {
         }
     }
 }
-void Tree::insertNode(int par,int src) {
-        TreeNode* new_Node;
-        new_Node->data=src;
-        //Do I need a find function
-        new_Node->parent=par;
-        new_Node->parent->children.push_back(new_Node);
+void Tree::insertNode(TreeNode*new_Node) {
         relationships.insert(new_Node->parent,new_Node);
         total++;
 

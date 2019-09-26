@@ -5,12 +5,14 @@
 #ifndef SEARCHING_GRAPH_H
 #define SEARCHING_GRAPH_H
 
+#include "LinkedList.h"
 #include <map>
 #include <vector>
 struct TreeNode{
     int data;
     TreeNode* parent;
     std::vector<TreeNode*>children;
+    bool visited=false;
 
 };
 class Tree {
@@ -18,10 +20,9 @@ public:
     Tree();
     Tree(int);
     std::vector<TreeNode*> getChildren(TreeNode*);
-    void insertNode(int,int);
+    void insertNode(TreeNode*);
     void deleteTree();
     TreeNode* find(int);
-    void update_Parent_Child();
 
 private:
     TreeNode* root;

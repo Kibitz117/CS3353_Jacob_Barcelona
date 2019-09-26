@@ -9,6 +9,8 @@
 class Graph {
 public:
     virtual void addNode()=0;
+    virtual void removeNode()=0;
+    
 private:
 
 };

@@ -5,12 +5,16 @@
 #ifndef SRC_ADJMATRIX_H
 #define SRC_ADJMATRIX_H
 
+#include "LinkedList.h"
+#include <vector>
 #include "Graph.h"
 class AdjMatrix: public Graph {
 public:
     void addNode(int x,int y,struct Node*);
 private:
-    struct Node* matrix_graph[5][6];
+    std::vector<std::vector<Node*>>edges;
+    int numVerticies;
+
 };
 
 
