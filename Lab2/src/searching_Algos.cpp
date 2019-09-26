@@ -20,7 +20,7 @@ while(!searching.empty())
     }
     current->visited=true;
     searching.pop();
-    path.insertNode(current->data,searching.top());
+    path.insertNode(current->data,searching.top()->data);
     current=searching.top();
     if(current->data==src)
         break;

@@ -10,7 +10,7 @@ total=0;
 }
 Tree::Tree(int r) {
     TreeNode *root_Node;
-    root_Node.data = r;
+    root_Node->data = r;
     root = root_Node;
     depth = 0;
     total = 1;
@@ -33,11 +33,14 @@ TreeNode* Tree::find(int data) {
 void Tree::insertNode(int par,int src) {
         TreeNode* new_Node;
         new_Node->data=src;
+        //Do I need a find function
         new_Node->parent=par;
         new_Node->parent->children.push_back(new_Node);
+        total++;
 
 
 }
+//Returns vector of children
 std::vector<TreeNode*> Tree::getChildren(TreeNode*par) {
     return par->children;
 }

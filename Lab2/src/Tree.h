@@ -5,7 +5,7 @@
 #ifndef SEARCHING_GRAPH_H
 #define SEARCHING_GRAPH_H
 
-
+#include <map>
 #include <vector>
 struct TreeNode{
     int data;
@@ -21,11 +21,13 @@ public:
     void insertNode(int,int);
     void deleteTree();
     TreeNode* find(int);
+    void update_Parent_Child();
 
 private:
     TreeNode* root;
     int depth;
     int total;
+    std::map<int,TreeNode*>relationships;
 };
 
 
