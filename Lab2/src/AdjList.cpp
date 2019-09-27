@@ -5,6 +5,7 @@
 #include "AdjList.h"
 AdjList::AdjList(int size) {
     this->list_Graph.reserve(size);
+    this->numVerticies=size;
 }
 void AdjList::add_Edge(int new_Node) {
     AdjNode *new_List;

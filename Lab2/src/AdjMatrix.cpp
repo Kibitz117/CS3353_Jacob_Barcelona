@@ -11,6 +11,8 @@ AdjMatrix::AdjMatrix(int size) {
         this->edges[i]=new Node*[size];
     }
 }
-void AdjMatrix::addNode(int x,int y,struct Node* new_Node) {
-
+void AdjMatrix::addNode(int src,int dest) {
+    struct Node* new_Node;
+    new_Node->data=dest;
+    this->edges[src][dest]=new_Node;
 }

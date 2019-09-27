@@ -17,14 +17,13 @@ std::vector<std::stringstream> streams;
 
     }
     AdjList list_Graph(count);
-    int count2=1;
-    for(int i=0;i<streams.size();i++)
+    for(int i=1;i<=streams.size();i++)
     {
         std::string node;
         while(getline(streams[i],node,','))
         {
             int temp=atoi(node.c_str());
-            list_Graph.addNode(temp,count2);
+            list_Graph.addNode(temp,i);
         }
     }
 

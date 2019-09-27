@@ -11,7 +11,7 @@
 class AdjMatrix: public Graph {
 public:
     AdjMatrix(int);
-    void addNode(int x,int y,struct Node*);
+    void addNode(int x,int y);
 private:
     Node***edges;
     int numVerticies;

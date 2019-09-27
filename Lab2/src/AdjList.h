@@ -32,6 +32,7 @@ public:
 
 private:
     std::vector<AdjNode*>list_Graph;
+    int numVerticies;
 };
 
 
