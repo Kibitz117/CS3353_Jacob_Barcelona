@@ -18,6 +18,7 @@ add_executable(src
         AdjList.cpp
         AdjList.h
         AdjMatrix.cpp
-        AdjList.h)
+        AdjList.h
+        main.cpp)
 
 

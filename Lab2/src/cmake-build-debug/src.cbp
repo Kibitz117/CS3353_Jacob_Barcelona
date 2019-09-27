@@ -115,6 +115,9 @@
 		<Unit filename="C:/Algorithms/Lab2/src/Tree.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="C:/Algorithms/Lab2/src/main.cpp">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="C:/Algorithms/Lab2/src/searching_Algos.cpp">
 			<Option target="src"/>
 		</Unit>

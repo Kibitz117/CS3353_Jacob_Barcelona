@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/src.dir/LinkedList.cpp.obj"
   "CMakeFiles/src.dir/AdjList.cpp.obj"
   "CMakeFiles/src.dir/AdjMatrix.cpp.obj"
+  "CMakeFiles/src.dir/main.cpp.obj"
   "src.pdb"
   "src.exe"
   "src.exe.manifest"

@@ -1,37 +1,33 @@
 //
 // Created by jakeb on 9/22/2019.
 //
-
 #include <sstream>
 #include "Search.h"
 void Search::Load(std::string fileName) {
     std::fstream dataFile;
     dataFile.open(fileName);
-    AdjList list_Graph;
     std::string line;
+    int count=0;
+std::vector<std::stringstream> streams;
     while(getline(dataFile,line))
     {
-        int count=0;
-        int count2=0;
         std::stringstream linestream(line);
-        std::string node;
-        while(getline(linestream,node,','))
-        {
-            if(count2==0)
-            {
-                int temp=atoi(node.c_str());
-                list_Graph.add_Edge(temp);
-            }
-            else{
-                int temp=atoi(node.c_str());
-                list_Graph.add_Node(temp,count);
-            }
-            count2++;
-
-        }
+        streams.push_back(linestream);
         count++;
 
     }
+    AdjList list_Graph(count);
+    int count2=1;
+    for(int i=0;i<streams.size();i++)
+    {
+        std::string node;
+        while(getline(streams[i],node,','))
+        {
+            int temp=atoi(node.c_str());
+            list_Graph.addNode(temp,count2);
+        }
+    }
+
     //Read line tokenize commas
     //First number is adjacency nodes
     //Following are the adjacency nodes children in Linked List

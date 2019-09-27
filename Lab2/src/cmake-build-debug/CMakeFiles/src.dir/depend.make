@@ -27,6 +27,15 @@ CMakeFiles/src.dir/Tree.cpp.obj: ../LinkedList.h
 CMakeFiles/src.dir/Tree.cpp.obj: ../Tree.cpp
 CMakeFiles/src.dir/Tree.cpp.obj: ../Tree.h
 
+CMakeFiles/src.dir/main.cpp.obj: ../AdjList.h
+CMakeFiles/src.dir/main.cpp.obj: ../Algorithm.h
+CMakeFiles/src.dir/main.cpp.obj: ../Graph.h
+CMakeFiles/src.dir/main.cpp.obj: ../LinkedList.h
+CMakeFiles/src.dir/main.cpp.obj: ../Search.h
+CMakeFiles/src.dir/main.cpp.obj: ../Tree.h
+CMakeFiles/src.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/src.dir/main.cpp.obj: ../searching_Algos.h
+
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../AdjList.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../Algorithm.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj: ../Graph.h

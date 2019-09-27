@@ -10,8 +10,8 @@
 #include <vector>
 struct TreeNode{
     int data;
-    TreeNode* parent;
-    std::vector<TreeNode*>children;
+    struct TreeNode* parent;
+    std::vector<struct TreeNode*>children;
     bool visited=false;
 
 };
@@ -19,16 +19,16 @@ class Tree {
 public:
     Tree();
     Tree(int);
-    std::vector<TreeNode*> getChildren(TreeNode*);
-    void insertNode(TreeNode*);
+    std::vector<struct TreeNode*> getChildren(struct TreeNode*);
+    void insertNode(struct TreeNode*);
     void deleteTree();
-    TreeNode* find(int);
+    struct TreeNode* find(int);
 
 private:
-    TreeNode* root;
+    struct TreeNode* root;
     int depth;
     int total;
-    std::map<TreeNode*,TreeNode*>relationships;
+    std::map<struct TreeNode*,struct TreeNode*>relationships;
 };
 
 

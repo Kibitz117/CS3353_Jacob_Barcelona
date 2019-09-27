@@ -10,9 +10,10 @@
 #include "Graph.h"
 class AdjMatrix: public Graph {
 public:
+    AdjMatrix(int);
     void addNode(int x,int y,struct Node*);
 private:
-    std::vector<std::vector<Node*>>edges;
+    Node***edges;
     int numVerticies;
 
 };

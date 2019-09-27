@@ -8,6 +8,7 @@
 #include "Algorithm.h"
 #include "searching_Algos.h"
 #include "AdjList.h"
+#include <vector>
 class Search: public Algorithm{
 public:
 virtual void  Load(std::string);

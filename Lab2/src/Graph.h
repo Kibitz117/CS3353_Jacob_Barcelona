@@ -8,8 +8,7 @@
 #include "LinkedList.h"
 class Graph {
 public:
-    virtual void addNode()=0;
-    virtual void removeNode()=0;
+    virtual void addNode(int,int)=0;
     
 private:
 
