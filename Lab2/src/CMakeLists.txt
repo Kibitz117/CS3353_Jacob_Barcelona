@@ -7,8 +7,6 @@ include_directories(.)
 
 add_executable(src
         Algorithm.h
-        Tree.cpp
-        Tree.h
         Search.cpp
         Search.h
         searching_Algos.cpp

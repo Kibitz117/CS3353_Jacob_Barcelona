@@ -2,10 +2,10 @@
 // Created by jakeb on 9/27/2019.
 //
 #include "Search.h"
+#include "AdjList.h"
 #include <iostream>
 int main()
 {
-    AdjList list_Graph;
     Search s;
-    s.Load("cmake-build-debug/graph.txt");
+    s.Load("C:\\Algorithms\\Lab2\\src\\cmake-build-debug\\graph.txt");
 }

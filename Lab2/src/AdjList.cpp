@@ -6,21 +6,18 @@
 AdjList::AdjList(int size) {
     this->list_Graph.reserve(size);
     this->numVerticies=size;
+    for(int i=0;i<size;i++)
+    {
+        add_Edge(i+1);
+    }
 }
 void AdjList::add_Edge(int new_Node) {
-    AdjNode *new_List;
-    new_List->data=new_Node;
-    list_Graph.push_back(new_List);
+    AdjNode new_List;
+    new_List.adj_Node->data=new_Node;
+    list_Graph.push_back(&new_List);
 }
 void AdjList::addNode(int src,int dest) {
-    AdjNode* new_Node;
-    new_Node->data=src;
-    auto it=std::find (list_Graph.begin(),list_Graph.end(),src);
-    if(it==list_Graph.end())
-    {
-        add_Edge(src);
-    }
-    list_Graph[src]->potential_paths->addToTail(dest);
+    list_Graph[src-1]->potential_paths->addToTail(dest);
 }
 std::vector<AdjNode*>AdjList::getList()
 {

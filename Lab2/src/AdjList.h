@@ -10,12 +10,11 @@
 #include "LinkedList.h"
 #include "Graph.h"
 struct AdjNode{
-    int data;
 public:
     LinkedList* potential_paths;
     Node* adj_Node;
     bool operator==(const AdjNode &rhs) {
-        if(this->data==rhs.data)
+        if(this->adj_Node->data==rhs.adj_Node->data)
         {
             return true;
         }

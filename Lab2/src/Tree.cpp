@@ -9,12 +9,12 @@ depth=0;
 total=0;
 }
 Tree::Tree(int r) {
-    TreeNode *root_Node;
-    root_Node->data = r;
-    root = root_Node;
+    TreeNode root_Node;
+    root_Node.data = r;
+    root = &root_Node;
     depth = 0;
     total = 1;
-    relationships.insert(root_Node,root_Node);
+    relationship.emplace_back(std::make_pair(root_Node,root_Node));
 }
 
 TreeNode* Tree::find(int data) {
@@ -33,6 +33,7 @@ TreeNode* Tree::find(int data) {
 }
 void Tree::insertNode(TreeNode*new_Node) {
         relationships.insert(new_Node->parent,new_Node);
+        relationship.emplace_back(std::make_pair(new_Node->parent,new_Node));
         total++;
 
 

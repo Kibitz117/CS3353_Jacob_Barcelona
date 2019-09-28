@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Algorithms/Lab2/src/AdjList.cpp
-AdjList.h
-C:/Algorithms/Lab2/src/AdjList.h
-
 C:/Algorithms/Lab2/src/AdjList.h
 algorithm
 -
@@ -17,18 +13,6 @@ vector
 -
 LinkedList.h
 C:/Algorithms/Lab2/src/LinkedList.h
-Graph.h
-C:/Algorithms/Lab2/src/Graph.h
-
-C:/Algorithms/Lab2/src/AdjMatrix.cpp
-AdjMatrix.h
-C:/Algorithms/Lab2/src/AdjMatrix.h
-
-C:/Algorithms/Lab2/src/AdjMatrix.h
-LinkedList.h
-C:/Algorithms/Lab2/src/LinkedList.h
-vector
--
 Graph.h
 C:/Algorithms/Lab2/src/Graph.h
 
@@ -71,6 +55,10 @@ AdjList.h
 C:/Algorithms/Lab2/src/AdjList.h
 vector
 -
+iostream
+-
+Graph.h
+C:/Algorithms/Lab2/src/Graph.h
 
 C:/Algorithms/Lab2/src/Tree.h
 LinkedList.h
@@ -79,16 +67,6 @@ map
 -
 vector
 -
-
-C:/Algorithms/Lab2/src/main.cpp
-Search.h
-C:/Algorithms/Lab2/src/Search.h
-iostream
--
-
-C:/Algorithms/Lab2/src/searching_Algos.cpp
-searching_Algos.h
-C:/Algorithms/Lab2/src/searching_Algos.h
 
 C:/Algorithms/Lab2/src/searching_Algos.h
 Graph.h

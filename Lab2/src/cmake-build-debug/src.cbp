@@ -109,12 +109,6 @@
 		<Unit filename="C:/Algorithms/Lab2/src/Search.h">
 			<Option target="src"/>
 		</Unit>
-		<Unit filename="C:/Algorithms/Lab2/src/Tree.cpp">
-			<Option target="src"/>
-		</Unit>
-		<Unit filename="C:/Algorithms/Lab2/src/Tree.h">
-			<Option target="src"/>
-		</Unit>
 		<Unit filename="C:/Algorithms/Lab2/src/main.cpp">
 			<Option target="src"/>
 		</Unit>

@@ -29,6 +29,7 @@ private:
     int depth;
     int total;
     std::map<struct TreeNode*,struct TreeNode*>relationships;
+    std::vector<std::pair<struct TreeNode*,struct TreeNode*>>relationship;
 };
 
 

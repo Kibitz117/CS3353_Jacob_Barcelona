@@ -9,6 +9,8 @@
 #include "searching_Algos.h"
 #include "AdjList.h"
 #include <vector>
+#include <iostream>
+#include "Graph.h"
 class Search: public Algorithm{
 public:
 virtual void  Load(std::string);
@@ -21,6 +23,7 @@ virtual void Configure();
 void Clear();
 private:
     //void(*searching_Algos)(std::vector<int>&)=nullptr;
+    Graph* list;
 };
 
 
