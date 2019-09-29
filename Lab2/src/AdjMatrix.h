@@ -8,12 +8,16 @@
 #include "LinkedList.h"
 #include <vector>
 #include "Graph.h"
+#include "Node.h"
 class AdjMatrix: public Graph {
 public:
     AdjMatrix(int);
     void addNode(int x,int y);
+    int getNumVerticies();
+    Node<int>**getVertices();
+    void toString();
 private:
-    Node***edges;
+    Node<int>**edges;
     int numVerticies;
 
 };

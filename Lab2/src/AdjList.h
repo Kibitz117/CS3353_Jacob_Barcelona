@@ -9,30 +9,53 @@
 #include <vector>
 #include "LinkedList.h"
 #include "Graph.h"
-struct AdjNode{
-public:
-    LinkedList* potential_paths;
-    Node* adj_Node;
-    bool operator==(const AdjNode &rhs) {
-        if(this->adj_Node->data==rhs.adj_Node->data)
-        {
-            return true;
-        }
-        return false;
-    }
-};
+#include "AdjNode.h"
+template <typename T>
 class AdjList: public Graph {
-public:
-    AdjList(int);
-    virtual void addNode(int,int list_Row);
-    void add_Edge(int);
-    std::vector<AdjNode*> getList();
-    AdjNode&operator==(AdjNode&rhs);
+    public:
+        AdjList(int);
+        void addNode(T,T);
+        int Find(int);
+        LinkedList<AdjNode<T>>& getList();
 
-private:
-    std::vector<AdjNode*>list_Graph;
-    int numVerticies;
-};
+    private:
+        LinkedList<AdjNode<T>>data;
+        int numVerticies;
+    };
+
+template <typename T>
+AdjList<T>::AdjList(int size) {
+    this->numVerticies=size;
+
+}
+    template<typename T>
+    void AdjList<T>::addNode(T root,T edge)
+    {
+        AdjNode<T> target;
+        target.getNode().setData(root);
+        if(data.search(target)<0)
+        {
+            data.addToTail(target);
+            data[data.search(target)].getEdges().addToTail(edge);
+        }
+        else
+            //Erases the values
+            data[data.search(target)].getEdges().addToTail(edge);
+
+
+    }
+    template<typename T>
+    int AdjList<T>::Find(int src)
+    {
+        AdjNode<T> root(src);
+        return data.search(root);
+
+    }
+    template<typename T>
+    LinkedList<AdjNode<T>>& AdjList<T>::getList()
+    {
+        return data;
+    }
 
 
 #endif //SRC_ADJLIST_H

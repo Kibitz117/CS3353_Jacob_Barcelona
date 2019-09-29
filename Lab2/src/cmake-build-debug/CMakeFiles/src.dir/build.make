@@ -84,38 +84,10 @@ CMakeFiles/src.dir/searching_Algos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/searching_Algos.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\searching_Algos.cpp -o CMakeFiles\src.dir\searching_Algos.cpp.s
 
-CMakeFiles/src.dir/LinkedList.cpp.obj: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/LinkedList.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
-CMakeFiles/src.dir/LinkedList.cpp.obj: ../LinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/src.dir/LinkedList.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\LinkedList.cpp.obj -c C:\Algorithms\Lab2\src\LinkedList.cpp
-
-CMakeFiles/src.dir/LinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/LinkedList.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab2\src\LinkedList.cpp > CMakeFiles\src.dir\LinkedList.cpp.i
-
-CMakeFiles/src.dir/LinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/LinkedList.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\LinkedList.cpp -o CMakeFiles\src.dir\LinkedList.cpp.s
-
-CMakeFiles/src.dir/AdjList.cpp.obj: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/AdjList.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
-CMakeFiles/src.dir/AdjList.cpp.obj: ../AdjList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/src.dir/AdjList.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\AdjList.cpp.obj -c C:\Algorithms\Lab2\src\AdjList.cpp
-
-CMakeFiles/src.dir/AdjList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/AdjList.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab2\src\AdjList.cpp > CMakeFiles\src.dir\AdjList.cpp.i
-
-CMakeFiles/src.dir/AdjList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/AdjList.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab2\src\AdjList.cpp -o CMakeFiles\src.dir\AdjList.cpp.s
-
 CMakeFiles/src.dir/AdjMatrix.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/AdjMatrix.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
 CMakeFiles/src.dir/AdjMatrix.cpp.obj: ../AdjMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/src.dir/AdjMatrix.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/src.dir/AdjMatrix.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\AdjMatrix.cpp.obj -c C:\Algorithms\Lab2\src\AdjMatrix.cpp
 
 CMakeFiles/src.dir/AdjMatrix.cpp.i: cmake_force
@@ -129,7 +101,7 @@ CMakeFiles/src.dir/AdjMatrix.cpp.s: cmake_force
 CMakeFiles/src.dir/main.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/main.cpp.obj: CMakeFiles/src.dir/includes_CXX.rsp
 CMakeFiles/src.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/src.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/src.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\main.cpp.obj -c C:\Algorithms\Lab2\src\main.cpp
 
 CMakeFiles/src.dir/main.cpp.i: cmake_force
@@ -144,8 +116,6 @@ CMakeFiles/src.dir/main.cpp.s: cmake_force
 src_OBJECTS = \
 "CMakeFiles/src.dir/Search.cpp.obj" \
 "CMakeFiles/src.dir/searching_Algos.cpp.obj" \
-"CMakeFiles/src.dir/LinkedList.cpp.obj" \
-"CMakeFiles/src.dir/AdjList.cpp.obj" \
 "CMakeFiles/src.dir/AdjMatrix.cpp.obj" \
 "CMakeFiles/src.dir/main.cpp.obj"
 
@@ -154,15 +124,13 @@ src_EXTERNAL_OBJECTS =
 
 src.exe: CMakeFiles/src.dir/Search.cpp.obj
 src.exe: CMakeFiles/src.dir/searching_Algos.cpp.obj
-src.exe: CMakeFiles/src.dir/LinkedList.cpp.obj
-src.exe: CMakeFiles/src.dir/AdjList.cpp.obj
 src.exe: CMakeFiles/src.dir/AdjMatrix.cpp.obj
 src.exe: CMakeFiles/src.dir/main.cpp.obj
 src.exe: CMakeFiles/src.dir/build.make
 src.exe: CMakeFiles/src.dir/linklibs.rsp
 src.exe: CMakeFiles/src.dir/objects1.rsp
 src.exe: CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable src.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Algorithms\Lab2\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable src.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\src.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

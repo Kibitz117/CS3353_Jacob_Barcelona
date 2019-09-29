@@ -13,7 +13,7 @@
 #include "LinkedList.h"
 class searching_Algos {
 public:
-   Tree& DFS_Iterative(int,int,AdjList);
+   Tree& DFS_Iterative(int,int,AdjList<int>);
    std::string DFS_Recursive();
    std::string BFS_Iterative();
 

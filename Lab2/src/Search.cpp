@@ -3,6 +3,8 @@
 //
 #include <sstream>
 #include "Search.h"
+#include "AdjMatrix.h"
+
 void Search::Load(std::string fileName) {
     std::fstream dataFile;
     dataFile.open(fileName);
@@ -15,7 +17,7 @@ std::vector<std::string> streams;
         count++;
 
     }
-    AdjList list_Graph(count);
+    AdjMatrix list_Graph(count);
     for(int i=0;i<streams.size();i++)
     {
         std::string node;
@@ -36,15 +38,7 @@ std::vector<std::string> streams;
         }
     }
     list=&list_Graph;
-    for(int i=0;i<list_Graph.getList().size();i++)
-    {
-        std::cout<<list_Graph.getList()[i]->adj_Node->data<<" ";
-        for(int z=0;z<list_Graph.getList()[i]->potential_paths->getSize();z++)
-        {
-            std::cout<<list_Graph.getList()[i]->potential_paths->operator[](z)->data<<" ";
-        }
-        std::cout<<std::endl;
-    }
+    list_Graph.toString();
 
     //Read line tokenize commas
     //First number is adjacency nodes

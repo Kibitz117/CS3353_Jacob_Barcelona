@@ -1,8 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/src.dir/Search.cpp.obj"
   "CMakeFiles/src.dir/searching_Algos.cpp.obj"
-  "CMakeFiles/src.dir/LinkedList.cpp.obj"
-  "CMakeFiles/src.dir/AdjList.cpp.obj"
   "CMakeFiles/src.dir/AdjMatrix.cpp.obj"
   "CMakeFiles/src.dir/main.cpp.obj"
   "src.pdb"

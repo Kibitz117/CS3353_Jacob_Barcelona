@@ -122,33 +122,6 @@ src/fast:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/build
 .PHONY : src/fast
 
-AdjList.obj: AdjList.cpp.obj
-
-.PHONY : AdjList.obj
-
-# target to build an object file
-AdjList.cpp.obj:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.obj
-.PHONY : AdjList.cpp.obj
-
-AdjList.i: AdjList.cpp.i
-
-.PHONY : AdjList.i
-
-# target to preprocess a source file
-AdjList.cpp.i:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.i
-.PHONY : AdjList.cpp.i
-
-AdjList.s: AdjList.cpp.s
-
-.PHONY : AdjList.s
-
-# target to generate assembly for a file
-AdjList.cpp.s:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjList.cpp.s
-.PHONY : AdjList.cpp.s
-
 AdjMatrix.obj: AdjMatrix.cpp.obj
 
 .PHONY : AdjMatrix.obj
@@ -175,33 +148,6 @@ AdjMatrix.s: AdjMatrix.cpp.s
 AdjMatrix.cpp.s:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/AdjMatrix.cpp.s
 .PHONY : AdjMatrix.cpp.s
-
-LinkedList.obj: LinkedList.cpp.obj
-
-.PHONY : LinkedList.obj
-
-# target to build an object file
-LinkedList.cpp.obj:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.obj
-.PHONY : LinkedList.cpp.obj
-
-LinkedList.i: LinkedList.cpp.i
-
-.PHONY : LinkedList.i
-
-# target to preprocess a source file
-LinkedList.cpp.i:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.i
-.PHONY : LinkedList.cpp.i
-
-LinkedList.s: LinkedList.cpp.s
-
-.PHONY : LinkedList.s
-
-# target to generate assembly for a file
-LinkedList.cpp.s:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/LinkedList.cpp.s
-.PHONY : LinkedList.cpp.s
 
 Search.obj: Search.cpp.obj
 
@@ -293,15 +239,9 @@ help:
 	@echo ... src
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... AdjList.obj
-	@echo ... AdjList.i
-	@echo ... AdjList.s
 	@echo ... AdjMatrix.obj
 	@echo ... AdjMatrix.i
 	@echo ... AdjMatrix.s
-	@echo ... LinkedList.obj
-	@echo ... LinkedList.i
-	@echo ... LinkedList.s
 	@echo ... Search.obj
 	@echo ... Search.i
 	@echo ... Search.s
