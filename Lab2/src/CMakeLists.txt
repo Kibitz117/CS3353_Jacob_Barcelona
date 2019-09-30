@@ -15,6 +15,8 @@ add_executable(src
         AdjList.h
         AdjMatrix.cpp
         AdjList.h
+        Tree.cpp
+        Tree.h
         main.cpp)
 
 

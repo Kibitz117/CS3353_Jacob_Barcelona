@@ -15,8 +15,9 @@ class AdjList: public Graph {
     public:
         AdjList(int);
         void addNode(T,T);
-        int Find(int);
+        int Find(int,int);
         LinkedList<AdjNode<T>>& getList();
+        int getSize();
 
     private:
         LinkedList<AdjNode<T>>data;
@@ -45,10 +46,10 @@ AdjList<T>::AdjList(int size) {
 
     }
     template<typename T>
-    int AdjList<T>::Find(int src)
+    int AdjList<T>::Find(int src,int dest)
     {
         AdjNode<T> root(src);
-        return data.search(root);
+        return data[src].getEdges().search(dest);
 
     }
     template<typename T>
@@ -56,6 +57,9 @@ AdjList<T>::AdjList(int size) {
     {
         return data;
     }
-
+template <typename T>
+int AdjList<T>::getSize() {
+    return numVerticies;
+}
 
 #endif //SRC_ADJLIST_H

@@ -21,7 +21,7 @@ AdjMatrix::AdjMatrix(int size) {
 }
 void AdjMatrix::addNode(int src,int dest) {
     //this->edges[src-1][dest-1]=new Node<int>(dest);
-    this->edges[src-1][dest-1]=new Node<int>(dest);
+    this->edges[src-1][dest-1].setData(dest);
 }
 int AdjMatrix::getNumVerticies() {
     return this->numVerticies;
@@ -37,4 +37,7 @@ void AdjMatrix::toString() {
             std::cout << this->edges[i][j].getData() << " ";
         std::cout << "\n";
     }
+}
+int AdjMatrix::Find(int) {
+    return 0;
 }

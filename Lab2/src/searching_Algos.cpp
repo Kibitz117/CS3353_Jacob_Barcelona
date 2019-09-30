@@ -3,7 +3,7 @@
 //
 
 #include "searching_Algos.h"
-Tree& searching_Algos::DFS_Iterative(int src, int dest,AdjList<int> adj_Graph) {
+Tree& searching_Algos::DFS_Iterative(int src, int dest,AdjList<Node> adj_Graph) {
     std::stack<TreeNode*>searching;
     int curr_index=adj_Graph.Find(src);
     struct TreeNode*current;
@@ -12,9 +12,9 @@ Tree& searching_Algos::DFS_Iterative(int src, int dest,AdjList<int> adj_Graph) {
     searching.push(current);
 while(!searching.empty())
 {
-    for(int i=0;i<adj_Graph.getList()[curr_index].getEdges().getSize();i++)
+    for(int i=0;i<adj_Graph.getSize();i++)
     {
-        if(adj_Graph.getList()[curr_index].getEdges().)
+        if(adj_Graph.getList()[curr_index].getEdges().operator[](i).isVisited()==false)
         {
             TreeNode* temp;
             temp->data=adj_Graph.getList()[src].getEdges()->operator[](i)->data;

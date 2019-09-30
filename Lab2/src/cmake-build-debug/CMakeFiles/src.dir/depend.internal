@@ -21,8 +21,14 @@ CMakeFiles/src.dir/Search.cpp.obj
  C:/Algorithms/Lab2/src/linkedlist.h
  C:/Algorithms/Lab2/src/node.h
  C:/Algorithms/Lab2/src/searching_Algos.h
+CMakeFiles/src.dir/Tree.cpp.obj
+ C:/Algorithms/Lab2/src/LinkedList.h
+ C:/Algorithms/Lab2/src/Node.h
+ C:/Algorithms/Lab2/src/Tree.cpp
+ C:/Algorithms/Lab2/src/Tree.h
 CMakeFiles/src.dir/main.cpp.obj
  C:/Algorithms/Lab2/src/AdjList.h
+ C:/Algorithms/Lab2/src/AdjMatrix.h
  C:/Algorithms/Lab2/src/AdjNode.h
  C:/Algorithms/Lab2/src/Algorithm.h
  C:/Algorithms/Lab2/src/Graph.h
@@ -35,4 +41,16 @@ CMakeFiles/src.dir/main.cpp.obj
  C:/Algorithms/Lab2/src/node.h
  C:/Algorithms/Lab2/src/searching_Algos.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj
+ C:/Algorithms/Lab2/src/AdjList.h
+ C:/Algorithms/Lab2/src/AdjMatrix.h
+ C:/Algorithms/Lab2/src/AdjNode.h
+ C:/Algorithms/Lab2/src/Algorithm.h
+ C:/Algorithms/Lab2/src/Graph.h
+ C:/Algorithms/Lab2/src/LinkedList.h
+ C:/Algorithms/Lab2/src/Node.h
+ C:/Algorithms/Lab2/src/Search.h
+ C:/Algorithms/Lab2/src/Tree.h
+ C:/Algorithms/Lab2/src/linkedlist.h
+ C:/Algorithms/Lab2/src/node.h
  C:/Algorithms/Lab2/src/searching_Algos.cpp
+ C:/Algorithms/Lab2/src/searching_Algos.h

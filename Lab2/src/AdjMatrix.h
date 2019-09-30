@@ -16,6 +16,7 @@ public:
     int getNumVerticies();
     Node<int>**getVertices();
     void toString();
+    int Find(int);
 private:
     Node<int>**edges;
     int numVerticies;

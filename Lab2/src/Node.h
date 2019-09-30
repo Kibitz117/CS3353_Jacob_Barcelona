@@ -14,7 +14,7 @@ private:
     T data;
     Node<T> *next;
     Node<T> *prev;
-    boo visited;
+    bool visited;
 public:
     //Deafult constructor
     Node<T>()

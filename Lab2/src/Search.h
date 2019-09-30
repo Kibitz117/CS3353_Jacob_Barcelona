@@ -11,6 +11,8 @@
 #include <vector>
 #include <iostream>
 #include "Graph.h"
+#include "AdjMatrix.h"
+#include <sstream>
 class Search: public Algorithm{
 public:
 virtual void  Load(std::string);

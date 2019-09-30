@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Algorithms/Lab2/src/AdjMatrix.cpp" "C:/Algorithms/Lab2/src/cmake-build-debug/CMakeFiles/src.dir/AdjMatrix.cpp.obj"
   "C:/Algorithms/Lab2/src/Search.cpp" "C:/Algorithms/Lab2/src/cmake-build-debug/CMakeFiles/src.dir/Search.cpp.obj"
+  "C:/Algorithms/Lab2/src/Tree.cpp" "C:/Algorithms/Lab2/src/cmake-build-debug/CMakeFiles/src.dir/Tree.cpp.obj"
   "C:/Algorithms/Lab2/src/main.cpp" "C:/Algorithms/Lab2/src/cmake-build-debug/CMakeFiles/src.dir/main.cpp.obj"
   "C:/Algorithms/Lab2/src/searching_Algos.cpp" "C:/Algorithms/Lab2/src/cmake-build-debug/CMakeFiles/src.dir/searching_Algos.cpp.obj"
   )

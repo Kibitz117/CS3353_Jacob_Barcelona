@@ -9,7 +9,9 @@
 class Graph {
 public:
     virtual void addNode(int,int)=0;
-    virtual void Find(int)=0;
+    virtual int Find(int,int)=0;
+    virtual int getSize()=0;
+
     
 private:
 

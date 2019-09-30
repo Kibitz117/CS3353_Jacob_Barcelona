@@ -1,9 +1,7 @@
 //
 // Created by jakeb on 9/22/2019.
 //
-#include <sstream>
 #include "Search.h"
-#include "AdjMatrix.h"
 
 void Search::Load(std::string fileName) {
     std::fstream dataFile;
@@ -17,7 +15,8 @@ std::vector<std::string> streams;
         count++;
 
     }
-    AdjMatrix list_Graph(count);
+    AdjList<int> list_Graph(count);
+    list=&list_Graph;
     for(int i=0;i<streams.size();i++)
     {
         std::string node;
@@ -31,14 +30,21 @@ std::vector<std::string> streams;
             }
             else{
                 int temp=atoi(node.c_str());
-                list_Graph.addNode(i+1,temp);
+                list->addNode(i+1,temp);
             }
             count2++;
 
         }
     }
-    list=&list_Graph;
-    list_Graph.toString();
+    for(int i=0;i<list_Graph.getList().getSize();i++)
+    {
+        std::cout<<list_Graph.getList()[i].getNode().getData()<<": ";
+        for(int z=0;z<list_Graph.getList()[i].getEdges().getSize();z++)
+        {
+            std::cout<<list_Graph.getList()[i].getEdges().operator[](z)<<" ";
+        }
+        std::cout<<std::endl;
+    }
 
     //Read line tokenize commas
     //First number is adjacency nodes
