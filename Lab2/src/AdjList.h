@@ -14,10 +14,11 @@ template <typename T>
 class AdjList: public Graph {
     public:
         AdjList(int);
-        void addNode(T,T);
-        int Find(int,int);
+        virtual void addNode(T,T);
+        virtual int Find(int,int);
         LinkedList<AdjNode<T>>& getList();
-        int getSize();
+        virtual int getSize();
+        void toString();
 
     private:
         LinkedList<AdjNode<T>>data;
@@ -61,5 +62,16 @@ template <typename T>
 int AdjList<T>::getSize() {
     return numVerticies;
 }
-
+template <typename T>
+void AdjList<T>::toString() {
+        for(int i=0;i<numVerticies;i++)
+    {
+        std::cout<<data[i].getNode().getData()<<": ";
+        for(int z=0;z<data[i].getEdges().getSize();z++)
+        {
+            std::cout<<data[i].getEdges().operator[](z)<<" ";
+        }
+        std::cout<<std::endl;
+    }
+}
 #endif //SRC_ADJLIST_H

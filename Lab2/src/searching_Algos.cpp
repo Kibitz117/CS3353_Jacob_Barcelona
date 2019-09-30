@@ -1,37 +1,36 @@
+////
+//// Created by jakeb on 9/22/2019.
+////
 //
-// Created by jakeb on 9/22/2019.
+//#include "searching_Algos.h"
+//std::vector<std::vector<Node<int>>>& searching_Algos::DFS_Iterative(int src, int dest,AdjList<Node<int>> adj_Graph) {
+//    std::stack<Node<int>>searching;
+//    std::vector<std::vector<Node<int>*>>paths;
+//    int curr_index=src-1;
+//     Node<int>* current;
+//    current=&adj_Graph.getList()[src].getEdges()[adj_Graph.Find(src,dest)];
+//    searching.push(current);
+//while(!searching.empty())
+//{
+//    for(int i=0;i<adj_Graph.getSize();i++)
+//    {
+//        if(adj_Graph.getList()[curr_index].getEdges().operator[](i).isVisited()==false)
+//        {
+//            Node<int>* temp;
+//            temp->setData()=adj_Graph.getList()[src].getEdges().operator[](i).getData();
+//            searching.push(temp);
+//        }
+//    }
+//    current->setVisited(true);
+//    searching.pop();
+//    paths[current].push_back(searching.top());
+//    current=&searching.top();
+//    if(current->getData()==dest)
+//        break;
+//    curr_index=current->getData()-1;
 //
-
-#include "searching_Algos.h"
-Tree& searching_Algos::DFS_Iterative(int src, int dest,AdjList<Node> adj_Graph) {
-    std::stack<TreeNode*>searching;
-    int curr_index=adj_Graph.Find(src);
-    struct TreeNode*current;
-    current->data=src;
-    Tree path(current->data);
-    searching.push(current);
-while(!searching.empty())
-{
-    for(int i=0;i<adj_Graph.getSize();i++)
-    {
-        if(adj_Graph.getList()[curr_index].getEdges().operator[](i).isVisited()==false)
-        {
-            TreeNode* temp;
-            temp->data=adj_Graph.getList()[src].getEdges()->operator[](i)->data;
-            temp->parent=current;
-            searching.push(temp);
-        }
-    }
-    current->visited=true;
-    searching.pop();
-    path.insertNode(searching.top());
-    current=searching.top();
-    if(current->data==src)
-        break;
-    curr_index=std::find(adj_Graph.getList().begin(),adj_Graph.getList().end(),current->data)-adj_Graph.getList().begin();
-
-}
-
-
-    return path;
-}
+//}
+//
+//
+//    return paths;
+//}

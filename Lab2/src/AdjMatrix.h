@@ -12,11 +12,11 @@
 class AdjMatrix: public Graph {
 public:
     AdjMatrix(int);
-    void addNode(int x,int y);
-    int getNumVerticies();
+    virtual void addNode(int x,int y);
+    virtual int getSize();
     Node<int>**getVertices();
     void toString();
-    int Find(int);
+    virtual int Find(int,int);
 private:
     Node<int>**edges;
     int numVerticies;

@@ -15,7 +15,7 @@ std::vector<std::string> streams;
         count++;
 
     }
-    AdjList<int> list_Graph(count);
+    AdjMatrix list_Graph(count);
     list=&list_Graph;
     for(int i=0;i<streams.size();i++)
     {
@@ -36,15 +36,8 @@ std::vector<std::string> streams;
 
         }
     }
-    for(int i=0;i<list_Graph.getList().getSize();i++)
-    {
-        std::cout<<list_Graph.getList()[i].getNode().getData()<<": ";
-        for(int z=0;z<list_Graph.getList()[i].getEdges().getSize();z++)
-        {
-            std::cout<<list_Graph.getList()[i].getEdges().operator[](z)<<" ";
-        }
-        std::cout<<std::endl;
-    }
+
+list_Graph.toString();
 
     //Read line tokenize commas
     //First number is adjacency nodes

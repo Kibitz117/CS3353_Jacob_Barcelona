@@ -20,10 +20,9 @@ AdjMatrix::AdjMatrix(int size) {
 
 }
 void AdjMatrix::addNode(int src,int dest) {
-    //this->edges[src-1][dest-1]=new Node<int>(dest);
     this->edges[src-1][dest-1].setData(dest);
 }
-int AdjMatrix::getNumVerticies() {
+int AdjMatrix::getSize() {
     return this->numVerticies;
 }
 Node<int>** AdjMatrix::getVertices() {
@@ -38,6 +37,6 @@ void AdjMatrix::toString() {
         std::cout << "\n";
     }
 }
-int AdjMatrix::Find(int) {
+int AdjMatrix::Find(int src ,int dest) {
     return 0;
 }

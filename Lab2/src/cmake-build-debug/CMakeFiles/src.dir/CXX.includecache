@@ -18,10 +18,6 @@ C:/Algorithms/Lab2/src/Graph.h
 AdjNode.h
 C:/Algorithms/Lab2/src/AdjNode.h
 
-C:/Algorithms/Lab2/src/AdjMatrix.cpp
-AdjMatrix.h
-C:/Algorithms/Lab2/src/AdjMatrix.h
-
 C:/Algorithms/Lab2/src/AdjMatrix.h
 LinkedList.h
 C:/Algorithms/Lab2/src/LinkedList.h
@@ -94,18 +90,6 @@ C:/Algorithms/Lab2/src/AdjMatrix.h
 sstream
 -
 
-C:/Algorithms/Lab2/src/Tree.cpp
-Tree.h
-C:/Algorithms/Lab2/src/Tree.h
-
-C:/Algorithms/Lab2/src/Tree.h
-LinkedList.h
-C:/Algorithms/Lab2/src/LinkedList.h
-map
--
-vector
--
-
 C:/Algorithms/Lab2/src/linkedlist.h
 stdio.h
 -
@@ -122,25 +106,11 @@ iostream
 stdexcept
 -
 
-C:/Algorithms/Lab2/src/main.cpp
-Search.h
-C:/Algorithms/Lab2/src/Search.h
-AdjList.h
-C:/Algorithms/Lab2/src/AdjList.h
-iostream
--
-
 C:/Algorithms/Lab2/src/node.h
-
-C:/Algorithms/Lab2/src/searching_Algos.cpp
-searching_Algos.h
-C:/Algorithms/Lab2/src/searching_Algos.h
 
 C:/Algorithms/Lab2/src/searching_Algos.h
 Graph.h
 C:/Algorithms/Lab2/src/Graph.h
-Tree.h
-C:/Algorithms/Lab2/src/Tree.h
 AdjList.h
 C:/Algorithms/Lab2/src/AdjList.h
 Search.h
@@ -149,4 +119,6 @@ stack
 -
 LinkedList.h
 C:/Algorithms/Lab2/src/LinkedList.h
+Node.h
+C:/Algorithms/Lab2/src/Node.h
 
