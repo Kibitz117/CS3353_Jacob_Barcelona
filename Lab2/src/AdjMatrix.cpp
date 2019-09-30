@@ -11,7 +11,7 @@ AdjMatrix::AdjMatrix(int size) {
         this->edges[i]=new Node<int>[size];
         for(int j=0;j<size;j++)
         {
-            Node<int>new_Node;
+            Node<int>new_Node(0);
             edges[i][j]=new_Node;
         }
     }
@@ -38,5 +38,5 @@ void AdjMatrix::toString() {
     }
 }
 int AdjMatrix::Find(int src ,int dest) {
-    return 0;
+    return src;
 }

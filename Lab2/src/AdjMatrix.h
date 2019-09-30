@@ -9,6 +9,7 @@
 #include <vector>
 #include "Graph.h"
 #include "Node.h"
+#include <cstdlib>
 class AdjMatrix: public Graph {
 public:
     AdjMatrix(int);
