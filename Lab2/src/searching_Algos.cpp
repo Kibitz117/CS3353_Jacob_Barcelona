@@ -42,6 +42,10 @@ void searching_Algos::DFS_Iterative(int src, int dest, Graph *g) {
                 node_Tree.insertNode(&new_Node);
             }
         }
+        if(current->getData()==dest)
+        {
+            break;
+        }
         //if top of the stack isn't visited and the stack isn't empty
         if(!(g->getVisited()[stack.top()->getData()-1]))
         {
@@ -49,13 +53,10 @@ void searching_Algos::DFS_Iterative(int src, int dest, Graph *g) {
             current_index=stack.top()->getData()-1;
             current=g->Find(current_index,0);
         }
-        if(current->getData()==dest)
-        {
-            break;
-        }
 
     }
 //Debugging print parent child
+std::cout<<"here";
 node_Tree.SavePath(current_index+1);
 }
 void searching_Algos::DFS_Recursive(int src,int dest,Graph* g) {
