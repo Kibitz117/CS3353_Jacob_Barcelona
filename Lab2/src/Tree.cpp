@@ -20,7 +20,7 @@ Tree::Tree(int r) {
 void Tree::insertNode(TreeNode*new_Node) {
     //Update leaf pointers
     std::map<int,TreeNode*>::iterator it = leaves.find(new_Node->data);
-    if(it!=leaves.end())
+    if(it==leaves.end())
     {
         //Insert new node to leaf pointers
         leaves.insert(std::make_pair(new_Node->data,new_Node));
