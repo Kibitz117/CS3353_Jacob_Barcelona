@@ -22,10 +22,11 @@ void Tree::insertNode(TreeNode*new_Node) {
     std::map<int,TreeNode*>::iterator it = leaves.find(new_Node->data);
     if(it==leaves.end())
     {
-        //Insert new node to leaf pointers
-        leaves.insert(std::make_pair(new_Node->data,new_Node));
+        leaves[new_Node->data]=new_Node;
         //Remove parent from leaf node pointers
-        leaves.erase(new_Node->parent->data);
+        std::map<int,TreeNode*>::iterator iter=leaves.find(new_Node->parent->data);
+        if(iter!=leaves.end())
+            leaves.erase(new_Node->parent->data);
         //This line isn't working properly
         //Push back new Node to its parent's vector of children
         new_Node->parent->children.push_back(new_Node);
@@ -47,7 +48,7 @@ void Tree::deleteTree() {
     delete root;
 }
 TreeNode* Tree::getLeaves(int i) {
-    return this->leaves[i];
+        return leaves[i];
 }
 TreeNode* Tree::getParent(TreeNode *curr) {
     return curr->parent;

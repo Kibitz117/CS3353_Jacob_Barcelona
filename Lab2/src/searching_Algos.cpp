@@ -25,23 +25,24 @@ void searching_Algos::DFS_Iterative(int src, int dest, Graph *g) {
         //Pop from stack
         stack.pop();
         //Push all children onto stack
-        for(int i=0;i<g->getSize();i++)
-        {//Are these nodes the same that are in
-            Node<int>*temp=g->Find(current_index,i);
+        //Are these nodes the same that are in
+        std::vector<Node<int>*>connections=g->getCons(current_index);
+        for(int i=0;i<connections.size();i++) {
+            Node<int> *temp = connections[i];
             //if not visited and not empty node
-            if(!(g->getVisited()[temp->getData()-1]==true)&&!(g->Find(current_index,i)->getData()==0))
-            {
+            if (!(g->getVisited()[temp->getData() - 1] == true)) {
                 stack.push(temp);
                 //Update parent child
                 //Add current to tree
                 TreeNode new_Node;
-                new_Node.data=stack.top()->getData();
-                new_Node.weight=stack.top()->getWeight();
+                new_Node.data = stack.top()->getData();
+                new_Node.weight = stack.top()->getWeight();
                 //Gets the treenode corresponding to current
-                new_Node.parent=node_Tree.getLeaves(current_index+1);
+                new_Node.parent = node_Tree.getLeaves(current_index + 1);
                 node_Tree.insertNode(&new_Node);
             }
         }
+
         if(current->getData()==dest)
         {
             break;
