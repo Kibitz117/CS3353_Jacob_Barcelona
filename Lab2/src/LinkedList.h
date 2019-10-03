@@ -13,7 +13,6 @@
 #include <stdexcept>
 template <typename T>
 class LinkedList{
-    template <class U> friend class myStack;
 public:
     LinkedList();
     ~LinkedList();

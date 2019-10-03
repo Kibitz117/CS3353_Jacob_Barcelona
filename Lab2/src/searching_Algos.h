@@ -12,14 +12,16 @@
 #include <stack>
 #include "LinkedList.h"
 #include "Node.h"
+#include <map>
 class searching_Algos {
 public:
-   std::vector<std::vector<Node<int>>>& DFS_Iterative(int,int,AdjList<Node<int>>);
-   std::string DFS_Recursive();
+   void DFS_Iterative(int,int,Graph* g);
+   void DFS_Recursive(int,int,Graph* g);
    std::string BFS_Iterative();
 
 private:
     void* graph_pointer;
+    void DFS_reccur(int,int,Graph *g);
 };
 
 

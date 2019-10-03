@@ -2,8 +2,8 @@
 // Created by jakeb on 9/22/2019.
 //
 #include "Search.h"
-
-void Search::Load(std::string fileName) {
+//Loads in nodes,weights,and positions
+void Search::Load(std::string fileName,std::string weights,std::string positions) {
     std::fstream dataFile;
     dataFile.open(fileName);
     std::string line;
@@ -36,8 +36,30 @@ std::vector<std::string> streams;
 
         }
     }
-
+    dataFile.close();
+    dataFile.open(weights);
+    std::string edge;
+    while(getline(dataFile,line))
+    {
+        std::stringstream tokenize(line);
+       std::string s;
+       std::vector<std::string>tokens;
+        while(getline(tokenize,s,','))
+        {
+            tokens.push_back(s);
+        }
+        int src=atoi(tokens[0].c_str());
+        int dest=atoi(tokens[1].c_str());
+        int weight=atoi(tokens[2].c_str());
+        tokens.clear();
+        list->Find(src-1,dest-1)->setWeight(weight);
+        list->Find(dest-1,src-1)->setWeight(weight);
+    }
 list_Graph.toString();
+searching_Algos s;
+    Graph* g=&list_Graph;
+    s.DFS_Iterative(2,12,g);
+
 
     //Read line tokenize commas
     //First number is adjacency nodes

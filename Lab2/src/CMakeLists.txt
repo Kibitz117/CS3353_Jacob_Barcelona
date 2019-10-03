@@ -13,6 +13,7 @@ add_executable(src
         searching_Algos.h
         LinkedList.h
         AdjList.h
+        AdjList.cpp
         AdjMatrix.cpp
         AdjList.h
         Tree.cpp

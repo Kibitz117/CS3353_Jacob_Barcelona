@@ -15,6 +15,7 @@ private:
     Node<T> *next;
     Node<T> *prev;
     bool visited;
+    int weight;
 public:
     //Deafult constructor
     Node<T>()
@@ -86,6 +87,14 @@ public:
     void setVisited(bool visited)
     {
         this->visited=visited;
+    }
+    void setWeight(int weight)
+    {
+        this->weight=weight;
+    }
+    int getWeight()
+    {
+        return this->weight;
     }
 
 

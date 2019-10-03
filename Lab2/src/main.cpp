@@ -7,5 +7,5 @@
 int main()
 {
     Search s;
-    s.Load("C:\\Algorithms\\Lab2\\src\\cmake-build-debug\\graph.txt");
+    s.Load("C:\\Algorithms\\Lab2\\src\\cmake-build-debug\\graph.txt","C:\\Algorithms\\Lab2\\src\\cmake-build-debug\\weights.txt","C:\\Algorithms\\Lab2\\src\\cmake-build-debug\\positions.txt");
 }

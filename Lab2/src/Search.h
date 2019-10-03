@@ -15,7 +15,7 @@
 #include <sstream>
 class Search: public Algorithm{
 public:
-virtual void  Load(std::string);
+virtual void  Load(std::string,std::string,std::string);
 virtual void Execute();//Running switch statement
 virtual void Display();
 virtual void Stats(int algo);

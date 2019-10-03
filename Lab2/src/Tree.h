@@ -1,36 +1,45 @@
+//////
+////// Created by jakeb on 9/22/2019.
+//////
 ////
-//// Created by jakeb on 9/22/2019.
-////
-//
-//#ifndef SEARCHING_GRAPH_H
-//#define SEARCHING_GRAPH_H
-//
-//#include "LinkedList.h"
-//#include <map>
-//#include <vector>
-//struct TreeNode{
-//    int data;
-//    struct TreeNode* parent;
-//    std::vector<struct TreeNode*>children;
-//    bool visited=false;
-//
-//};
-//class Tree {
-//public:
-//    Tree();
-//    Tree(int);
-//    std::vector<struct TreeNode*> getChildren(struct TreeNode*);
-//    void insertNode(struct TreeNode*);
-//    void deleteTree();
-//    struct TreeNode* find(int);
-//
-//private:
-//    struct TreeNode* root;
-//    int depth;
-//    int total;
-//    std::map<struct TreeNode*,struct TreeNode*>relationships;
-//    std::vector<std::pair<struct TreeNode*,struct TreeNode*>>relationship;
-//};
-//
-//
-//#endif //SEARCHING_GRAPH_H
+#ifndef SEARCHING_GRAPH_H
+#define SEARCHING_GRAPH_H
+
+#include "LinkedList.h"
+#include <map>
+#include <vector>
+struct TreeNode{
+    int data=0;
+    int weight=0;
+    int position=0;
+    int distance_parent=0;
+    struct TreeNode* parent= nullptr;
+    std::vector<TreeNode*>children;
+    bool visited=false;
+
+};
+//Resets root
+class Tree {
+public:
+    Tree();
+    Tree(int);
+    std::vector<TreeNode*> getChildren(struct TreeNode*);
+    void insertNode(struct TreeNode*);
+    void deleteTree();
+    struct TreeNode* find(int);
+    TreeNode* getParent(TreeNode*);
+    void setParent(int);
+    TreeNode* getLeaves(int);
+    TreeNode* getRoot();
+    std::vector<TreeNode*>SavePath(int);
+
+
+private:
+    TreeNode* root;
+    int depth;
+    int total;
+    std::map<int,TreeNode*>leaves;
+};
+
+
+#endif //SEARCHING_GRAPH_H

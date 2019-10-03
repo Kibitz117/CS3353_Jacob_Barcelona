@@ -17,10 +17,14 @@ public:
     virtual int getSize();
     Node<int>**getVertices();
     void toString();
-    virtual int Find(int,int);
+    virtual Node<int>* Find(int,int);
+    virtual Node<int> getSrc(int);
+    virtual bool* getVisited();
+    virtual std::vector<Node<int>*>getCons(int);
 private:
     Node<int>**edges;
     int numVerticies;
+    bool*visited;
 
 };
 

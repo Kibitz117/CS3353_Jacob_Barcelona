@@ -6,14 +6,18 @@
 #define SRC_GRAPH_H
 
 #include "LinkedList.h"
+#include <vector>
 class Graph {
 public:
     virtual void addNode(int,int)=0;
-    virtual int Find(int,int)=0;
+    virtual Node<int>* Find(int,int)=0;
     virtual int getSize()=0;
+    virtual bool* getVisited()=0;
+    virtual std::vector<Node<int>*>getCons(int)=0;
 
     
 private:
+   bool*visited;
 
 };
 

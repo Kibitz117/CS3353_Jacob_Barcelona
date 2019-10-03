@@ -11,7 +11,7 @@
 #include <chrono>
 class Algorithm{
 public:
-    virtual void Load(std::string)=0;
+    virtual void Load(std::string,std::string,std::string)=0;
     virtual void Execute()=0;
     virtual void Display()=0;
     virtual void Stats(int)=0;

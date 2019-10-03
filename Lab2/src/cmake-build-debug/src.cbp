@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Algorithms/Lab2/src/AdjList.cpp">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="C:/Algorithms/Lab2/src/AdjList.h">
 			<Option target="src"/>
 		</Unit>
