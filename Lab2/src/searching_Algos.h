@@ -6,7 +6,7 @@
 #define SEARCHING_SEARCHING_ALGOS_H
 
 #include "Graph.h"
-//#include "Tree.h"
+#include "Tree.h"
 #include "AdjList.h"
 #include "Search.h"
 #include <stack>
@@ -17,11 +17,11 @@ class searching_Algos {
 public:
    void DFS_Iterative(int,int,Graph* g);
    void DFS_Recursive(int,int,Graph* g);
-   std::string BFS_Iterative();
+   void BFS_Iterative(int,int,Graph* g);
 
 private:
     void* graph_pointer;
-    void DFS_reccur(int,int,Graph *g);
+    void DFS_reccur(int,int,Graph *g,std::vector<int>&);
 };
 
 

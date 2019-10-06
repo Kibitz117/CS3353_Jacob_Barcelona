@@ -52,13 +52,17 @@ std::vector<std::string> streams;
         int dest=atoi(tokens[1].c_str());
         int weight=atoi(tokens[2].c_str());
         tokens.clear();
-        list->Find(src-1,dest-1)->setWeight(weight);
-        list->Find(dest-1,src-1)->setWeight(weight);
+//        list->Find(src-1,dest-1)->setWeight(weight);
+//        list->Find(dest-1,src-1)->setWeight(weight);
     }
 list_Graph.toString();
 searching_Algos s;
     Graph* g=&list_Graph;
-    s.DFS_Iterative(2,12,g);
+    s.DFS_Iterative(2,8,g);
+    //s.DFS_Recursive(2,8,g);
+   //s.BFS_Iterative(2,8,g);
+
+
 
 
     //Read line tokenize commas

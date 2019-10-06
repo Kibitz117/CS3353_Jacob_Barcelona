@@ -21,6 +21,7 @@ CMakeFiles/src.dir/Search.cpp.obj: ../LinkedList.h
 CMakeFiles/src.dir/Search.cpp.obj: ../Node.h
 CMakeFiles/src.dir/Search.cpp.obj: ../Search.cpp
 CMakeFiles/src.dir/Search.cpp.obj: ../Search.h
+CMakeFiles/src.dir/Search.cpp.obj: ../Tree.h
 CMakeFiles/src.dir/Search.cpp.obj: ../searching_Algos.h
 
 CMakeFiles/src.dir/Tree.cpp.obj: ../LinkedList.h
@@ -35,6 +36,7 @@ CMakeFiles/src.dir/main.cpp.obj: ../Graph.h
 CMakeFiles/src.dir/main.cpp.obj: ../LinkedList.h
 CMakeFiles/src.dir/main.cpp.obj: ../Node.h
 CMakeFiles/src.dir/main.cpp.obj: ../Search.h
+CMakeFiles/src.dir/main.cpp.obj: ../Tree.h
 CMakeFiles/src.dir/main.cpp.obj: ../main.cpp
 CMakeFiles/src.dir/main.cpp.obj: ../searching_Algos.h
 

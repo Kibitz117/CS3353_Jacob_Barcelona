@@ -24,9 +24,6 @@ void Tree::insertNode(TreeNode*new_Node) {
     {
         leaves[new_Node->data]=new_Node;
         //Remove parent from leaf node pointers
-        std::map<int,TreeNode*>::iterator iter=leaves.find(new_Node->parent->data);
-        if(iter!=leaves.end())
-            leaves.erase(iter);
         //This line isn't working properly
         //Push back new Node to its parent's vector of children
         new_Node->parent->children.push_back(new_Node);
@@ -59,7 +56,7 @@ TreeNode* Tree::getRoot() {
 std::vector<TreeNode*> Tree::SavePath(int dest) {
     std::vector<TreeNode*>path;
     TreeNode*curr=leaves[dest];
-    while(curr!=root)
+    while(curr!= nullptr)
     {
         path.push_back(curr);
         curr=curr->parent;

@@ -22,6 +22,7 @@ CMakeFiles/src.dir/Search.cpp.obj
  C:/Algorithms/Lab2/src/Node.h
  C:/Algorithms/Lab2/src/Search.cpp
  C:/Algorithms/Lab2/src/Search.h
+ C:/Algorithms/Lab2/src/Tree.h
  C:/Algorithms/Lab2/src/searching_Algos.h
 CMakeFiles/src.dir/Tree.cpp.obj
  C:/Algorithms/Lab2/src/LinkedList.h
@@ -36,6 +37,7 @@ CMakeFiles/src.dir/main.cpp.obj
  C:/Algorithms/Lab2/src/LinkedList.h
  C:/Algorithms/Lab2/src/Node.h
  C:/Algorithms/Lab2/src/Search.h
+ C:/Algorithms/Lab2/src/Tree.h
  C:/Algorithms/Lab2/src/main.cpp
  C:/Algorithms/Lab2/src/searching_Algos.h
 CMakeFiles/src.dir/searching_Algos.cpp.obj
