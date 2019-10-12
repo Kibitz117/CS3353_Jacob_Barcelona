@@ -18,10 +18,11 @@ public:
    void DFS_Iterative(int,int,Graph* g);
    void DFS_Recursive(int,int,Graph* g);
    void BFS_Iterative(int,int,Graph* g);
+   void BFS_Recursive(int,int,Graph* g);
 
 private:
-    void* graph_pointer;
     void DFS_reccur(int,int,Graph *g,std::vector<int>&);
+    void BFS_reccur(int,int Graph*g,std::queue<int>&);
 };
 
 

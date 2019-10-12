@@ -15,7 +15,7 @@ std::vector<std::string> streams;
         count++;
 
     }
-    AdjMatrix list_Graph(count);
+    AdjList list_Graph(count);
     list=&list_Graph;
     for(int i=0;i<streams.size();i++)
     {
@@ -58,9 +58,9 @@ std::vector<std::string> streams;
 list_Graph.toString();
 searching_Algos s;
     Graph* g=&list_Graph;
-    s.DFS_Iterative(2,8,g);
-    //s.DFS_Recursive(2,8,g);
-   //s.BFS_Iterative(2,8,g);
+   // s.DFS_Iterative(2,8,g);
+   // s.DFS_Recursive(2,8,g);
+  s.BFS_Iterative(2,8,g);
 
 
 
@@ -71,24 +71,56 @@ searching_Algos s;
     //Find way to abstract with AdjMatrix
 }
 void Search::Execute(){
-
+    auto start_time = std::chrono::high_resolution_clock::now();
+    (SearchAlgo)(src,dest,list);
+    auto end_time = std::chrono::high_resolution_clock::now();
+    time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
 }//Running switch statement
 void Search::Display(){
-
+//Output tree or vector
+//Make Tree a parameter by reference
 }
 void Search::Stats(int algo){
 
 }
-void Search::Select(int){
-
+void Search::Select(int i){
+    if(i==DFS_ITER)
+    {
+        //Why isn't this line working?
+        SearchAlgo= &searching_Algos::DFS_Iterative;
+        std::cout<<"DFS Iterative"<<std::endl;
+        Execute();
+    }
+    else if(i==DFS_RECUR)
+    {
+        SearchAlgo= &searching_Algos::DFS_Recursive;
+        std::cout<<"Insertion Sort"<<std::endl;
+        Execute();
+    }
+    else if(i==BFS_ITER)
+    {
+        SearchAlgo=&searching_Algos::BFS_Iterative;
+        std::cout<<"Merge Sort"<<std::endl;
+        Execute();
+    }
+    else if(i==BFS_RECUR)
+    {
+        SearchAlgo=&searching_Algos::BFS_Recursive;
+        std::cout<<"BFS Recursive"<<std::endl;
+        Execute();
+    }
+    else
+    {
+        std::cout<<"ERROR No Sort Selected"<<std::endl;
+    }
 }//Select active algorithm
 void Search::Save(std::string,int,std::string){
-
+//Change searches to return vector so just save vector path
 }
 void Search::Configure(){
 
 }
 void Search::Clear()
 {
-
+    //Tree and vector clear
 }

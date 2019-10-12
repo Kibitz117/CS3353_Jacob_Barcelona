@@ -24,8 +24,18 @@ virtual void Save(std::string,int,std::string);
 virtual void Configure();
 void Clear();
 private:
-    //void(*searching_Algos)(std::vector<int>&)=nullptr;
     Graph* list;
+    int src;
+    int dest;
+    float time;
+    void(*SearchAlgo)(int,int,Graph* g)=nullptr;
+    enum SEARCHING_ALGO{
+        DFS_ITER=0,
+        DFS_RECUR,
+        BFS_ITER,
+        BFS_RECUR,
+        END
+    };
 };
 
 

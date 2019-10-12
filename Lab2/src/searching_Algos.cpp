@@ -106,12 +106,12 @@ void searching_Algos::BFS_Iterative(int src, int dest, Graph *g) {
     current=g->Find(current_index,0);
     //Push root node
     queue.push(current);
-    //Loop until stack is empty
+    //Loop until queue is empty
     while(!queue.empty())
     {
         //Set current as visited
         g->getVisited()[current_index]=true;
-        //Pop from stack
+        //Pop from queue
         queue.pop();
         //Push all children onto stack
         //Are these nodes the same that are in
@@ -124,14 +124,13 @@ void searching_Algos::BFS_Iterative(int src, int dest, Graph *g) {
                 //Update parent child
                 //Add current to tree
                 TreeNode* new_Node=new TreeNode();
-                new_Node->data = queue.front()->getData();
-                new_Node->weight = queue.front()->getWeight();
+                new_Node->data = temp->getData();
+                new_Node->weight = temp->getWeight();
                 //Gets the treenode corresponding to current
-                new_Node->parent = node_Tree.getLeaves(current_index + 1);
+                new_Node->parent = node_Tree.getLeaves(current_index+1);
                 node_Tree.insertNode(new_Node);
                 if(queue.front()->getData()==dest)
                 {
-                    std::cout<<"here"<<std::endl;
                     std::vector<TreeNode*>saved=node_Tree.SavePath(queue.front()->getData());
                     for(int a=saved.size()-1;a>=0;a--)
                     {
@@ -152,4 +151,7 @@ void searching_Algos::BFS_Iterative(int src, int dest, Graph *g) {
     }
 //Debugging print parent child
     node_Tree.SavePath(current_index+1);
+}
+void searching_Algos::BFS_Recursive(int src, int dest, Graph *g) {
+
 }
