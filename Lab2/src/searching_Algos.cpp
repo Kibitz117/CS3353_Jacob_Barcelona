@@ -153,5 +153,85 @@ void searching_Algos::BFS_Iterative(int src, int dest, Graph *g) {
     node_Tree.SavePath(current_index+1);
 }
 void searching_Algos::BFS_Recursive(int src, int dest, Graph *g) {
+    std::queue<int>queue;
+    std::vector<int>path;
+    queue.push(src);
+    BFS_reccur(src,dest,g,queue,path);
+}
+void searching_Algos::BFS_reccur(int src, int dest, Graph* g,std::queue<int>&queue,std::vector<int>&path) {
+    g->getVisited()[src-1]=true;
+    path.push_back(src);
+    if(src==dest)
+    {
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+    }
+    else{
+        //std::vector<Node<int>*>cons=g->getCons(src-1);
+        std::vector<Node<int>*>cons=g->getCons((queue.front())-1);
+        queue.pop();
+        for(int i=0;i<cons.size();i++)
+        {
+            if (!g->getVisited()[cons[i]->getData()-1]){
+                queue.push(cons[i]->getData());
+                BFS_reccur(cons[i]->getData(),dest,g,queue,path);
+            }
 
+
+        }
+    }
+}
+void searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<std::pair<int,int>,int>&weight_values) {
+    std::priority_queue<TreeNode*, std::vector<TreeNode*>, compare > priorityQueue;
+    Tree tree(src);
+    priorityQueue.push(tree.getRoot());
+    int current_cost=0;
+    int current_index=src-1;
+    while(!priorityQueue.empty())
+    {
+        //Get connections of current index
+        std::vector<Node<int>*>connections=g->getCons(current_index);
+        //Pop current index from queue
+        priorityQueue.pop();
+        g->getVisited()[current_index]=true;
+        for(int i=0;i<connections.size();i++)
+        {
+            Node<int>*temp=connections[i];
+            if(!(g->getVisited()[temp->getData() - 1] == true))
+            {
+                //Add all the connections to tree and set current_index to lowest weight
+                int weight=weight_values[std::make_pair(current_index+1,temp->getData())];
+                //Add every node to tree
+                TreeNode*new_Node=new TreeNode();
+                new_Node->data = temp->getData();
+                //Gets the treenode corresponding to current
+                new_Node->parent = tree.getLeaves(current_index+1);
+                //Set weight of new tree node
+                Tree::setWeight(*new_Node,weight);
+                tree.insertNode(new_Node);
+                if(new_Node->data==dest)
+                {
+                    std::vector<TreeNode*>path= tree.SavePath(new_Node->data);
+                    for(int i=0;i<path.size();i++)
+                    {
+                        std::cout<<path[i]->data<<" ";
+                    }
+                    return;
+                }
+                //Push all connections to priority queue lowest weight is top
+                priorityQueue.push(new_Node);
+            }
+
+        }
+
+       // current_cost+=new_Node->weight;
+        //Make tree nodes at weights to compare paths
+        //current_index=priorityQueue.top()->getData()-1;
+        //Make priority queue of treenodes
+        current_index=(priorityQueue.top()->data)-1;
+        //Tree Node current can keep track of current weight of path
+
+    }
 }

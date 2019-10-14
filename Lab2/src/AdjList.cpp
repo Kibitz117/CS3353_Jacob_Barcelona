@@ -17,7 +17,7 @@ AdjList::AdjList(int size) {
 bool* AdjList::getVisited() {
     return visited;
 }
-void AdjList::addNode(int root,int edge)
+void AdjList::addNode(int root,int edge,int weight=0)
 {
     data[root-1].getData().addToHead(edge);
 

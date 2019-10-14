@@ -5,8 +5,25 @@
 //Loads in nodes,weights,and positions
 void Search::Load(std::string fileName,std::string weights,std::string positions) {
     std::fstream dataFile;
-    dataFile.open(fileName);
+    dataFile.open(weights);
+    std::string edge;
     std::string line;
+    std::map<std::pair<int,int>,int>weight_values;
+    while(getline(dataFile,line)) {
+        std::stringstream tokenize(line);
+        std::string s;
+        std::vector<std::string> tokens;
+        while (getline(tokenize, s, ',')) {
+            tokens.push_back(s);
+        }
+        int src = atoi(tokens[0].c_str());
+        int dest = atoi(tokens[1].c_str());
+        int weight = atoi(tokens[2].c_str());
+        weight_values[std::make_pair(src, dest)] = weight;
+        tokens.clear();
+    }
+        dataFile.close();
+    dataFile.open(fileName);
     int count=0;
 std::vector<std::string> streams;
     while(getline(dataFile,line))
@@ -30,37 +47,27 @@ std::vector<std::string> streams;
             }
             else{
                 int temp=atoi(node.c_str());
-                list->addNode(i+1,temp);
+                int weight=weight_values[std::make_pair(i+1,temp)];
+                list->addNode(i+1,temp,weight);
             }
             count2++;
 
         }
     }
     dataFile.close();
-    dataFile.open(weights);
-    std::string edge;
-    while(getline(dataFile,line))
-    {
-        std::stringstream tokenize(line);
-       std::string s;
-       std::vector<std::string>tokens;
-        while(getline(tokenize,s,','))
-        {
-            tokens.push_back(s);
-        }
-        int src=atoi(tokens[0].c_str());
-        int dest=atoi(tokens[1].c_str());
-        int weight=atoi(tokens[2].c_str());
-        tokens.clear();
+
 //        list->Find(src-1,dest-1)->setWeight(weight);
 //        list->Find(dest-1,src-1)->setWeight(weight);
-    }
+
+
 list_Graph.toString();
 searching_Algos s;
     Graph* g=&list_Graph;
    // s.DFS_Iterative(2,8,g);
    // s.DFS_Recursive(2,8,g);
-  s.BFS_Iterative(2,8,g);
+// s.BFS_Iterative(3,9,g);
+ // s.BFS_Recursive(3,9,g);//WRONG
+  s.Djkstra(2,12,g,weight_values);//WRONG
 
 
 
@@ -84,35 +91,35 @@ void Search::Stats(int algo){
 
 }
 void Search::Select(int i){
-    if(i==DFS_ITER)
-    {
-        //Why isn't this line working?
-        SearchAlgo= &searching_Algos::DFS_Iterative;
-        std::cout<<"DFS Iterative"<<std::endl;
-        Execute();
-    }
-    else if(i==DFS_RECUR)
-    {
-        SearchAlgo= &searching_Algos::DFS_Recursive;
-        std::cout<<"Insertion Sort"<<std::endl;
-        Execute();
-    }
-    else if(i==BFS_ITER)
-    {
-        SearchAlgo=&searching_Algos::BFS_Iterative;
-        std::cout<<"Merge Sort"<<std::endl;
-        Execute();
-    }
-    else if(i==BFS_RECUR)
-    {
-        SearchAlgo=&searching_Algos::BFS_Recursive;
-        std::cout<<"BFS Recursive"<<std::endl;
-        Execute();
-    }
-    else
-    {
-        std::cout<<"ERROR No Sort Selected"<<std::endl;
-    }
+//    if(i==DFS_ITER)
+//    {
+//        //Why isn't this line working?
+//        SearchAlgo= &searching_Algos::DFS_Iterative;
+//        std::cout<<"DFS Iterative"<<std::endl;
+//        Execute();
+//    }
+//    else if(i==DFS_RECUR)
+//    {
+//        SearchAlgo= &searching_Algos::DFS_Recursive;
+//        std::cout<<"Insertion Sort"<<std::endl;
+//        Execute();
+//    }
+//    else if(i==BFS_ITER)
+//    {
+//        SearchAlgo=&searching_Algos::BFS_Iterative;
+//        std::cout<<"Merge Sort"<<std::endl;
+//        Execute();
+//    }
+//    else if(i==BFS_RECUR)
+//    {
+//        SearchAlgo=&searching_Algos::BFS_Recursive;
+//        std::cout<<"BFS Recursive"<<std::endl;
+//        Execute();
+//    }
+//    else
+//    {
+//        std::cout<<"ERROR No Sort Selected"<<std::endl;
+//    }
 }//Select active algorithm
 void Search::Save(std::string,int,std::string){
 //Change searches to return vector so just save vector path

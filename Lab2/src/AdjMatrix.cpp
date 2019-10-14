@@ -23,7 +23,7 @@ AdjMatrix::AdjMatrix(int size) {
 bool* AdjMatrix::getVisited() {
     return this->visited;
 }
-void AdjMatrix::addNode(int src,int dest) {
+void AdjMatrix::addNode(int src,int dest,int weight=0) {
     this->edges[src-1][dest-1].setData(dest);
 }
 int AdjMatrix::getSize() {

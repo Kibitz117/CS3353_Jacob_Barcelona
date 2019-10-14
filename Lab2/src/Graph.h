@@ -9,7 +9,7 @@
 #include <vector>
 class Graph {
 public:
-    virtual void addNode(int,int)=0;
+    virtual void addNode(int,int,int)=0;
     virtual Node<int>* Find(int,int)=0;
     virtual int getSize()=0;
     virtual bool* getVisited()=0;

@@ -88,11 +88,11 @@ public:
     {
         this->visited=visited;
     }
-    void setWeight(int weight)
+    void setWeight(int& weight)
     {
         this->weight=weight;
     }
-    int getWeight()
+    int getWeight()const
     {
         return this->weight;
     }

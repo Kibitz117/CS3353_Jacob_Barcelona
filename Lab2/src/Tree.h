@@ -32,6 +32,8 @@ public:
     TreeNode* getLeaves(int);
     TreeNode* getRoot();
     std::vector<TreeNode*>SavePath(int);
+   static void setWeight(TreeNode&,int);
+   int getShortest(int);
 
 
 private:

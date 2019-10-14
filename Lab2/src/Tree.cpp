@@ -64,4 +64,25 @@ std::vector<TreeNode*> Tree::SavePath(int dest) {
     return path;
 
 }
+void Tree::setWeight(TreeNode &node,int weight) {
+//    TreeNode*curr=&node;
+//    while(curr->parent!= nullptr)
+//    {
+//        curr=curr->parent;
+//        weight+=curr->weight;
+//    }
+    weight+=node.parent->weight;
+    node.weight=weight;
+}
 //Map of leaf nodes
+int Tree::getShortest(int current_weight) {
+    TreeNode*small;
+    for(std::map<int,TreeNode*>::iterator it=leaves.begin(); it!=leaves.end(); ++it)
+    {
+        if(it->second->weight<current_weight&&it->second->children.empty())
+        {
+            small=it->second;
+        }
+    }
+    return small->data;
+}

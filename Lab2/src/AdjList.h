@@ -12,7 +12,7 @@
 class AdjList: public Graph {
     public:
         AdjList(int);
-        virtual void addNode(int,int);
+        virtual void addNode(int,int,int);
         virtual Node<int>* Find(int,int);
     std::vector<Node<LinkedList<Node<int>>>>&  getList();
         virtual int getSize();
