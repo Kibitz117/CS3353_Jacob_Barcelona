@@ -1,0 +1,3 @@
+C:/Algorithms/Lab2/src/cmake-build-debug-mingw/CMakeFiles/src.dir
+C:/Algorithms/Lab2/src/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Algorithms/Lab2/src/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

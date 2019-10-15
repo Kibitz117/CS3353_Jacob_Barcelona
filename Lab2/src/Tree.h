@@ -8,11 +8,12 @@
 #include "LinkedList.h"
 #include <map>
 #include <vector>
+#include <math.h>
 struct TreeNode{
     int data=0;
-    int weight=0;
-    int position=0;
-    int distance_parent=0;
+    double weight=0.0;
+    std::vector<int> position;
+    double distance_parent=0.0;
     struct TreeNode* parent= nullptr;
     std::vector<TreeNode*>children;
     bool visited=false;
@@ -23,6 +24,7 @@ class Tree {
 public:
     Tree();
     Tree(int);
+    ~Tree();
     std::vector<TreeNode*> getChildren(struct TreeNode*);
     void insertNode(struct TreeNode*);
     void deleteTree();
@@ -32,7 +34,8 @@ public:
     TreeNode* getLeaves(int);
     TreeNode* getRoot();
     std::vector<TreeNode*>SavePath(int);
-   static void setWeight(TreeNode&,int);
+   static void setWeight(TreeNode&,double);
+   static void setPosition(TreeNode&,std::vector<int>);
    int getShortest(int);
 
 

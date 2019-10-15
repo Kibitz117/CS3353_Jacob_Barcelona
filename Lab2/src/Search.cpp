@@ -8,7 +8,7 @@ void Search::Load(std::string fileName,std::string weights,std::string positions
     dataFile.open(weights);
     std::string edge;
     std::string line;
-    std::map<std::pair<int,int>,int>weight_values;
+    std::map<std::pair<int,int>,double>weight_values;
     while(getline(dataFile,line)) {
         std::stringstream tokenize(line);
         std::string s;
@@ -18,11 +18,29 @@ void Search::Load(std::string fileName,std::string weights,std::string positions
         }
         int src = atoi(tokens[0].c_str());
         int dest = atoi(tokens[1].c_str());
-        int weight = atoi(tokens[2].c_str());
+        double weight = atof(tokens[2].c_str());
         weight_values[std::make_pair(src, dest)] = weight;
         tokens.clear();
     }
         dataFile.close();
+    dataFile.open(positions);
+    while(getline(dataFile,line))
+    {
+        std::stringstream tokenize(line);
+        std::string s;
+        std::vector<std::string>tokens;
+        while (getline(tokenize,s,','))
+            tokens.push_back(s);
+        int node=atoi(tokens[0].c_str());
+        int x=atoi(tokens[1].c_str());
+        int y=atoi(tokens[2].c_str());
+        int z=atoi(tokens[3].c_str());
+        node_positions[node].push_back(x);
+        node_positions[node].push_back(y);
+        node_positions[node].push_back(z);
+        tokens.clear();
+    }
+    dataFile.close();
     dataFile.open(fileName);
     int count=0;
 std::vector<std::string> streams;
@@ -68,7 +86,7 @@ std::vector<std::string> streams;
 }
 void Search::Execute(int src,int dest){
     auto start_time = std::chrono::high_resolution_clock::now();
-    path=(SearchAlgo)(src,dest,list,weight_values);
+    path=(SearchAlgo)(src,dest,list,weight_values,node_positions);
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
 }//Running switch statement
@@ -87,6 +105,7 @@ void Search::Stats(int algo){
         }
         std::cout<<std::endl;
         //Vector size
+        std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Tree Size
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
     }
@@ -100,6 +119,7 @@ void Search::Stats(int algo){
         }
         std::cout<<std::endl;
         //Vector size
+        std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Not sure for nodes explored
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
     }
@@ -113,6 +133,7 @@ void Search::Stats(int algo){
         }
         std::cout<<std::endl;
         //Vector size
+        std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Tree Size
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
 
@@ -126,6 +147,7 @@ void Search::Stats(int algo){
             std::cout<<path[i]<<" ";
         }
         std::cout<<std::endl;
+        std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Vector size
         //Not sure for nodes explored
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
@@ -141,7 +163,25 @@ void Search::Stats(int algo){
         }
         std::cout<<std::endl;
         //Vector size
+        std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Cost
+        //TREE POINTER SAME AS VECTOR THINGY
+        //Tree Size
+        std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
+    }
+    else if(algo==A_STAR)
+    {
+        std::cout<<"A*"<<std::endl;
+        //Output path
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+        std::cout<<std::endl;
+        //Vector size
+        std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
+        //Cost
+        //TREE POINTER SAME AS VECTOR THINGY
         //Tree Size
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
     }
@@ -154,7 +194,6 @@ void Search::Stats(int algo){
 void Search::Select(int i){
     if(i==DFS_ITER)
     {
-        //Why isn't this line working?
         SearchAlgo= &searching_Algos::DFS_Iterative;
     }
     else if(i==DFS_RECUR)
@@ -173,13 +212,19 @@ void Search::Select(int i){
     {
        SearchAlgo=&searching_Algos::Djkstra;
     }
+    else if(i==A_STAR)
+    {
+        SearchAlgo=&searching_Algos::A_Star;
+    }
     else
     {
         std::cout<<"ERROR No Sort Selected"<<std::endl;
     }
 }//Select active algorithm
-void Search::Save(std::string,int,std::string){
-//Change searches to return vector so just save vector path
+void Search::Save(std::string path,int i,std::string filename){
+    std::ofstream out;
+    path+=filename;
+    //Save vector path to file also name file based on algo and graph size
 }
 void Search::Configure(){
 
@@ -187,4 +232,6 @@ void Search::Configure(){
 void Search::Clear()
 {
     //Tree and vector clear
+    path.clear();
+    //Tree private data member clear
 }

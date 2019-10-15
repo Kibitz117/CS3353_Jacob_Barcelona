@@ -15,7 +15,11 @@ Tree::Tree(int r) {
     root = root_Node;
     depth = 0;
     total = 1;
+    root_Node->weight=0;
     this->leaves.insert(std::make_pair(root->data,root));
+}
+Tree::~Tree() {
+    delete root;
 }
 void Tree::insertNode(TreeNode*new_Node) {
     //Update leaf pointers
@@ -64,13 +68,8 @@ std::vector<TreeNode*> Tree::SavePath(int dest) {
     return path;
 
 }
-void Tree::setWeight(TreeNode &node,int weight) {
-//    TreeNode*curr=&node;
-//    while(curr->parent!= nullptr)
-//    {
-//        curr=curr->parent;
-//        weight+=curr->weight;
-//    }
+void Tree::setWeight(TreeNode &node,double weight) {
+
     weight+=node.parent->weight;
     node.weight=weight;
 }
@@ -85,4 +84,12 @@ int Tree::getShortest(int current_weight) {
         }
     }
     return small->data;
+}
+void Tree::setPosition(TreeNode &node, std::vector<int>position) {
+    node.position=position;
+    int dx=position[0]-node.parent->position[0];
+    int dy=position[1]-node.parent->position[1];
+    int dz=position[2]-node.parent->position[2];
+    double distance=sqrt((dx^2)+(dy^2)+(dz^2));
+    node.distance_parent=distance;
 }
