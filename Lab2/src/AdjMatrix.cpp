@@ -18,6 +18,9 @@ AdjMatrix::AdjMatrix(int size) {
 
 
 }
+AdjMatrix::~AdjMatrix() {
+    delete[]edges;
+}
 void AdjMatrix::addNode(int src,int dest,int weight=0) {
     this->edges[src-1][dest-1].setData(dest);
 }

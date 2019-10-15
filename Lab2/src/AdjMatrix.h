@@ -13,6 +13,7 @@
 class AdjMatrix: public Graph {
 public:
     AdjMatrix(int);
+    ~AdjMatrix();
     virtual void addNode(int x,int y,int i);
     virtual int getSize();
     Node<int>**getVertices();
