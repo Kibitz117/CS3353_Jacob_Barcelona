@@ -62,10 +62,6 @@ stdexcept
 
 C:/Algorithms/Lab2/src/Node.h
 
-C:/Algorithms/Lab2/src/Search.cpp
-Search.h
-C:/Algorithms/Lab2/src/Search.h
-
 C:/Algorithms/Lab2/src/Search.h
 fstream
 -
@@ -95,6 +91,14 @@ vector
 -
 math.h
 -
+
+C:/Algorithms/Lab2/src/searching_Algos.cpp
+queue
+-
+searching_Algos.h
+C:/Algorithms/Lab2/src/searching_Algos.h
+Tree.h
+C:/Algorithms/Lab2/src/Tree.h
 
 C:/Algorithms/Lab2/src/searching_Algos.h
 Graph.h

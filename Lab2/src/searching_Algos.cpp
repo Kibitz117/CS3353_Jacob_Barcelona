@@ -52,6 +52,7 @@ std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std:
                         path.push_back(saved[a]->data);
                     }
                     std::cout<<std::endl;
+                    delete new_Node;
                     return path;
                 }
             }
@@ -146,6 +147,7 @@ std::vector<int> searching_Algos::BFS_Iterative(int src, int dest, Graph *g,std:
                     {
                         path.push_back(saved[a]->data);
                     }
+                    delete new_Node;
                     return path;
                 }
             }
@@ -239,6 +241,7 @@ std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<st
                     {
                         path.push_back(saved[i]->data);
                     }
+                    delete new_Node;
                     return path;
                 }
                 //Push all connections to priority queue lowest weight is top
@@ -299,6 +302,7 @@ std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<s
                     {
                         path.push_back(saved[i]->data);
                     }
+                    delete new_Node;
                     return path;
                 }
                 //Push all connections to priority queue lowest weight is top
