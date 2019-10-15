@@ -14,6 +14,7 @@
 #include "Node.h"
 #include <map>
 #include <queue>
+#include <vector>
 struct compare{
     bool operator()(const TreeNode*l,const TreeNode*r)
     {
@@ -24,15 +25,16 @@ struct compare{
 };
 class searching_Algos {
 public:
-   void DFS_Iterative(int,int,Graph* g);
-   void DFS_Recursive(int,int,Graph* g);
-   void BFS_Iterative(int,int,Graph* g);
-   void BFS_Recursive(int,int,Graph* g);
-   void Djkstra(int,int,Graph*g,std::map<std::pair<int,int>,int>&);
+  static std::vector<int> DFS_Iterative(int,int,Graph* g,std::map<std::pair<int,int>,int>&);
+   static std::vector<int> DFS_Recursive(int,int,Graph* g,std::map<std::pair<int,int>,int>&);
+   static std::vector<int> BFS_Iterative(int,int,Graph* g,std::map<std::pair<int,int>,int>&);
+   static std::vector<int> BFS_Recursive(int,int,Graph* g,std::map<std::pair<int,int>,int>&);
+  static std::vector<int> Djkstra(int,int,Graph*g,std::map<std::pair<int,int>,int>&);
 
 private:
-    void DFS_reccur(int,int,Graph *g,std::vector<int>&);
-    void BFS_reccur(int,int, Graph*g,std::queue<int>&,std::vector<int>&);
+    static void DFS_reccur(int,int,Graph *g,std::vector<int>&,bool*);
+    static void BFS_reccur(int,int, Graph*g,std::queue<int>&,std::vector<int>&,bool*);
+    static std::vector<int>recur_path;
 };
 
 

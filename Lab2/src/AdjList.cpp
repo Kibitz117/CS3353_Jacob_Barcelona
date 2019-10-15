@@ -10,12 +10,8 @@ AdjList::AdjList(int size) {
     {
         data.push_back(edge);
     }
-    visited=new bool[size];
 
 
-}
-bool* AdjList::getVisited() {
-    return visited;
 }
 void AdjList::addNode(int root,int edge,int weight=0)
 {

@@ -15,13 +15,8 @@ AdjMatrix::AdjMatrix(int size) {
             edges[i][j]=new_Node;
         }
     }
-    visited=new bool[size];
 
 
-
-}
-bool* AdjMatrix::getVisited() {
-    return this->visited;
 }
 void AdjMatrix::addNode(int src,int dest,int weight=0) {
     this->edges[src-1][dest-1].setData(dest);

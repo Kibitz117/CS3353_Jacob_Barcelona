@@ -17,13 +17,11 @@ class AdjList: public Graph {
     std::vector<Node<LinkedList<Node<int>>>>&  getList();
         virtual int getSize();
         void toString();
-        virtual bool*getVisited();
         virtual std::vector<Node<int>*>getCons(int);
 
     private:
         std::vector<Node<LinkedList<Node<int>>>>data;
         int numVerticies;
-        bool*visited;
     };
 
 

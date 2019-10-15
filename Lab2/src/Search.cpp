@@ -3,7 +3,7 @@
 //
 #include "Search.h"
 //Loads in nodes,weights,and positions
-void Search::Load(std::string fileName,std::string weights,std::string positions) {
+void Search::Load(std::string fileName,std::string weights,std::string positions,int graph) {
     std::fstream dataFile;
     dataFile.open(weights);
     std::string edge;
@@ -32,8 +32,17 @@ std::vector<std::string> streams;
         count++;
 
     }
-    AdjList list_Graph(count);
-    list=&list_Graph;
+    if(graph==0)
+    {
+        AdjList *list_Graph=new AdjList(count);
+        list=list_Graph;
+    }
+    else
+    {
+        AdjMatrix *list_Graph=new AdjMatrix(count);
+        list=list_Graph;
+    }
+
     for(int i=0;i<streams.size();i++)
     {
         std::string node;
@@ -55,31 +64,11 @@ std::vector<std::string> streams;
         }
     }
     dataFile.close();
-
-//        list->Find(src-1,dest-1)->setWeight(weight);
-//        list->Find(dest-1,src-1)->setWeight(weight);
-
-
-list_Graph.toString();
-searching_Algos s;
-    Graph* g=&list_Graph;
-   // s.DFS_Iterative(2,8,g);
-   // s.DFS_Recursive(2,8,g);
-// s.BFS_Iterative(3,9,g);
- // s.BFS_Recursive(3,9,g);//WRONG
-  s.Djkstra(2,12,g,weight_values);//WRONG
-
-
-
-
-    //Read line tokenize commas
-    //First number is adjacency nodes
-    //Following are the adjacency nodes children in Linked List
-    //Find way to abstract with AdjMatrix
+    this->weight_values=weight_values;
 }
-void Search::Execute(){
+void Search::Execute(int src,int dest){
     auto start_time = std::chrono::high_resolution_clock::now();
-    (SearchAlgo)(src,dest,list);
+    path=(SearchAlgo)(src,dest,list,weight_values);
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
 }//Running switch statement
@@ -88,38 +77,106 @@ void Search::Display(){
 //Make Tree a parameter by reference
 }
 void Search::Stats(int algo){
+    if(algo==DFS_ITER)
+    {
+        std::cout<<"DFS Iterative"<<std::endl;
+        //Output path
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+        std::cout<<std::endl;
+        //Vector size
+        //Tree Size
+        std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
+    }
+    else if(algo==DFS_RECUR)
+    {
+        std::cout<<"DFS Recursive"<<std::endl;
+        //Output path
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+        std::cout<<std::endl;
+        //Vector size
+        //Not sure for nodes explored
+        std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
+    }
+    else if(algo==BFS_ITER)
+    {
+        std::cout<<"BFS Iterative"<<std::endl;
+        //Output path
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+        std::cout<<std::endl;
+        //Vector size
+        //Tree Size
+        std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
 
+    }
+    else if(algo==BFS_RECUR)
+    {
+        std::cout<<"BFS Recursive"<<std::endl;
+        //Output path
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+        std::cout<<std::endl;
+        //Vector size
+        //Not sure for nodes explored
+        std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
+
+    }
+    else if(algo==DJKSTRA)
+    {
+        std::cout<<"Djkstra"<<std::endl;
+        //Output path
+        for(int i=0;i<path.size();i++)
+        {
+            std::cout<<path[i]<<" ";
+        }
+        std::cout<<std::endl;
+        //Vector size
+        //Cost
+        //Tree Size
+        std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
+    }
+    else
+    {
+        std::cout<<"ERROR No Sort Selected"<<std::endl;
+    }
+    //Next steps: change output from void to vector path, load in other graphs, figure out nodes explored for recursive
 }
 void Search::Select(int i){
-//    if(i==DFS_ITER)
-//    {
-//        //Why isn't this line working?
-//        SearchAlgo= &searching_Algos::DFS_Iterative;
-//        std::cout<<"DFS Iterative"<<std::endl;
-//        Execute();
-//    }
-//    else if(i==DFS_RECUR)
-//    {
-//        SearchAlgo= &searching_Algos::DFS_Recursive;
-//        std::cout<<"Insertion Sort"<<std::endl;
-//        Execute();
-//    }
-//    else if(i==BFS_ITER)
-//    {
-//        SearchAlgo=&searching_Algos::BFS_Iterative;
-//        std::cout<<"Merge Sort"<<std::endl;
-//        Execute();
-//    }
-//    else if(i==BFS_RECUR)
-//    {
-//        SearchAlgo=&searching_Algos::BFS_Recursive;
-//        std::cout<<"BFS Recursive"<<std::endl;
-//        Execute();
-//    }
-//    else
-//    {
-//        std::cout<<"ERROR No Sort Selected"<<std::endl;
-//    }
+    if(i==DFS_ITER)
+    {
+        //Why isn't this line working?
+        SearchAlgo= &searching_Algos::DFS_Iterative;
+    }
+    else if(i==DFS_RECUR)
+    {
+        SearchAlgo= &searching_Algos::DFS_Recursive;
+    }
+    else if(i==BFS_ITER)
+    {
+        SearchAlgo=&searching_Algos::BFS_Iterative;
+    }
+    else if(i==BFS_RECUR)
+    {
+        SearchAlgo=&searching_Algos::BFS_Recursive;
+    }
+    else if(i==DJKSTRA)
+    {
+       SearchAlgo=&searching_Algos::Djkstra;
+    }
+    else
+    {
+        std::cout<<"ERROR No Sort Selected"<<std::endl;
+    }
 }//Select active algorithm
 void Search::Save(std::string,int,std::string){
 //Change searches to return vector so just save vector path
