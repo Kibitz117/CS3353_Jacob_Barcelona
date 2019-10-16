@@ -20,6 +20,11 @@ Tree::Tree(int r) {
 }
 Tree::~Tree() {
     delete root;
+    for(std::map<int,TreeNode*>::iterator it=leaves.begin();it!=leaves.end();++it)
+    {
+        TreeNode* curr=it->second;
+        delete curr;
+    }
 }
 void Tree::insertNode(TreeNode*new_Node) {
     //Update leaf pointers
@@ -46,7 +51,7 @@ std::vector<TreeNode*> Tree::getChildren(TreeNode*par) {
     return par->children;
 }
 void Tree::deleteTree() {
-    delete root;
+
 }
 TreeNode* Tree::getLeaves(int i) {
         return leaves[i];
