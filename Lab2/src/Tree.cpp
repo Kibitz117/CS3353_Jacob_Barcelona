@@ -19,7 +19,10 @@ Tree::Tree(int r) {
     this->leaves.insert(std::make_pair(root->data,root));
 }
 Tree::~Tree() {
-    delete root;
+    for(std::map<int,TreeNode*>::iterator it=leaves.begin();it!=leaves.end();++it)
+    {
+        delete it->second;
+    }
 }
 void Tree::insertNode(TreeNode*parent,int data,double weight,std::vector<int>&position) {
     //Update leaf pointers
@@ -102,4 +105,7 @@ void Tree::setPosition(TreeNode &node) {
     int dz=node.position[2]-node.parent->position[2];
     double distance=sqrt((dx^2)+(dy^2)+(dz^2));
     node.distance_parent=distance+node.parent->distance_parent;
+}
+int Tree::getTotal() {
+    return total;
 }

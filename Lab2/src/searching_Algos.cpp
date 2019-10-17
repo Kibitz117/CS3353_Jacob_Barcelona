@@ -9,8 +9,12 @@
 std::vector<int> searching_Algos::recur_path;
 std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std::map<std::pair<int,int>,double>&weight_values,std::map<int,std::vector<int>>&node_positions) {
     //Stack of node pointers
-
+    int vis=0;
     bool visited[g->getSize()];
+    for(int i=0;i<g->getSize();i++)
+    {
+        visited[i]=false;
+    }
     std::stack<Node<int>*>stack;
     Tree node_Tree(src);
     //Current row
@@ -25,6 +29,7 @@ std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std:
     {
         //Set current as visited
        visited[current_index]=true;
+       vis++;
         //Pop from stack
         stack.pop();
         //Push all children onto stack
@@ -32,6 +37,7 @@ std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std:
         std::vector<Node<int>*>connections=g->getCons(current_index);
         for(int i=0;i<connections.size();i++) {
             Node<int> *temp = connections[i];
+            double weight=weight_values[std::make_pair(current_index+1,temp->getData())];
             //if not visited and not empty node
             if (!(visited[temp->getData() - 1] == true)) {
                 stack.push(temp);
@@ -43,7 +49,6 @@ std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std:
 //                //Gets the treenode corresponding to current
 //                new_Node->parent = node_Tree.getLeaves(current_index + 1);
 //                node_Tree.insertNode(new_Node);
-                double weight=weight_values[std::make_pair(current_index+1,temp->getData())];
                 //Add every node to tree
                 TreeNode*parent=node_Tree.getLeaves(current_index+1);
                 std::vector<int>empty;
@@ -57,17 +62,15 @@ std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std:
                         path.push_back(saved[a]->data);
                     }
                     std::cout<<std::endl;
+                    path.push_back(vis);
                     return path;
                 }
             }
         }
-        //if top of the stack isn't visited and the stack isn't empty
-        if(!(visited[stack.top()->getData()-1]))
-        {
-            //Set current to top index
+
+        //Set current to top index
             current_index=stack.top()->getData()-1;
             current=g->Find(current_index,0);
-        }
 
     }
     std::vector<int>empty;
@@ -76,6 +79,10 @@ return empty;
 std::vector<int> searching_Algos::DFS_Recursive(int src,int dest,Graph* g,std::map<std::pair<int,int>,double>&weight_values,std::map<int,std::vector<int>>&node_positions) {
     std::vector<int>path;
     bool visited[g->getSize()];
+    for(int i=0;i<g->getSize();i++)
+    {
+        visited[i]=false;
+    }
     recur_path.clear();
     DFS_reccur(src,dest,g,path,visited);
     return recur_path;
@@ -108,9 +115,12 @@ void searching_Algos::DFS_reccur(int src, int dest,Graph* g,std::vector<int>&pat
 
 }
 std::vector<int> searching_Algos::BFS_Iterative(int src, int dest, Graph *g,std::map<std::pair<int,int>,double>&weight_values,std::map<int,std::vector<int>>&node_positions) {
-    //Stack of node pointers
-    //std::stack<Node<int>*>stack;
+    int vis=0;
     bool visited[g->getSize()];
+    for(int i=0;i<g->getSize();i++)
+    {
+        visited[i]=false;
+    }
     std::queue<Node<int>*>queue;
     Tree node_Tree(src);
     //Current row
@@ -125,6 +135,7 @@ std::vector<int> searching_Algos::BFS_Iterative(int src, int dest, Graph *g,std:
     {
         //Set current as visited
         visited[current_index]=true;
+        vis++;
         //Pop from queue
         queue.pop();
         //Push all children onto stack
@@ -156,18 +167,16 @@ std::vector<int> searching_Algos::BFS_Iterative(int src, int dest, Graph *g,std:
                     {
                         path.push_back(saved[a]->data);
                     }
+                    path.push_back(vis);
                     return path;
                 }
 
             }
         }
         //if top of the stack isn't visited and the stack isn't empty
-        if(!(visited[queue.front()->getData()-1]))
-        {
             //Set current to top index
             current_index=queue.front()->getData()-1;
             current=g->Find(current_index,0);
-        }
 
     }
     std::vector<int>empty;
@@ -178,6 +187,10 @@ std::vector<int> searching_Algos::BFS_Recursive(int src, int dest, Graph *g,std:
     std::vector<int>path;
     queue.push(src);
     bool visited[g->getSize()];
+    for(int i=0;i<g->getSize();i++)
+    {
+        visited[i]=false;
+    }
     recur_path.clear();
     BFS_reccur(src,dest,g,queue,path,visited);
     return recur_path;
@@ -214,7 +227,12 @@ void searching_Algos::BFS_reccur(int src, int dest, Graph* g,std::queue<int>&que
 }
 
 std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<std::pair<int,int>,double>&weight_values,std::map<int,std::vector<int>>&node_positions) {
+    int vis=0;
     bool visited[g->getSize()];
+    for(int i=0;i<g->getSize();i++)
+    {
+        visited[i]=false;
+    }
     std::priority_queue<TreeNode*, std::vector<TreeNode*>, compare > priorityQueue;
     Tree tree(src);
     priorityQueue.push(tree.getRoot());
@@ -222,11 +240,16 @@ std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<st
     int current_index=src-1;
     while(!priorityQueue.empty())
     {
+        if(priorityQueue.top()->data==dest)
+        {
+            break;
+        }
         //Get connections of current index
         std::vector<Node<int>*>connections=g->getCons(current_index);
         //Pop current index from queue
         priorityQueue.pop();
         visited[current_index]=true;
+        vis++;
         for(int i=0;i<connections.size();i++)
         {
             Node<int>*temp=connections[i];
@@ -267,11 +290,17 @@ std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<st
         path.push_back(saved[i]->data);
     }
     weight_values[std::make_pair(src,dest)]=tree.getLeaves(dest)->weight;
+    path.push_back(vis);
     return path;
 }
 std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<std::pair<int, int>, double> &weight_values,
                                          std::map<int, std::vector<int>> &node_positions) {
+    int vis=0;
     bool visited[g->getSize()];
+    for(int i=0;i<g->getSize();i++)
+    {
+        visited[i]=false;
+    }
     std::priority_queue<TreeNode*, std::vector<TreeNode*>, compare > priorityQueue;
     Tree tree(src);
     tree.getRoot()->position=node_positions[src];
@@ -279,11 +308,16 @@ std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<s
     int current_index=src-1;
     while(!priorityQueue.empty())
     {
+        if(priorityQueue.top()->data==dest)
+        {
+            break;
+        }
         //Get connections of current index
         std::vector<Node<int>*>connections=g->getCons(current_index);
         //Pop current index from queue
         priorityQueue.pop();
         visited[current_index]=true;
+        vis++;
         for(int i=0;i<connections.size();i++)
         {
             Node<int>*temp=connections[i];
@@ -327,6 +361,7 @@ std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<s
     weight_values[std::make_pair(src,dest)]=tree.getLeaves(dest)->weight;
                     //A way to retrieve the final distance in stats
     weight_values[std::make_pair(dest,src)]=tree.getLeaves(dest)->distance_parent;
+                    path.push_back(vis);
                     return path;
 
 }

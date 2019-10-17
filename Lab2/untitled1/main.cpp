@@ -5,7 +5,7 @@
 #include <algorithm>
 int main() {
     std::ofstream out;
-    std::string path="Data_Point_Nodes.txt";
+    std::string path="Data_Point_Nodes(2).txt";
     std::vector<int>nodes;
     std::map<std::pair<int,int>,bool>node_pairs;
     nodes.reserve(16);

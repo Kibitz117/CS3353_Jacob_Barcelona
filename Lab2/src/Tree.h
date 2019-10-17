@@ -40,6 +40,7 @@ public:
    static void setWeight(TreeNode&,double);
    static void setPosition(TreeNode&);
    int getShortest(int);
+   int getTotal();
 
 
 private:
