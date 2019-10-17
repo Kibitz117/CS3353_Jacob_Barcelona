@@ -17,6 +17,12 @@ struct TreeNode{
     struct TreeNode* parent= nullptr;
     std::vector<TreeNode*>children;
     bool visited=false;
+    ~TreeNode(){
+        for(int i=0;i<children.size();i++)
+        {
+            delete children[i];
+        }
+    }
 
 };
 //Resets root

@@ -20,14 +20,10 @@ Tree::Tree(int r) {
 }
 Tree::~Tree() {
     delete root;
-    for(std::map<int,TreeNode*>::iterator it=leaves.begin();it!=leaves.end();++it)
-    {
-        TreeNode* curr=it->second;
-        delete curr;
-    }
 }
 void Tree::insertNode(TreeNode*new_Node) {
     //Update leaf pointers
+
     std::map<int,TreeNode*>::iterator it = leaves.find(new_Node->data);
     if(it==leaves.end())
     {
@@ -37,10 +33,6 @@ void Tree::insertNode(TreeNode*new_Node) {
         //Push back new Node to its parent's vector of children
         new_Node->parent->children.push_back(new_Node);
         total++;
-        if(new_Node->parent->children.size()<2)
-        {
-            depth++;
-        }
 
     }
 
