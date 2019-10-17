@@ -10,7 +10,7 @@ int main(int argc,char*argv[])
     {
         s.Load("src/cmake-build-debug/largeGraph.txt","src/cmake-build-debug/largeWeights.txt","src/cmake-build-debug/largePositions.txt",i);
         //Loop through each algo
-        for(int a=0;a<1;a++)
+        for(int a=2;a<6;a++)
         {
             s.Select(a);
             int src=atoi(argv[1]);

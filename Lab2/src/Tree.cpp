@@ -21,20 +21,30 @@ Tree::Tree(int r) {
 Tree::~Tree() {
     delete root;
 }
-void Tree::insertNode(TreeNode*new_Node) {
+void Tree::insertNode(TreeNode*parent,int data,double weight,std::vector<int>&position) {
     //Update leaf pointers
-
-    std::map<int,TreeNode*>::iterator it = leaves.find(new_Node->data);
-    if(it==leaves.end())
+    TreeNode*new_Node=new TreeNode();
+    new_Node->data=data;
+    new_Node->parent=parent;
+    Tree::setWeight(*new_Node,weight);
+    if(!position.empty())
     {
-        leaves[new_Node->data]=new_Node;
-        //Remove parent from leaf node pointers
-        //This line isn't working properly
-        //Push back new Node to its parent's vector of children
-        new_Node->parent->children.push_back(new_Node);
-        total++;
-
+        new_Node->position=position;
+        Tree::setPosition(*new_Node);
     }
+    total++;
+    leaves[data]=new_Node;
+//    std::map<int,TreeNode*>::iterator it = leaves.find(new_Node->data);
+//    if(it==leaves.end())
+//    {
+//        leaves[new_Node->data]=new_Node;
+//        //Remove parent from leaf node pointers
+//        //This line isn't working properly
+//        //Push back new Node to its parent's vector of children
+//        new_Node->parent->children.push_back(new_Node);
+//        total++;
+//
+//    }
 
 
 }
@@ -82,11 +92,10 @@ int Tree::getShortest(int current_weight) {
     }
     return small->data;
 }
-void Tree::setPosition(TreeNode &node, std::vector<int>position) {
-    node.position=position;
-    int dx=position[0]-node.parent->position[0];
-    int dy=position[1]-node.parent->position[1];
-    int dz=position[2]-node.parent->position[2];
+void Tree::setPosition(TreeNode &node) {
+    int dx=node.position[0]-node.parent->position[0];
+    int dy=node.position[1]-node.parent->position[1];
+    int dz=node.position[2]-node.parent->position[2];
     double distance=sqrt((dx^2)+(dy^2)+(dz^2));
     node.distance_parent=distance;
 }

@@ -32,7 +32,7 @@ public:
     Tree(int);
     ~Tree();
     std::vector<TreeNode*> getChildren(struct TreeNode*);
-    void insertNode(struct TreeNode*);
+    void insertNode(TreeNode*,int,double,std::vector<int>&);
     void deleteTree();
     struct TreeNode* find(int);
     TreeNode* getParent(TreeNode*);
@@ -41,7 +41,7 @@ public:
     TreeNode* getRoot();
     std::vector<TreeNode*>SavePath(int);
    static void setWeight(TreeNode&,double);
-   static void setPosition(TreeNode&,std::vector<int>);
+   static void setPosition(TreeNode&);
    int getShortest(int);
 
 

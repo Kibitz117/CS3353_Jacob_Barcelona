@@ -37,12 +37,17 @@ std::vector<int> searching_Algos::DFS_Iterative(int src, int dest, Graph *g,std:
                 stack.push(temp);
                 //Update parent child
                 //Add current to tree
-                TreeNode* new_Node=new TreeNode();
-                new_Node->data = stack.top()->getData();
-                new_Node->weight = stack.top()->getWeight();
-                //Gets the treenode corresponding to current
-                new_Node->parent = node_Tree.getLeaves(current_index + 1);
-                node_Tree.insertNode(new_Node);
+//                TreeNode* new_Node=new TreeNode();
+//                new_Node->data = stack.top()->getData();
+//                new_Node->weight = stack.top()->getWeight();
+//                //Gets the treenode corresponding to current
+//                new_Node->parent = node_Tree.getLeaves(current_index + 1);
+//                node_Tree.insertNode(new_Node);
+                double weight=weight_values[std::make_pair(current_index+1,temp->getData())];
+                //Add every node to tree
+                TreeNode*parent=node_Tree.getLeaves(current_index+1);
+                std::vector<int>empty;
+                node_Tree.insertNode(parent,temp->getData(),weight,empty);
                 if(stack.top()->getData()==dest)
                 {
                     std::vector<TreeNode*>saved=node_Tree.SavePath(stack.top()->getData());
@@ -132,12 +137,17 @@ std::vector<int> searching_Algos::BFS_Iterative(int src, int dest, Graph *g,std:
                 queue.push(temp);
                 //Update parent child
                 //Add current to tree
-                TreeNode* new_Node=new TreeNode();
-                new_Node->data = temp->getData();
-                new_Node->weight = temp->getWeight();
-                //Gets the treenode corresponding to current
-                new_Node->parent = node_Tree.getLeaves(current_index+1);
-                node_Tree.insertNode(new_Node);
+//                TreeNode* new_Node=new TreeNode();
+//                new_Node->data = temp->getData();
+//                new_Node->weight = temp->getWeight();
+//                //Gets the treenode corresponding to current
+//                new_Node->parent = node_Tree.getLeaves(current_index+1);
+//                node_Tree.insertNode(new_Node);
+                double weight=weight_values[std::make_pair(current_index+1,temp->getData())];
+                //Add every node to tree
+                TreeNode*parent=node_Tree.getLeaves(current_index+1);
+                std::vector<int>empty;
+                node_Tree.insertNode(parent,temp->getData(),weight, empty);
                 if(queue.front()->getData()==dest)
                 {
                     std::vector<TreeNode*>saved=node_Tree.SavePath(queue.front()->getData());
@@ -225,16 +235,19 @@ std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<st
                 //Add all the connections to tree and set current_index to lowest weight
                 double weight=weight_values[std::make_pair(current_index+1,temp->getData())];
                 //Add every node to tree
-                TreeNode*new_Node=new TreeNode();
-                new_Node->data = temp->getData();
-                //Gets the treenode corresponding to current
-                new_Node->parent = tree.getLeaves(current_index+1);
-                //Set weight of new tree node
-                Tree::setWeight(*new_Node,weight);
-                Tree::setPosition(*new_Node,{0,0,1});
-                tree.insertNode(new_Node);
+                TreeNode*parent=tree.getLeaves(current_index+1);
+                std::vector<int>empty;
+                tree.insertNode(parent,temp->getData(),weight, empty);
+//                TreeNode*new_Node=new TreeNode();
+//                new_Node->data = temp->getData();
+//                //Gets the treenode corresponding to current
+//                new_Node->parent = tree.getLeaves(current_index+1);
+//                //Set weight of new tree node
+//                Tree::setWeight(*new_Node,weight);
+//                Tree::setPosition(*new_Node,{0,0,1});
+             //   tree.insertNode(new_Node);
                 //Push all connections to priority queue lowest weight is top
-                priorityQueue.push(new_Node);
+                priorityQueue.push(tree.getLeaves(temp->getData()));
             }
 
         }
@@ -280,16 +293,19 @@ std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<s
                 double weight=weight_values[std::make_pair(current_index+1,temp->getData())];
                 std::vector<int>position=node_positions[temp->getData()];
                 //Add every node to tree
-                TreeNode*new_Node=new TreeNode();
-                new_Node->data = temp->getData();
-                //Gets the treenode corresponding to current
-                new_Node->parent = tree.getLeaves(current_index+1);
-                //Set weight of new tree node
-                Tree::setWeight(*new_Node,weight);
-                Tree::setPosition(*new_Node,position);
-                tree.insertNode(new_Node);
+//                TreeNode*new_Node=new TreeNode();
+//                new_Node->data = temp->getData();
+//                //Gets the treenode corresponding to current
+//                new_Node->parent = tree.getLeaves(current_index+1);
+//                //Set weight of new tree node
+//                Tree::setWeight(*new_Node,weight);
+//                Tree::setPosition(*new_Node,position);
+//                tree.insertNode(new_Node);
+                //Add every node to tree
+                TreeNode*parent=tree.getLeaves(current_index+1);
+                tree.insertNode(parent,temp->getData(),weight, position);
                 //Push all connections to priority queue lowest weight is top
-                priorityQueue.push(new_Node);
+                priorityQueue.push(tree.getLeaves(temp->getData()));
             }
 
         }
