@@ -18,8 +18,8 @@
 struct compare{
     bool operator()(const TreeNode*l,const TreeNode*r)
     {
-        int weight_l=(l->weight)+(l->distance_parent);
-        int weight_r=(r->weight)+(r->distance_parent);
+        int weight_l=(1+l->weight)*(l->distance_parent);
+        int weight_r=(1+r->weight)*(r->distance_parent);
        if(weight_l>weight_r)
            return true;
        return false;

@@ -231,6 +231,7 @@ std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<st
                 new_Node->parent = tree.getLeaves(current_index+1);
                 //Set weight of new tree node
                 Tree::setWeight(*new_Node,weight);
+                Tree::setPosition(*new_Node,{0,0,1});
                 tree.insertNode(new_Node);
                 //Push all connections to priority queue lowest weight is top
                 priorityQueue.push(new_Node);
