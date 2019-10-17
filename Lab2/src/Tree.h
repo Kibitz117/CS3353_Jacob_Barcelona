@@ -17,12 +17,9 @@ struct TreeNode{
     struct TreeNode* parent= nullptr;
     std::vector<TreeNode*>children;
     bool visited=false;
-    ~TreeNode(){
-        for(int i=0;i<children.size();i++)
-        {
-            delete children[i];
-        }
-    }
+    double cost=(1+weight)*(distance_parent);
+
+
 
 };
 //Resets root
@@ -33,7 +30,7 @@ public:
     ~Tree();
     std::vector<TreeNode*> getChildren(struct TreeNode*);
     void insertNode(TreeNode*,int,double,std::vector<int>&);
-    void deleteTree();
+    void deleteNode(TreeNode*);
     struct TreeNode* find(int);
     TreeNode* getParent(TreeNode*);
     void setParent(int);

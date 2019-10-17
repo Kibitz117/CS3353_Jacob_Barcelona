@@ -8,9 +8,9 @@ int main(int argc,char*argv[])
     //AdjList or Matrix
     for(int i=0;i<2;i++)
     {
-        s.Load("src/cmake-build-debug/largeGraph.txt","src/cmake-build-debug/largeWeights.txt","src/cmake-build-debug/largePositions.txt",i);
+        s.Load("src/cmake-build-debug/graph.txt","src/cmake-build-debug/weights.txt","src/cmake-build-debug/positions.txt",i);
         //Loop through each algo
-        for(int a=2;a<6;a++)
+        for(int a=0;a<6;a++)
         {
             s.Select(a);
             int src=atoi(argv[1]);

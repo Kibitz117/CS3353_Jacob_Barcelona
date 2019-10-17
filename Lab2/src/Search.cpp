@@ -165,6 +165,7 @@ void Search::Stats(int algo){
         //Vector size
         std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Cost
+        std::cout<<"Cost: "<<weight_values[std::make_pair(path[0],path[path.size()-1])]<<std::endl;
         //TREE POINTER SAME AS VECTOR THINGY
         //Tree Size
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
@@ -181,7 +182,9 @@ void Search::Stats(int algo){
         //Vector size
         std::cout<<"Number of nodes in path:"<<path.size()<<std::endl;
         //Cost
+        std::cout<<"Cost: "<<weight_values[std::make_pair(path[0],path[path.size()-1])]<<std::endl;
         //TREE POINTER SAME AS VECTOR THINGY
+        std::cout<<"Distance: "<<weight_values[std::make_pair(path[path.size()-1],path[0])]<<std::endl;
         //Tree Size
         std::cout<<"Time of execution: "<<time<<" ns"<<std::endl;
     }

@@ -52,7 +52,11 @@ void Tree::insertNode(TreeNode*parent,int data,double weight,std::vector<int>&po
 std::vector<TreeNode*> Tree::getChildren(TreeNode*par) {
     return par->children;
 }
-void Tree::deleteTree() {
+void Tree::deleteNode(TreeNode*node) {
+        for(int i=0;i<node->children.size();i++)
+        {
+            deleteNode(node->children[i]);
+        }
 
 }
 TreeNode* Tree::getLeaves(int i) {
@@ -97,5 +101,5 @@ void Tree::setPosition(TreeNode &node) {
     int dy=node.position[1]-node.parent->position[1];
     int dz=node.position[2]-node.parent->position[2];
     double distance=sqrt((dx^2)+(dy^2)+(dz^2));
-    node.distance_parent=distance;
+    node.distance_parent=distance+node.parent->distance_parent;
 }

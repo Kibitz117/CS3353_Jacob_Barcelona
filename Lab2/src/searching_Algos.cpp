@@ -266,6 +266,7 @@ std::vector<int> searching_Algos::Djkstra(int src, int dest, Graph*g,std::map<st
     {
         path.push_back(saved[i]->data);
     }
+    weight_values[std::make_pair(src,dest)]=tree.getLeaves(dest)->weight;
     return path;
 }
 std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<std::pair<int, int>, double> &weight_values,
@@ -275,7 +276,6 @@ std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<s
     Tree tree(src);
     tree.getRoot()->position=node_positions[src];
     priorityQueue.push(tree.getRoot());
-    int current_cost=0;
     int current_index=src-1;
     while(!priorityQueue.empty())
     {
@@ -323,6 +323,10 @@ std::vector<int> searching_Algos::A_Star(int src, int dest, Graph *g, std::map<s
                     {
                         path.push_back(saved[i]->data);
                     }
+                    //A way to retrieve the final cost in stats
+    weight_values[std::make_pair(src,dest)]=tree.getLeaves(dest)->weight;
+                    //A way to retrieve the final distance in stats
+    weight_values[std::make_pair(dest,src)]=tree.getLeaves(dest)->distance_parent;
                     return path;
 
 }
