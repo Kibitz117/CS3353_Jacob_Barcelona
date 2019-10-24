@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Algorithms/Lab3/src/FileLoader.h
+fstream
+-
+map
+-
+vector
+-
+sstream
+-
+StructureFactory.h
+C:/Algorithms/Lab3/src/StructureFactory.h
+
+C:/Algorithms/Lab3/src/MapHandler.h
+vector
+-
+map
+-
+StructureHandler.h
+C:/Algorithms/Lab3/src/StructureHandler.h
+sstream
+-
+
+C:/Algorithms/Lab3/src/StructureFactory.h
+MapHandler.h
+C:/Algorithms/Lab3/src/MapHandler.h
+StructureHandler.h
+C:/Algorithms/Lab3/src/StructureHandler.h
+
+C:/Algorithms/Lab3/src/StructureHandler.h
+string
+-
+
+C:/Algorithms/Lab3/src/main.cpp
+iostream
+-
+FileLoader.h
+C:/Algorithms/Lab3/src/FileLoader.h
+
