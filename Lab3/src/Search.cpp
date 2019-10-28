@@ -4,7 +4,7 @@
 #include "Search.h"
 void Search::Load(std::string path, int structure) {
     FileLoader loader;
-loader.load("C:\\Algorithms\\Lab3\\src\\cmake-build-debug\\positions.txt",0,structure);
+structure=loader.load("C:\\Algorithms\\Lab3\\src\\cmake-build-debug\\positions.txt",0);
 
 
 }

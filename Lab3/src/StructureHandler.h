@@ -8,6 +8,7 @@
 class StructureHandler {
 public:
 virtual void addLine(std::string s)=0;
+virtual
 };
 
 

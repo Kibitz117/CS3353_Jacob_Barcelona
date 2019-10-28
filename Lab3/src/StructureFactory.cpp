@@ -7,7 +7,7 @@ StructureHandler* StructureFactory::Create(int i) {
     StructureHandler* pStruct;
     switch (i)
     {
-        case StructureFactory::MAP:
+        case MAP:
             pStruct=new MapHandler();
             break;
 

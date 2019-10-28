@@ -4,7 +4,7 @@
 
 #include "FileLoader.h"
 
-void FileLoader::load(const std::string &path,int structure,StructureHandler*&structure_type) {
+StructureHandler* FileLoader::load(const std::string &path,int structure) {
 std::fstream dataFile;
 dataFile.open(path);
 std::string line;
@@ -15,6 +15,7 @@ std::string line;
     structure_type->addLine(line);
     }
     dataFile.close();
+    return structure_type;
 }
 void FileLoader::output(std::vector<int>&path,std::string&filepath) {
     std::ofstream out;
