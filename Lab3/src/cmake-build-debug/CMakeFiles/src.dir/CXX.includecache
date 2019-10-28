@@ -54,6 +54,10 @@ C:/Algorithms/Lab3/src/StructureHandler.h
 sstream
 -
 
+C:/Algorithms/Lab3/src/PathFinders.cpp
+PathFinders.h
+C:/Algorithms/Lab3/src/PathFinders.h
+
 C:/Algorithms/Lab3/src/PathFinders.h
 map
 -
@@ -69,6 +73,8 @@ CostCalc.h
 C:/Algorithms/Lab3/src/CostCalc.h
 iostream
 -
+StructureHandler.h
+C:/Algorithms/Lab3/src/StructureHandler.h
 
 C:/Algorithms/Lab3/src/Search.cpp
 Search.h

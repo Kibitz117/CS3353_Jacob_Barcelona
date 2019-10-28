@@ -12,8 +12,10 @@
 #include <cmath>
 #include "CostCalc.h"
 #include <iostream>
+#include "StructureHandler.h"
 class PathFinders {
 public:
+    void setMap(StructureHandler*);
     std::vector<int>(PathFinders::*PathAlgo)(int);
  std::vector<int>NBF(int src);
  std::vector<int>DP(int src);

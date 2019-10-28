@@ -24,8 +24,9 @@ virtual void Configure();
 
 
 private:
+    StructureHandler* s;
+    MapHandler map;
     PathFinders p;
-    StructureHandler* structure;
     enum Algo{
         NBF=0,
         DP

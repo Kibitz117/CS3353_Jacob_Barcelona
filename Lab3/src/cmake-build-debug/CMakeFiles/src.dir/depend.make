@@ -17,6 +17,7 @@ CMakeFiles/src.dir/MapHandler.cpp.obj: ../StructureHandler.h
 CMakeFiles/src.dir/PathFinders.cpp.obj: ../CostCalc.h
 CMakeFiles/src.dir/PathFinders.cpp.obj: ../PathFinders.cpp
 CMakeFiles/src.dir/PathFinders.cpp.obj: ../PathFinders.h
+CMakeFiles/src.dir/PathFinders.cpp.obj: ../StructureHandler.h
 
 CMakeFiles/src.dir/Search.cpp.obj: ../Algorithm.h
 CMakeFiles/src.dir/Search.cpp.obj: ../CostCalc.h

@@ -3,7 +3,9 @@
 //
 
 #include "PathFinders.h"
+void PathFinders::setMap(StructureHandler *map) {
 
+}
 std::vector<int> PathFinders::NBF(int src) {
 
     //Make src and dest same node
