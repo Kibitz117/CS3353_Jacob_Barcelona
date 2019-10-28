@@ -40,6 +40,10 @@ sstream
 StructureFactory.h
 C:/Algorithms/Lab3/src/StructureFactory.h
 
+C:/Algorithms/Lab3/src/MapHandler.cpp
+MapHandler.h
+C:/Algorithms/Lab3/src/MapHandler.h
+
 C:/Algorithms/Lab3/src/MapHandler.h
 vector
 -
@@ -87,6 +91,10 @@ FileLoader.h
 C:/Algorithms/Lab3/src/FileLoader.h
 StructureHandler.h
 C:/Algorithms/Lab3/src/StructureHandler.h
+
+C:/Algorithms/Lab3/src/StructureFactory.cpp
+StructureFactory.h
+C:/Algorithms/Lab3/src/StructureFactory.h
 
 C:/Algorithms/Lab3/src/StructureFactory.h
 MapHandler.h
