@@ -14,7 +14,7 @@ public:
         MAP=0,
         VECTOR
     };
-    static StructureHandler* Create(StructureFactory::structure_type);
+    static StructureHandler* Create(int i);
 };
 
 

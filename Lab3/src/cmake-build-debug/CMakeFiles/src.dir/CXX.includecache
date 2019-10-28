@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+C:/Algorithms/Lab3/src/FileLoader.cpp
+FileLoader.h
+C:/Algorithms/Lab3/src/FileLoader.h
+
 C:/Algorithms/Lab3/src/FileLoader.h
 fstream
 -
@@ -37,10 +41,4 @@ C:/Algorithms/Lab3/src/StructureHandler.h
 C:/Algorithms/Lab3/src/StructureHandler.h
 string
 -
-
-C:/Algorithms/Lab3/src/main.cpp
-iostream
--
-FileLoader.h
-C:/Algorithms/Lab3/src/FileLoader.h
 

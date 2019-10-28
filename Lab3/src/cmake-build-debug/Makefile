@@ -122,6 +122,33 @@ src/fast:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/build
 .PHONY : src/fast
 
+CostCalc.obj: CostCalc.cpp.obj
+
+.PHONY : CostCalc.obj
+
+# target to build an object file
+CostCalc.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/CostCalc.cpp.obj
+.PHONY : CostCalc.cpp.obj
+
+CostCalc.i: CostCalc.cpp.i
+
+.PHONY : CostCalc.i
+
+# target to preprocess a source file
+CostCalc.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/CostCalc.cpp.i
+.PHONY : CostCalc.cpp.i
+
+CostCalc.s: CostCalc.cpp.s
+
+.PHONY : CostCalc.s
+
+# target to generate assembly for a file
+CostCalc.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/CostCalc.cpp.s
+.PHONY : CostCalc.cpp.s
+
 FileLoader.obj: FileLoader.cpp.obj
 
 .PHONY : FileLoader.obj
@@ -203,6 +230,33 @@ PathFinders.cpp.s:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/PathFinders.cpp.s
 .PHONY : PathFinders.cpp.s
 
+Search.obj: Search.cpp.obj
+
+.PHONY : Search.obj
+
+# target to build an object file
+Search.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Search.cpp.obj
+.PHONY : Search.cpp.obj
+
+Search.i: Search.cpp.i
+
+.PHONY : Search.i
+
+# target to preprocess a source file
+Search.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Search.cpp.i
+.PHONY : Search.cpp.i
+
+Search.s: Search.cpp.s
+
+.PHONY : Search.s
+
+# target to generate assembly for a file
+Search.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/Search.cpp.s
+.PHONY : Search.cpp.s
+
 StructureFactory.obj: StructureFactory.cpp.obj
 
 .PHONY : StructureFactory.obj
@@ -266,6 +320,9 @@ help:
 	@echo ... src
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... CostCalc.obj
+	@echo ... CostCalc.i
+	@echo ... CostCalc.s
 	@echo ... FileLoader.obj
 	@echo ... FileLoader.i
 	@echo ... FileLoader.s
@@ -275,6 +332,9 @@ help:
 	@echo ... PathFinders.obj
 	@echo ... PathFinders.i
 	@echo ... PathFinders.s
+	@echo ... Search.obj
+	@echo ... Search.i
+	@echo ... Search.s
 	@echo ... StructureFactory.obj
 	@echo ... StructureFactory.i
 	@echo ... StructureFactory.s

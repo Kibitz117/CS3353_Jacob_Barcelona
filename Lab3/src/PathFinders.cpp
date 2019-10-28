@@ -24,6 +24,14 @@ std::vector<int> PathFinders::NBF(int src) {
         priorityQueue.push(make_pair(path,cost));
         //Keep looping until no more permutations exist
     }while(std::next_permutation(path.begin(),path.end()));
+    std::vector<int>f_path=priorityQueue.top().first;
+    for(int i=0;i<f_path.size();i++)
+    {
+        std::cout<<f_path[i]<<" ";
+    }
     return priorityQueue.top().first;
 
 }
+//std::vector<int> PathFinders::NBF(int src) {
+//    return std::vector<int>temp;
+//}

@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/src.dir/PathFinders.cpp.obj"
   "CMakeFiles/src.dir/MapHandler.cpp.obj"
   "CMakeFiles/src.dir/StructureFactory.cpp.obj"
+  "CMakeFiles/src.dir/Search.cpp.obj"
+  "CMakeFiles/src.dir/CostCalc.cpp.obj"
   "src.pdb"
   "src.exe"
   "src.exe.manifest"

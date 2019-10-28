@@ -83,6 +83,12 @@
 		<Unit filename="C:/Algorithms/Lab3/src/Algorithm.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="C:/Algorithms/Lab3/src/CostCalc.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Algorithms/Lab3/src/CostCalc.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="C:/Algorithms/Lab3/src/FileLoader.cpp">
 			<Option target="src"/>
 		</Unit>
@@ -99,6 +105,9 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="C:/Algorithms/Lab3/src/PathFinders.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Algorithms/Lab3/src/Search.cpp">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="C:/Algorithms/Lab3/src/Search.h">

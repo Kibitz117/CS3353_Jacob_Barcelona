@@ -15,4 +15,7 @@ add_executable(src main.cpp
         Algorithm.h
         StructureFactory.h
         StructureFactory.cpp
+        Search.cpp
+        CostCalc.cpp
+        CostCalc.h
         )

@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Algorithms/Lab3/src/CostCalc.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/CostCalc.cpp.obj"
   "C:/Algorithms/Lab3/src/FileLoader.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/FileLoader.cpp.obj"
   "C:/Algorithms/Lab3/src/MapHandler.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/MapHandler.cpp.obj"
   "C:/Algorithms/Lab3/src/PathFinders.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/PathFinders.cpp.obj"
+  "C:/Algorithms/Lab3/src/Search.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/Search.cpp.obj"
   "C:/Algorithms/Lab3/src/StructureFactory.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/StructureFactory.cpp.obj"
   "C:/Algorithms/Lab3/src/main.cpp" "C:/Algorithms/Lab3/src/cmake-build-debug/CMakeFiles/src.dir/main.cpp.obj"
   )

@@ -3,9 +3,8 @@
 //
 
 #include "StructureFactory.h"
-StructureHandler* StructureFactory::Create(StructureFactory::structure_type) {
+StructureHandler* StructureFactory::Create(int i) {
     StructureHandler* pStruct;
-    int i;
     switch (i)
     {
         case StructureFactory::MAP:

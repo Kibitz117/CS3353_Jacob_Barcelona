@@ -10,11 +10,13 @@
 #include <queue>
 #include <algorithm>
 #include <cmath>
-#include "CostCalc.cpp"
+#include "CostCalc.h"
+#include <iostream>
 class PathFinders {
 public:
-std::vector<int>NBF(int src);
-std::vector<int>DP();
+    std::vector<int>(PathFinders::*PathAlgo)(int);
+ std::vector<int>NBF(int src);
+ std::vector<int>DP(int src);
     struct compare{
         bool operator()(const std::pair<std::vector<int>,float>&l,const std::pair<std::vector<int>,float>&r)
         {
@@ -23,7 +25,7 @@ std::vector<int>DP();
     };
 
 private:
-    std::map<int,std::vector<float>>node_map;
+     std::map<int,std::vector<float>>node_map;
 
 };
 

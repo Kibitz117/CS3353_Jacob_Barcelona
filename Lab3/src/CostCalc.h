@@ -5,8 +5,9 @@
 #ifndef SRC_COSTCALC_H
 #define SRC_COSTCALC_H
 
-#include <vector>
 #include <map>
+#include <vector>
+#include <cmath>
 class CostCalc {
 public:
 static float calcPathCost(const std::vector<int>&,std::map<int,std::vector<float>>&);

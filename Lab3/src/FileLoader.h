@@ -12,11 +12,9 @@
 #include "StructureFactory.h"
 class FileLoader {
 public:
- void load(const std::string& path,int select_structure);
+void load(const std::string& path,int select_structure,StructureHandler*&);
  void output(std::vector<int>&path,std::string& filepath);
-
 private:
-StructureHandler*structure_type;
 };
 
 
