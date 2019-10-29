@@ -18,3 +18,6 @@ void MapHandler::addLine(std::string line) {
     node_map[node].push_back(z);
     tokens.clear();
 }
+std::map<int,std::vector<float>>& MapHandler::getMap() {
+    return node_map;
+}

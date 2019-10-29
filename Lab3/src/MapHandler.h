@@ -12,6 +12,7 @@
 class MapHandler: public StructureHandler {
 public:
  virtual void addLine(std::string s);
+ std::map<int,std::vector<float>>&getMap();
 
 private:
     std::map<int,std::vector<float>>node_map;

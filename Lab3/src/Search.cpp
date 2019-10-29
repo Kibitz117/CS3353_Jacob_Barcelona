@@ -4,11 +4,12 @@
 #include "Search.h"
 void Search::Load(std::string path, int structure) {
     FileLoader loader;
-s=loader.load("C:\\Algorithms\\Lab3\\src\\cmake-build-debug\\positions.txt",0);
+s=loader.load("C:\\Algorithms\\Lab3\\src\\cmake-build-debug\\positions.txt",structure);
+if(structure==0)
+{
+    map= dynamic_cast<MapHandler *>(s);
 
-
-
-}
+}p.setMap(map->getMap());}
 void Search::Execute(int src) {
     (p.*(p.PathAlgo))(src);
 }

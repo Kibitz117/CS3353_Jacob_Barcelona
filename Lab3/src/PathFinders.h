@@ -15,7 +15,7 @@
 #include "StructureHandler.h"
 class PathFinders {
 public:
-    void setMap(StructureHandler*);
+    void setMap(std::map<int,std::vector<float>>&);
     std::vector<int>(PathFinders::*PathAlgo)(int);
  std::vector<int>NBF(int src);
  std::vector<int>DP(int src);
