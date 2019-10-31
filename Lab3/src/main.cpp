@@ -1,6 +1,7 @@
 #include <iostream>
 #include "FileLoader.h"
 #include "Search.h"
+
 int main() {
    // FileLoader::load("C:\\Algorithms\\Lab3\\src\\cmake-build-debug\\positions.txt",0);
    Search s;

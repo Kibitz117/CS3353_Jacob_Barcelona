@@ -10,7 +10,7 @@
 #include <cmath>
 class CostCalc {
 public:
-static float calcPathCost(const std::vector<int>&,std::map<int,std::vector<float>>&);
+static float calcPathCost(const std::vector<int>&,std::map<int,std::vector<float>>&,int src);
 };
 
 
