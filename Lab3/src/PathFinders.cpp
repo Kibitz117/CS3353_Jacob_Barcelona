@@ -40,3 +40,57 @@ std::vector<int> PathFinders::NBF(int src) {
 
 }
 
+float PathFinders::DP(int mask, int src) {
+    if(src==1)
+    {
+        //Initalizes the distances between all nodes
+        this->makeDistances();
+        //Initializes matrix setting all to negative 1
+        for(int i=0;i<(1<<n);i++){
+            for(int j=0;j<n;j++){
+                dp[i][j] = -1;
+            }
+        }
+    }
+    //Checks if visited all nodes
+    if(mask==VISITED_ALL){
+        return dist[src][0];
+    }
+    //Checks if node has been visited
+    if(dp[mask][src]!=-1){
+        return dp[mask][src];
+    }
+
+    //Now from current node, we will try to go to every other node and take the min ans
+    float ans = INT_MAX;
+
+    //Visit all the unvisited cities and take the best route
+    for(int city=0;city<n;city++) {
+
+        if ((mask & (1 << city)) == 0) {
+            float newAns = dist[src][city] + DP(mask | (1 << city), city);
+            if (newAns < ans) {
+                ans = newAns;
+                //std::cout<<src<<" ";
+            }
+        }
+
+    }
+    return dp[mask][src] = ans;
+}
+std::vector<int> PathFinders::Dynamic(int src) {
+    std::vector<int>path;
+    float distance=this->DP(1,src);
+    std::cout<<"Shortest path is"<<distance<<std::endl;
+    return path;
+
+}
+void PathFinders::makeDistances() {
+    for(int i=0;i<n;i++)
+    {
+        for(int z=0;z<n;z++)
+        {
+            dist[i][z]=CostCalc::distance((i+1),(z+1),node_map);
+        }
+    }
+}

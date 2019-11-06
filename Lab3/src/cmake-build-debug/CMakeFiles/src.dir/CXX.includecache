@@ -16,10 +16,6 @@ algorithm
 chrono
 -
 
-C:/Algorithms/Lab3/src/CostCalc.cpp
-CostCalc.h
-C:/Algorithms/Lab3/src/CostCalc.h
-
 C:/Algorithms/Lab3/src/CostCalc.h
 map
 -
@@ -50,10 +46,6 @@ C:/Algorithms/Lab3/src/StructureHandler.h
 sstream
 -
 
-C:/Algorithms/Lab3/src/PathFinders.cpp
-PathFinders.h
-C:/Algorithms/Lab3/src/PathFinders.h
-
 C:/Algorithms/Lab3/src/PathFinders.h
 map
 -
@@ -72,10 +64,6 @@ iostream
 StructureHandler.h
 C:/Algorithms/Lab3/src/StructureHandler.h
 
-C:/Algorithms/Lab3/src/Search.cpp
-Search.h
-C:/Algorithms/Lab3/src/Search.h
-
 C:/Algorithms/Lab3/src/Search.h
 fstream
 -
@@ -91,14 +79,10 @@ PathFinders.h
 C:/Algorithms/Lab3/src/PathFinders.h
 FileLoader.h
 C:/Algorithms/Lab3/src/FileLoader.h
-StructureHandler.h
-C:/Algorithms/Lab3/src/StructureHandler.h
 
 C:/Algorithms/Lab3/src/StructureFactory.h
 MapHandler.h
 C:/Algorithms/Lab3/src/MapHandler.h
-StructureHandler.h
-C:/Algorithms/Lab3/src/StructureHandler.h
 
 C:/Algorithms/Lab3/src/StructureHandler.h
 string

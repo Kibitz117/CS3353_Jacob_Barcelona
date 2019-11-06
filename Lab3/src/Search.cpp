@@ -10,8 +10,9 @@ if(structure==0)
     map= dynamic_cast<MapHandler *>(s);
 
 }p.setMap(map->getMap());}
-void Search::Execute(int src) {
-    (p.*(p.PathAlgo))(src);
+void Search::Execute(int src,int mask) {
+   (p.*(p.PathAlgo))(src);
+
 }
 void Search::Stats(int algo) {
 
@@ -33,7 +34,8 @@ void Search::Select(int i) {
     }
     else if(i==DP)
     {
-//       p.PathAlgo=&PathFinders::DP;
+     p.PathAlgo=&PathFinders::Dynamic;
+
     }
     else{
     p.PathAlgo=nullptr;

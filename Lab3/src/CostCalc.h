@@ -11,6 +11,7 @@
 class CostCalc {
 public:
 static float calcPathCost(const std::vector<int>&,std::map<int,std::vector<float>>&,int src);
+static float distance(int src,int dest,std::map<int,std::vector<float>>&node_map);
 };
 
 

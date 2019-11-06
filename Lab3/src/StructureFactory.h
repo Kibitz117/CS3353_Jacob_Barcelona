@@ -6,7 +6,6 @@
 #define SRC_STRUCTUREFACTORY_H
 
 #include "MapHandler.h"
-#include "StructureHandler.h"
 
 class StructureFactory {
 public:

@@ -11,11 +11,10 @@
 #include <sstream>
 #include "PathFinders.h"
 #include "FileLoader.h"
-#include "StructureHandler.h"
 class Search: public Algorithm{
 public:
 virtual void  Load(std::string,int);
-virtual void Execute(int);//Running switch statement
+virtual void Execute(int,int);//Running switch statement
 virtual void Display();
 virtual void Stats(int algo);
 virtual void Select(int);//Select active algorithm
