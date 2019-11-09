@@ -30,67 +30,80 @@ std::vector<int> PathFinders::NBF(int src) {
         //Keep looping until no more permutations exist
     }while(std::next_permutation(path.begin(),path.end()));
     std::vector<int>f_path=priorityQueue.top().first;
-    std::cout<<src<<" ";
-    for(int i=0;i<f_path.size();i++)
-    {
-        std::cout<<f_path[i]<<" ";
-    }
-    std::cout<<src<<std::endl;
+    cost= priorityQueue.top().second;
     return priorityQueue.top().first;
 
 }
-
-float PathFinders::DP(int mask, int src) {
-    if(src==1)
-    {
-        //Initalizes the distances between all nodes
-        this->makeDistances();
-        //Initializes matrix setting all to negative 1
-        for(int i=0;i<(1<<n);i++){
-            for(int j=0;j<n;j++){
-                dp[i][j] = -1;
-            }
-        }
-    }
-    //Checks if visited all nodes
-    if(mask==VISITED_ALL){
-        return dist[src][0];
-    }
-    //Checks if node has been visited
-    if(dp[mask][src]!=-1){
-        return dp[mask][src];
-    }
-
-    //Now from current node, we will try to go to every other node and take the min ans
-    float ans = INT_MAX;
-
-    //Visit all the unvisited cities and take the best route
-    for(int city=0;city<n;city++) {
-
-        if ((mask & (1 << city)) == 0) {
-            float newAns = dist[src][city] + DP(mask | (1 << city), city);
-            if (newAns < ans) {
-                ans = newAns;
-                //std::cout<<src<<" ";
-            }
-        }
-
-    }
-    return dp[mask][src] = ans;
-}
 std::vector<int> PathFinders::Dynamic(int src) {
+    int n=node_map.size();
     std::vector<int>path;
-    float distance=this->DP(1,src);
-    std::cout<<"Shortest path is"<<distance<<std::endl;
+    std::vector<int>middle;
+   // this->makeDistances(n);
+   path.push_back(src);
+    for(int i=2;i<=n;i++)
+    {
+        middle.push_back(i);
+    }
+    float distance=this->DP(src,src,middle,path);
+    path.push_back(src);
+    cost=distance;
     return path;
 
 }
-void PathFinders::makeDistances() {
-    for(int i=0;i<n;i++)
+float PathFinders::DP(int src,int dest,std::vector<int>middle,std::vector<int>&path) {
+
+    if(middle.empty())
     {
-        for(int z=0;z<n;z++)
-        {
-            dist[i][z]=CostCalc::distance((i+1),(z+1),node_map);
-        }
+        return CostCalc::distance(src,dest,node_map);
     }
+    else{
+        std::vector<float>sum;
+        for(int i=0;i<middle.size();i++)
+        {
+            std::vector<int>temp=middle;
+            temp.erase(temp.begin()+i);
+            float min=1000;
+            int minindex=0;
+            for(int a=2;a<=node_map.size();a++)
+            {
+                if(CostCalc::distance(src,a,node_map)<min)
+                {
+                    min=CostCalc::distance(src,a,node_map);
+                    minindex=a;
+                }
+            }
+            if(!(std::count(path.begin(),path.end(),minindex)))
+            {
+                path.push_back(minindex);
+            }
+//            if(path.size()==node_map.size())
+//            {
+//                middle.clear();
+//                path.erase(path.begin());
+//                float cost=CostCalc::calcPathCost(path,node_map,1);
+//                return cost;
+//            }
+
+            sum.push_back(CostCalc::distance(src,middle[i],node_map)+DP(middle[i],dest,temp,path));
+        }
+        float min=1000;
+        for(int i=0;i<sum.size();i++)
+        {
+            if(sum[i]<min){
+                min=sum[i];
+            }
+        }
+
+        return min;
+    }
+
 }
+//void PathFinders::makeDistances(int n) {
+//    for(int i=0;i<n;i++)
+//    {
+//        for(int z=0;z<n;z++)
+//        {
+//            dist[i][z]=CostCalc::distance((i+1),(z+1),node_map);
+//        }
+//    }
+//}
