@@ -16,6 +16,7 @@
 #define INT_MAX 999999
 class PathFinders {
 public:
+    int step;
     float cost=0;
     void setMap(std::map<int,std::vector<float>>&);
     std::vector<int>(PathFinders::*PathAlgo)(int);
@@ -23,7 +24,6 @@ public:
  std::vector<int>Dynamic(int src);
 
 private:
-    void makeDistances(int n);
     float DP(int src,int dest,std::vector<int>middle,std::vector<int>&path);
      std::map<int,std::vector<float>>node_map;
     float *dist;

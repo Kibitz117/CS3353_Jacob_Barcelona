@@ -7,6 +7,7 @@ void PathFinders::setMap(std::map<int, std::vector<float>> &map) {
     node_map=map;
 }
 std::vector<int> PathFinders::NBF(int src) {
+    step=0;
 
     //Make src and dest same node
     int dest=src;
@@ -28,6 +29,7 @@ std::vector<int> PathFinders::NBF(int src) {
         float cost=CostCalc::calcPathCost(path,node_map,src);
         priorityQueue.push(make_pair(path,cost));
         //Keep looping until no more permutations exist
+        step++;
     }while(std::next_permutation(path.begin(),path.end()));
     std::vector<int>f_path=priorityQueue.top().first;
     cost= priorityQueue.top().second;
@@ -38,7 +40,7 @@ std::vector<int> PathFinders::Dynamic(int src) {
     int n=node_map.size();
     std::vector<int>path;
     std::vector<int>middle;
-   // this->makeDistances(n);
+   step=0;
    path.push_back(src);
     for(int i=2;i<=n;i++)
     {
@@ -54,6 +56,7 @@ float PathFinders::DP(int src,int dest,std::vector<int>middle,std::vector<int>&p
 
     if(middle.empty())
     {
+        step++;
         return CostCalc::distance(src,dest,node_map);
     }
     else{
@@ -76,13 +79,7 @@ float PathFinders::DP(int src,int dest,std::vector<int>middle,std::vector<int>&p
             {
                 path.push_back(minindex);
             }
-//            if(path.size()==node_map.size())
-//            {
-//                middle.clear();
-//                path.erase(path.begin());
-//                float cost=CostCalc::calcPathCost(path,node_map,1);
-//                return cost;
-//            }
+            step++;
 
             sum.push_back(CostCalc::distance(src,middle[i],node_map)+DP(middle[i],dest,temp,path));
         }
@@ -98,12 +95,3 @@ float PathFinders::DP(int src,int dest,std::vector<int>middle,std::vector<int>&p
     }
 
 }
-//void PathFinders::makeDistances(int n) {
-//    for(int i=0;i<n;i++)
-//    {
-//        for(int z=0;z<n;z++)
-//        {
-//            dist[i][z]=CostCalc::distance((i+1),(z+1),node_map);
-//        }
-//    }
-//}

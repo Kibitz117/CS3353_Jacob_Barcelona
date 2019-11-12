@@ -29,7 +29,8 @@ if(algo==NBF)
         std::cout<<path[i]<<" ";
     }
     std::cout<<1<<" "<<std::endl;
-    std::cout<<time<<" ns";
+    std::cout<<time<<" ns"<<std::endl;
+    std::cout<<"Nanoseconds per step "<<p.step;
 }
 else if(algo==DP)
 {
@@ -41,14 +42,20 @@ else if(algo==DP)
         std::cout<<path[i]<<" ";
     }
     std::cout<<std::endl;
-    std::cout<<time<<" ns";
+    std::cout<<time<<" ns"<<std::endl;
+    std::cout<<"Nanoseconds per step "<<p.step;
 }
 }
 void Search::Save(std::string, int, std::string) {
-
+FileLoader loader;
+std::string out="path.txt";
+loader.output(path,out);
 }
 void Search::Display() {
-
+for(int i=0;i<path.size();i++)
+{
+    std::cout<<path[i]<<" ";
+}
 }
 void Search::Configure() {
 
