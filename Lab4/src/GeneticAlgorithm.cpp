@@ -1,7 +1,8 @@
 //
 // Created by jakeb on 11/14/2019.
 //
-//GET RID OF REPEATS
+
+//SOMEWHERE VALUES AREN'T GETTING INTIALIZED MAYBE NEW OPERATOR
 #include "GeneticAlgorithm.h"
 //
 GeneticAlgorithm::GeneticAlgorithm(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map) {
@@ -64,15 +65,20 @@ void GeneticAlgorithm::elitism(Tour&parent) {
     population.erase(population.begin()+high_index);
 }
 
-void GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
+Tour GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
+    Tour child;
     srand(time(NULL));
     int cross_index=(rand() % parent1.getTour().size()-2)+2;
-    std::vector<int>new_parent1;
-    std::vector<int> new_parent2;
+    std::vector<int>new_parent1(parent1.getTour().size());
+    std::vector<int> new_parent2(parent1.getTour().size());
+    int p1_count=0;
+    int p2_count=0;
     //Fills new_parent1 with first half of parent1
     for(int i=0;i<cross_index;i++)
     {
-        new_parent1.push_back(parent1.getTour()[i]);
+       // new_parent1.push_back(parent1.getTour()[i]);
+       new_parent1[p1_count]=parent1.getTour()[i];
+       p1_count++;
     }
     //Fills new_parent1 with second half of parent2
     for(int i=cross_index;i<parent1.getTour().size();i++)
@@ -82,12 +88,18 @@ void GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
 
         }
         else
-        new_parent1.push_back(parent2.getTour()[i]);
+        {
+            new_parent1[p1_count]=parent2.getTour()[i];
+            p1_count++;
+        }
+        //new_parent1.push_back(parent2.getTour()[i]);
     }
     //Fills new_parent2 with first half of parent2
     for(int i=0;i<cross_index;i++)
     {
-        new_parent2.push_back(parent2.getTour()[i]);
+        //new_parent2.push_back(parent2.getTour()[i]);
+        new_parent2[p2_count]=parent2.getTour()[i];
+        p2_count++;
     }
     //Fills new_parent2 with second half of parent1
     for(int i=cross_index;i<parent2.getTour().size();i++)
@@ -97,7 +109,11 @@ void GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
 
         }
         else
-            new_parent2.push_back(parent1.getTour()[i]);
+        {
+            new_parent2[p2_count]=parent1.getTour()[i];
+            p2_count++;
+        }
+            //new_parent2.push_back(parent1.getTour()[i]);
     }
     //Fill in rest of nodes
     for(int i=2;i<=parent1.getTour().size()+1;i++)
@@ -107,17 +123,23 @@ void GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
 
         }
         else{
-            new_parent1.push_back(i);
+            //new_parent1.push_back(i);
+            new_parent1[p1_count]=i;
+            p1_count++;
         }
         if(find(new_parent2.begin(),new_parent2.end(),i)!=new_parent2.end())
         {
 
         }
         else{
-            new_parent2.push_back(i);
+            //new_parent2.push_back(i);
+            new_parent2[p2_count]=i;
+            p2_count++;
         }
 
     }
+    child.setTour(new_parent1);
+    child.calcFitness(src,node_map);
     parent1.setTour(new_parent1);
     parent2.setTour(new_parent2);
     parent1.calcFitness(src,node_map);
@@ -130,6 +152,7 @@ void GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
     {
         global_best=parent2;
     }
+    return child;
 }
 void GeneticAlgorithm::swap_Mutation(Tour &parent1, Tour &parent2) {
     int to_swap1=(rand() % parent1.getTour().size());
@@ -156,14 +179,15 @@ void GeneticAlgorithm::evolve() {
         this->rouletteWheel(parent1);
         this->elitism(parent2);
         //Crossover to create children
-        this->one_Point_Crossover(parent1,parent2);
+        Tour child;
+        child=this->one_Point_Crossover(parent1,parent2);
         //HIGH MUTATION RATE
         if(i%25==0)
         {
-            this->swap_Mutation(parent1,parent2);
+            this->swap_Mutation(child,parent2);
         }
         //Add the children to new parents
-        new_pop.push_back(parent1);
+        new_pop.push_back(child);
     }
     population.clear();
 //    for(int i=0;i<population.size();i++)

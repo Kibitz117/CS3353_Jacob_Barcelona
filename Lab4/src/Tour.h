@@ -10,7 +10,7 @@
 class Tour {
 public:
     Tour();
-    std::vector<int> getTour();
+    std::vector<int>& getTour();
     void generateTour(std::vector<int>tour);
     float getFitness();
     void setProbability(int sum);

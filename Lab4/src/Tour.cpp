@@ -12,7 +12,7 @@ std::random_shuffle(tour.begin(),tour.end());
 this->tour=tour;
 }
 //Returns path for tsp
-std::vector<int> Tour::getTour() {
+std::vector<int>& Tour::getTour() {
     return tour;
 }
 //Gets fitness rating for path

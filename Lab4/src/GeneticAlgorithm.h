@@ -34,7 +34,7 @@ public:
         Tour tournament();
     //Crossover
         //One-point
-        void one_Point_Crossover(Tour&,Tour&);
+        Tour one_Point_Crossover(Tour&,Tour&);
         //OX1
         //Multi-point
     //Mutation
