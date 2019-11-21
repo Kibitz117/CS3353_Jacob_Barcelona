@@ -13,9 +13,11 @@
 #include "CostCalc.h"
 #include <iostream>
 #include "StructureHandler.h"
+#include "GeneticAlgorithm.h"
 class travelingsalesAlgos {
 public:
     std::vector<int>(travelingsalesAlgos::*PathAlgo)(int);
+    //Interface to dynamically switch out parts of dynamic programing
 
 
 private:

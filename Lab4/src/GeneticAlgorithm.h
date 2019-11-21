@@ -37,6 +37,7 @@ public:
         Tour one_Point_Crossover(Tour&,Tour&);
         //OX1
         //Multi-point
+        Tour multi_Point_Crossover(Tour&,Tour&);
     //Mutation
         //Bit flip for binary encoded
         void swap_Mutation(Tour&,Tour&);

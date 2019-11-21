@@ -52,7 +52,9 @@ CMakeFiles/src.dir/main.cpp.obj: ../Tour.h
 CMakeFiles/src.dir/main.cpp.obj: ../main.cpp
 
 CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../CostCalc.h
+CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../GeneticAlgorithm.h
 CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../StructureHandler.h
+CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../Tour.h
 CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../travelingsalesAlgos.cpp
 CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../travelingsalesAlgos.h
 

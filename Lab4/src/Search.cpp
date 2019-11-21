@@ -16,7 +16,7 @@ if(structure==0)
    //path=(p.*(p.PathAlgo))(src);
     std::vector<int>path={2,3,4,5,6,7,8};
     GeneticAlgorithm a(src,10,path,node_map);
-    for(int i=0;i<100;i++)
+    for(int i=0;i<1000000;i++)
     {
         a.evolve();
     }

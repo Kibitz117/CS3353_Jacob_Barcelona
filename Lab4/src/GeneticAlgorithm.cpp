@@ -3,6 +3,11 @@
 //
 
 //SOMEWHERE VALUES AREN'T GETTING INTIALIZED MAYBE NEW OPERATOR
+//Something with erasing from vector maybe pair of bool and tour so can't get repeats
+//TRY IF tour[pos]==null fill with leftover value
+//Roulette wheel returning empty tours maybe?
+//Check if population empty tour
+//Tomorrow do tabu search then come back to Genetic
 #include "GeneticAlgorithm.h"
 //
 GeneticAlgorithm::GeneticAlgorithm(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map) {
@@ -45,8 +50,8 @@ void GeneticAlgorithm::rouletteWheel(Tour&parent) {
         randNum+=population[count].getFitness();
         count++;
     }
-    parent=population[count];
-    population.erase(population.begin()+count);
+    parent=population[count-1];
+    //population.erase(population.begin()+count);
 
 }
 void GeneticAlgorithm::elitism(Tour&parent) {
@@ -62,13 +67,13 @@ void GeneticAlgorithm::elitism(Tour&parent) {
             high_index=i;
         }
     }
-    population.erase(population.begin()+high_index);
+    //population.erase(population.begin()+high_index);
 }
 
 Tour GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
     Tour child;
     srand(time(NULL));
-    int cross_index=(rand() % parent1.getTour().size()-2)+2;
+    int cross_index=(rand() % parent1.getTour().size()-2);
     std::vector<int>new_parent1(parent1.getTour().size());
     std::vector<int> new_parent2(parent1.getTour().size());
     int p1_count=0;
