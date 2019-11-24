@@ -11,6 +11,7 @@
 #include <sstream>
 #include "GeneticAlgorithm.h"
 #include "FileLoader.h"
+#include "TabuSearch.h"
 class Search: public Algorithm{
 public:
 virtual void  Load(std::string,int);
@@ -29,7 +30,9 @@ private:
     StructureHandler* s;
     enum Algo{
         NBF=0,
-        DP
+        DP,
+        GA,
+        TABU
     };
     std::map<int,std::vector<float>>node_map;
 

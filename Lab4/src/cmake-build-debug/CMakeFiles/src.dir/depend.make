@@ -14,6 +14,7 @@ CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../CostCalc.h
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../GeneticAlgorithm.cpp
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../GeneticAlgorithm.h
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../StructureHandler.h
+CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../TSPInterface.h
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../Tour.h
 
 CMakeFiles/src.dir/MapHandler.cpp.obj: ../MapHandler.cpp
@@ -29,12 +30,20 @@ CMakeFiles/src.dir/Search.cpp.obj: ../Search.cpp
 CMakeFiles/src.dir/Search.cpp.obj: ../Search.h
 CMakeFiles/src.dir/Search.cpp.obj: ../StructureFactory.h
 CMakeFiles/src.dir/Search.cpp.obj: ../StructureHandler.h
+CMakeFiles/src.dir/Search.cpp.obj: ../TSPInterface.h
+CMakeFiles/src.dir/Search.cpp.obj: ../TabuSearch.h
 CMakeFiles/src.dir/Search.cpp.obj: ../Tour.h
 
 CMakeFiles/src.dir/StructureFactory.cpp.obj: ../MapHandler.h
 CMakeFiles/src.dir/StructureFactory.cpp.obj: ../StructureFactory.cpp
 CMakeFiles/src.dir/StructureFactory.cpp.obj: ../StructureFactory.h
 CMakeFiles/src.dir/StructureFactory.cpp.obj: ../StructureHandler.h
+
+CMakeFiles/src.dir/TabuSearch.cpp.obj: ../CostCalc.h
+CMakeFiles/src.dir/TabuSearch.cpp.obj: ../TSPInterface.h
+CMakeFiles/src.dir/TabuSearch.cpp.obj: ../TabuSearch.cpp
+CMakeFiles/src.dir/TabuSearch.cpp.obj: ../TabuSearch.h
+CMakeFiles/src.dir/TabuSearch.cpp.obj: ../Tour.h
 
 CMakeFiles/src.dir/Tour.cpp.obj: ../CostCalc.h
 CMakeFiles/src.dir/Tour.cpp.obj: ../Tour.cpp
@@ -48,13 +57,8 @@ CMakeFiles/src.dir/main.cpp.obj: ../MapHandler.h
 CMakeFiles/src.dir/main.cpp.obj: ../Search.h
 CMakeFiles/src.dir/main.cpp.obj: ../StructureFactory.h
 CMakeFiles/src.dir/main.cpp.obj: ../StructureHandler.h
+CMakeFiles/src.dir/main.cpp.obj: ../TSPInterface.h
+CMakeFiles/src.dir/main.cpp.obj: ../TabuSearch.h
 CMakeFiles/src.dir/main.cpp.obj: ../Tour.h
 CMakeFiles/src.dir/main.cpp.obj: ../main.cpp
-
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../CostCalc.h
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../GeneticAlgorithm.h
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../StructureHandler.h
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../Tour.h
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../travelingsalesAlgos.cpp
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../travelingsalesAlgos.h
 

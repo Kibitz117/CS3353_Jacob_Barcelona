@@ -159,47 +159,131 @@ Tour GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
     }
     return child;
 }
-void GeneticAlgorithm::swap_Mutation(Tour &parent1, Tour &parent2) {
-    int to_swap1=(rand() % parent1.getTour().size());
-    int to_swap2=(rand() % parent1.getTour().size());
+Tour GeneticAlgorithm::multi_Point_Crossover(Tour &parent1, Tour &parent2) {
+    Tour child;
+    srand(time(NULL));
+    int cross_index=(rand() % parent1.getTour().size()-2);
+    int cross_index2=(rand() % cross_index)+cross_index;
+    std::vector<int>new_parent1(parent1.getTour().size());
+    std::vector<int> new_parent2(parent1.getTour().size());
+    int p1_count=0;
+    int p2_count=0;
+    //Fills new_parent1 with first half of parent1
+    for(int i=0;i<cross_index;i++)
+    {
+        // new_parent1.push_back(parent1.getTour()[i]);
+        new_parent1[p1_count]=parent1.getTour()[i];
+        p1_count++;
+    }
+    //Fills new_parent1 with second half of parent2
+    for(int i=cross_index;i<cross_index2;i++)
+    {
+        if(std::find(new_parent1.begin(),new_parent1.end(),parent2.getTour()[i])!=new_parent1.end())
+        {
+
+        }
+        else
+        {
+            new_parent1[p1_count]=parent2.getTour()[i];
+            p1_count++;
+        }
+        //new_parent1.push_back(parent2.getTour()[i]);
+    }
+    for(int i=cross_index2;i<parent1.getTour().size();i++)
+    {
+        if(std::find(new_parent1.begin(),new_parent1.end(),parent1.getTour()[i])!=new_parent1.end())
+        {
+
+        }
+        else
+        {
+            new_parent1[p1_count]=parent1.getTour()[i];
+            p1_count++;
+        }
+        //new_parent1.push_back(parent2.getTour()[i]);
+    }
+    for(int i=2;i<=parent1.getTour().size()+1;i++)
+    {
+        if(find(new_parent1.begin(),new_parent1.end(),i)!=new_parent1.end())
+        {
+
+        }
+        else{
+            //new_parent1.push_back(i);
+            new_parent1[p1_count]=i;
+            p1_count++;
+        }
+        if(find(new_parent2.begin(),new_parent2.end(),i)!=new_parent2.end())
+        {
+
+        }
+        else{
+            //new_parent2.push_back(i);
+            new_parent2[p2_count]=i;
+            p2_count++;
+        }
+
+    }
+    child.setTour(new_parent1);
+    child.calcFitness(src,node_map);
+    parent1.setTour(new_parent1);
+    parent2.setTour(new_parent2);
+    parent1.calcFitness(src,node_map);
+    if(parent1.getCost()<global_best.getCost())
+    {
+        global_best=parent1;
+    }
+    parent2.calcFitness(src,node_map);
+    if(parent2.getCost()<global_best.getCost())
+    {
+        global_best=parent2;
+    }
+    return child;
+}
+void GeneticAlgorithm::swap_Mutation(Tour &child) {
+    int to_swap1=(rand() % child.getTour().size());
+    int to_swap2=(rand() % child.getTour().size());
 //   std::swap(parent1.getTour()[to_swap1],parent1.getTour()[to_swap2]);
 //    std::swap(parent2.getTour()[to_swap1],parent1.getTour()[to_swap2]);
-std::iter_swap(parent1.getTour().begin()+to_swap1,parent1.getTour().begin()+to_swap2);
-    std::iter_swap(parent2.getTour().begin()+to_swap1,parent2.getTour().begin()+to_swap2);
+std::iter_swap(child.getTour().begin()+to_swap1,child.getTour().begin()+to_swap2);
 }
-void GeneticAlgorithm::evolve() {
+void GeneticAlgorithm::evolve(int num_times) {
     //Update global best to see if getting better paths
     //Also make tours save cost so you can see evolution
-    for(int i=0;i<global_best.getTour().size();i++)
+    int run=0;
+    while(run<num_times)
     {
-        std::cout<<global_best.getTour()[i]<<" ";
-    }
-    std::cout<<"    "<<global_best.getCost()<<std::endl;
-    std::vector<Tour>new_pop;
-    new_pop.reserve(population.size());
-    for(int i=0;i<population.size();i++)
-    {
-        Tour parent1;
-        Tour parent2;
-        this->rouletteWheel(parent1);
-        this->elitism(parent2);
-        //Crossover to create children
-        Tour child;
-        child=this->one_Point_Crossover(parent1,parent2);
-        //HIGH MUTATION RATE
-        if(i%25==0)
+        for(int i=0;i<global_best.getTour().size();i++)
         {
-            this->swap_Mutation(child,parent2);
+            std::cout<<global_best.getTour()[i]<<" ";
         }
-        //Add the children to new parents
-        new_pop.push_back(child);
-    }
-    population.clear();
+        std::cout<<"    "<<global_best.getCost()<<std::endl;
+        std::vector<Tour>new_pop;
+        new_pop.reserve(population.size());
+        for(int i=0;i<population.size();i++)
+        {
+            Tour parent1;
+            Tour parent2;
+            this->rouletteWheel(parent1);
+            this->elitism(parent2);
+            //Crossover to create children
+            Tour child;
+            //child=this->one_Point_Crossover(parent1,parent2);
+            child=this->multi_Point_Crossover(parent1,parent2);
+            //HIGH MUTATION RATE
+            if(i%25==0)
+            {
+                this->swap_Mutation(child);
+            }
+            //Add the children to new parents
+            new_pop.push_back(child);
+        }
+        population.clear();
 //    for(int i=0;i<population.size();i++)
 //    {
 //        population.push_back(new_pop[i]);
 //    }
-population=new_pop;
+        population=new_pop;
 
 //    for(int i=0;i<new_pop.size();i++)
 //    {
@@ -209,6 +293,8 @@ population=new_pop;
 //        }
 //        std::cout<<new_pop[i].getFitness()<<std::endl;
 //    }
+    }
+
 
 
 }

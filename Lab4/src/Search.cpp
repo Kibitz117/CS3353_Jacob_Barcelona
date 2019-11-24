@@ -14,17 +14,28 @@ if(structure==0)
  void Search::Execute(int src) {
     auto start_time = std::chrono::high_resolution_clock::now();
    //path=(p.*(p.PathAlgo))(src);
-    std::vector<int>path={2,3,4,5,6,7,8};
-    GeneticAlgorithm a(src,10,path,node_map);
-    for(int i=0;i<1000000;i++)
-    {
-        a.evolve();
-    }
+    std::vector<int>path={2,3,4,5,6,7,8,9,10,11};
+//    TabuSearch t(src,10000,path,node_map);
+//    t.Execute(10000);
+
+    GeneticAlgorithm a(src,1000,path,node_map);
+        a.evolve(1000);
+
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
 
 }
 void Search::Stats(int algo) {
+    if(algo==GA)
+    {
+        std::cout<<"Genetic Algorithm"<<std::endl;
+        std::cout<<time<<" ns"<<std::endl;
+    }
+    else if(algo==TABU)
+    {
+        std::cout<<"Tabu Search"<<std::endl;
+        std::cout<<time<<" ns"<<std::endl;
+    }
 //if(algo==NBF)
 //{
 //    std::cout<<"Brute Force"<<std::endl;

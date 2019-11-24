@@ -122,6 +122,15 @@
 		<Unit filename="C:/Algorithms/Lab4/src/StructureHandler.h">
 			<Option target="src"/>
 		</Unit>
+		<Unit filename="C:/Algorithms/Lab4/src/TSPInterface.h">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Algorithms/Lab4/src/TabuSearch.cpp">
+			<Option target="src"/>
+		</Unit>
+		<Unit filename="C:/Algorithms/Lab4/src/TabuSearch.h">
+			<Option target="src"/>
+		</Unit>
 		<Unit filename="C:/Algorithms/Lab4/src/Tour.cpp">
 			<Option target="src"/>
 		</Unit>
@@ -129,12 +138,6 @@
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="C:/Algorithms/Lab4/src/main.cpp">
-			<Option target="src"/>
-		</Unit>
-		<Unit filename="C:/Algorithms/Lab4/src/travelingsalesAlgos.cpp">
-			<Option target="src"/>
-		</Unit>
-		<Unit filename="C:/Algorithms/Lab4/src/travelingsalesAlgos.h">
 			<Option target="src"/>
 		</Unit>
 		<Unit filename="C:/Algorithms/Lab4/src/CMakeLists.txt">

@@ -41,6 +41,20 @@ void Tour::operator=(const Tour &tour) {
     this->cost=tour.cost;
     this->probability=tour.probability;
 }
+bool Tour::operator==(const Tour &tour)const {
+
+    if(this->cost==tour.cost&&this->tour==tour.tour)
+    {
+        return true;
+    }
+    return false;
+}
 void Tour::setTour(std::vector<int> &path) {
     this->tour=path;
+}
+void Tour::swap(int i, int x,std::map<int,std::vector<float>>node_map) {
+    int temp=tour[i];
+    tour[i]=tour[x];
+    tour[x]=temp;
+    calcFitness(1,node_map);
 }

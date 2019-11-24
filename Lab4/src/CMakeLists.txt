@@ -16,9 +16,10 @@ add_executable(src main.cpp
         StructureFactory.h
         StructureFactory.cpp
         StructureHandler.h
-        travelingsalesAlgos.h
-        travelingsalesAlgos.cpp
         GeneticAlgorithm.h
         GeneticAlgorithm.cpp
         Tour.h
-        Tour.cpp)
+        Tour.cpp
+        TabuSearch.cpp
+        TabuSearch.h
+        TSPInterface.h)

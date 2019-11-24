@@ -5,6 +5,7 @@
 #ifndef SRC_GENETICALGORITHM_H
 #define SRC_GENETICALGORITHM_H
 
+#include "TSPInterface.h"
 #include <map>
 #include <vector>
 #include <queue>
@@ -16,7 +17,7 @@
 #include "Tour.h"
 #include <cstdlib>
 #include <ctime>
-class GeneticAlgorithm {
+class GeneticAlgorithm:public TSPInterface {
     //Elitism at first
     //STORE GLOBAL BESTS
     //Look at costs
@@ -24,6 +25,7 @@ class GeneticAlgorithm {
     //Look at better algos
 
 public:
+    void Run(int);
     GeneticAlgorithm(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map);
     //Execute(int src,node_map/vector path,int generations)
     //Selection
@@ -40,11 +42,11 @@ public:
         Tour multi_Point_Crossover(Tour&,Tour&);
     //Mutation
         //Bit flip for binary encoded
-        void swap_Mutation(Tour&,Tour&);
+        void swap_Mutation(Tour&);
         //Swap mutation two positions
 
         //Evolve population
-        void evolve();
+        void evolve(int num_times);
 private:
     void setMap(std::map<int,std::vector<float>>&node_map);
     std::vector<Tour>population;

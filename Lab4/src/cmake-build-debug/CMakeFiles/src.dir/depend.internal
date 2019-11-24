@@ -15,6 +15,7 @@ CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj
  C:/Algorithms/Lab4/src/GeneticAlgorithm.cpp
  C:/Algorithms/Lab4/src/GeneticAlgorithm.h
  C:/Algorithms/Lab4/src/StructureHandler.h
+ C:/Algorithms/Lab4/src/TSPInterface.h
  C:/Algorithms/Lab4/src/Tour.h
 CMakeFiles/src.dir/MapHandler.cpp.obj
  C:/Algorithms/Lab4/src/MapHandler.cpp
@@ -30,12 +31,20 @@ CMakeFiles/src.dir/Search.cpp.obj
  C:/Algorithms/Lab4/src/Search.h
  C:/Algorithms/Lab4/src/StructureFactory.h
  C:/Algorithms/Lab4/src/StructureHandler.h
+ C:/Algorithms/Lab4/src/TSPInterface.h
+ C:/Algorithms/Lab4/src/TabuSearch.h
  C:/Algorithms/Lab4/src/Tour.h
 CMakeFiles/src.dir/StructureFactory.cpp.obj
  C:/Algorithms/Lab4/src/MapHandler.h
  C:/Algorithms/Lab4/src/StructureFactory.cpp
  C:/Algorithms/Lab4/src/StructureFactory.h
  C:/Algorithms/Lab4/src/StructureHandler.h
+CMakeFiles/src.dir/TabuSearch.cpp.obj
+ C:/Algorithms/Lab4/src/CostCalc.h
+ C:/Algorithms/Lab4/src/TSPInterface.h
+ C:/Algorithms/Lab4/src/TabuSearch.cpp
+ C:/Algorithms/Lab4/src/TabuSearch.h
+ C:/Algorithms/Lab4/src/Tour.h
 CMakeFiles/src.dir/Tour.cpp.obj
  C:/Algorithms/Lab4/src/CostCalc.h
  C:/Algorithms/Lab4/src/Tour.cpp
@@ -49,12 +58,7 @@ CMakeFiles/src.dir/main.cpp.obj
  C:/Algorithms/Lab4/src/Search.h
  C:/Algorithms/Lab4/src/StructureFactory.h
  C:/Algorithms/Lab4/src/StructureHandler.h
+ C:/Algorithms/Lab4/src/TSPInterface.h
+ C:/Algorithms/Lab4/src/TabuSearch.h
  C:/Algorithms/Lab4/src/Tour.h
  C:/Algorithms/Lab4/src/main.cpp
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj
- C:/Algorithms/Lab4/src/CostCalc.h
- C:/Algorithms/Lab4/src/GeneticAlgorithm.h
- C:/Algorithms/Lab4/src/StructureHandler.h
- C:/Algorithms/Lab4/src/Tour.h
- C:/Algorithms/Lab4/src/travelingsalesAlgos.cpp
- C:/Algorithms/Lab4/src/travelingsalesAlgos.h

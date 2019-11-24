@@ -134,22 +134,9 @@ CMakeFiles/src.dir/StructureFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/StructureFactory.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\StructureFactory.cpp -o CMakeFiles\src.dir\StructureFactory.cpp.s
 
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: CMakeFiles/src.dir/flags.make
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj: ../travelingsalesAlgos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\travelingsalesAlgos.cpp.obj -c C:\Algorithms\Lab4\src\travelingsalesAlgos.cpp
-
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/travelingsalesAlgos.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\travelingsalesAlgos.cpp > CMakeFiles\src.dir\travelingsalesAlgos.cpp.i
-
-CMakeFiles/src.dir/travelingsalesAlgos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/travelingsalesAlgos.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\travelingsalesAlgos.cpp -o CMakeFiles\src.dir\travelingsalesAlgos.cpp.s
-
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../GeneticAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\GeneticAlgorithm.cpp.obj -c C:\Algorithms\Lab4\src\GeneticAlgorithm.cpp
 
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.i: cmake_force
@@ -162,7 +149,7 @@ CMakeFiles/src.dir/GeneticAlgorithm.cpp.s: cmake_force
 
 CMakeFiles/src.dir/Tour.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/Tour.cpp.obj: ../Tour.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/src.dir/Tour.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/src.dir/Tour.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\Tour.cpp.obj -c C:\Algorithms\Lab4\src\Tour.cpp
 
 CMakeFiles/src.dir/Tour.cpp.i: cmake_force
@@ -173,6 +160,19 @@ CMakeFiles/src.dir/Tour.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Tour.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\Tour.cpp -o CMakeFiles\src.dir\Tour.cpp.s
 
+CMakeFiles/src.dir/TabuSearch.cpp.obj: CMakeFiles/src.dir/flags.make
+CMakeFiles/src.dir/TabuSearch.cpp.obj: ../TabuSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/src.dir/TabuSearch.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\TabuSearch.cpp.obj -c C:\Algorithms\Lab4\src\TabuSearch.cpp
+
+CMakeFiles/src.dir/TabuSearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/TabuSearch.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\TabuSearch.cpp > CMakeFiles\src.dir\TabuSearch.cpp.i
+
+CMakeFiles/src.dir/TabuSearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/TabuSearch.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\TabuSearch.cpp -o CMakeFiles\src.dir\TabuSearch.cpp.s
+
 # Object files for target src
 src_OBJECTS = \
 "CMakeFiles/src.dir/main.cpp.obj" \
@@ -181,9 +181,9 @@ src_OBJECTS = \
 "CMakeFiles/src.dir/Search.cpp.obj" \
 "CMakeFiles/src.dir/MapHandler.cpp.obj" \
 "CMakeFiles/src.dir/StructureFactory.cpp.obj" \
-"CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj" \
 "CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj" \
-"CMakeFiles/src.dir/Tour.cpp.obj"
+"CMakeFiles/src.dir/Tour.cpp.obj" \
+"CMakeFiles/src.dir/TabuSearch.cpp.obj"
 
 # External object files for target src
 src_EXTERNAL_OBJECTS =
@@ -194,9 +194,9 @@ src.exe: CMakeFiles/src.dir/FileLoader.cpp.obj
 src.exe: CMakeFiles/src.dir/Search.cpp.obj
 src.exe: CMakeFiles/src.dir/MapHandler.cpp.obj
 src.exe: CMakeFiles/src.dir/StructureFactory.cpp.obj
-src.exe: CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj
 src.exe: CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj
 src.exe: CMakeFiles/src.dir/Tour.cpp.obj
+src.exe: CMakeFiles/src.dir/TabuSearch.cpp.obj
 src.exe: CMakeFiles/src.dir/build.make
 src.exe: CMakeFiles/src.dir/linklibs.rsp
 src.exe: CMakeFiles/src.dir/objects1.rsp

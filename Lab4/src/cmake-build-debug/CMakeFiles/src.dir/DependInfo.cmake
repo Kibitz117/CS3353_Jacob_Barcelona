@@ -10,9 +10,9 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Algorithms/Lab4/src/MapHandler.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/MapHandler.cpp.obj"
   "C:/Algorithms/Lab4/src/Search.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/Search.cpp.obj"
   "C:/Algorithms/Lab4/src/StructureFactory.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/StructureFactory.cpp.obj"
+  "C:/Algorithms/Lab4/src/TabuSearch.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/TabuSearch.cpp.obj"
   "C:/Algorithms/Lab4/src/Tour.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/Tour.cpp.obj"
   "C:/Algorithms/Lab4/src/main.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/main.cpp.obj"
-  "C:/Algorithms/Lab4/src/travelingsalesAlgos.cpp" "C:/Algorithms/Lab4/src/cmake-build-debug/CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

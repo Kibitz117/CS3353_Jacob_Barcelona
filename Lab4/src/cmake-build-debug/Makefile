@@ -284,6 +284,33 @@ StructureFactory.cpp.s:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/StructureFactory.cpp.s
 .PHONY : StructureFactory.cpp.s
 
+TabuSearch.obj: TabuSearch.cpp.obj
+
+.PHONY : TabuSearch.obj
+
+# target to build an object file
+TabuSearch.cpp.obj:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/TabuSearch.cpp.obj
+.PHONY : TabuSearch.cpp.obj
+
+TabuSearch.i: TabuSearch.cpp.i
+
+.PHONY : TabuSearch.i
+
+# target to preprocess a source file
+TabuSearch.cpp.i:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/TabuSearch.cpp.i
+.PHONY : TabuSearch.cpp.i
+
+TabuSearch.s: TabuSearch.cpp.s
+
+.PHONY : TabuSearch.s
+
+# target to generate assembly for a file
+TabuSearch.cpp.s:
+	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/TabuSearch.cpp.s
+.PHONY : TabuSearch.cpp.s
+
 Tour.obj: Tour.cpp.obj
 
 .PHONY : Tour.obj
@@ -338,33 +365,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-travelingsalesAlgos.obj: travelingsalesAlgos.cpp.obj
-
-.PHONY : travelingsalesAlgos.obj
-
-# target to build an object file
-travelingsalesAlgos.cpp.obj:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/travelingsalesAlgos.cpp.obj
-.PHONY : travelingsalesAlgos.cpp.obj
-
-travelingsalesAlgos.i: travelingsalesAlgos.cpp.i
-
-.PHONY : travelingsalesAlgos.i
-
-# target to preprocess a source file
-travelingsalesAlgos.cpp.i:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/travelingsalesAlgos.cpp.i
-.PHONY : travelingsalesAlgos.cpp.i
-
-travelingsalesAlgos.s: travelingsalesAlgos.cpp.s
-
-.PHONY : travelingsalesAlgos.s
-
-# target to generate assembly for a file
-travelingsalesAlgos.cpp.s:
-	$(MAKE) -f CMakeFiles\src.dir\build.make CMakeFiles/src.dir/travelingsalesAlgos.cpp.s
-.PHONY : travelingsalesAlgos.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -392,15 +392,15 @@ help:
 	@echo ... StructureFactory.obj
 	@echo ... StructureFactory.i
 	@echo ... StructureFactory.s
+	@echo ... TabuSearch.obj
+	@echo ... TabuSearch.i
+	@echo ... TabuSearch.s
 	@echo ... Tour.obj
 	@echo ... Tour.i
 	@echo ... Tour.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... travelingsalesAlgos.obj
-	@echo ... travelingsalesAlgos.i
-	@echo ... travelingsalesAlgos.s
 .PHONY : help
 
 
