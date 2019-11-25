@@ -247,7 +247,7 @@ void GeneticAlgorithm::swap_Mutation(Tour &child) {
 //    std::swap(parent2.getTour()[to_swap1],parent1.getTour()[to_swap2]);
 std::iter_swap(child.getTour().begin()+to_swap1,child.getTour().begin()+to_swap2);
 }
-void GeneticAlgorithm::evolve(int num_times) {
+void GeneticAlgorithm::Run(int num_times) {
     //Update global best to see if getting better paths
     //Also make tours save cost so you can see evolution
     int run=0;

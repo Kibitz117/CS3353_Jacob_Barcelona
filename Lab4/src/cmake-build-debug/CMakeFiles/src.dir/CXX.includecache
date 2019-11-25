@@ -36,10 +36,6 @@ sstream
 StructureFactory.h
 C:/Algorithms/Lab4/src/StructureFactory.h
 
-C:/Algorithms/Lab4/src/GeneticAlgorithm.cpp
-GeneticAlgorithm.h
-C:/Algorithms/Lab4/src/GeneticAlgorithm.h
-
 C:/Algorithms/Lab4/src/GeneticAlgorithm.h
 TSPInterface.h
 C:/Algorithms/Lab4/src/TSPInterface.h
@@ -76,10 +72,6 @@ C:/Algorithms/Lab4/src/StructureHandler.h
 sstream
 -
 
-C:/Algorithms/Lab4/src/Search.cpp
-Search.h
-C:/Algorithms/Lab4/src/Search.h
-
 C:/Algorithms/Lab4/src/Search.h
 fstream
 -
@@ -97,6 +89,8 @@ FileLoader.h
 C:/Algorithms/Lab4/src/FileLoader.h
 TabuSearch.h
 C:/Algorithms/Lab4/src/TabuSearch.h
+TSPInterface.h
+C:/Algorithms/Lab4/src/TSPInterface.h
 
 C:/Algorithms/Lab4/src/StructureFactory.h
 MapHandler.h
@@ -107,12 +101,6 @@ string
 -
 
 C:/Algorithms/Lab4/src/TSPInterface.h
-
-C:/Algorithms/Lab4/src/TabuSearch.cpp
-iostream
--
-TabuSearch.h
-C:/Algorithms/Lab4/src/TabuSearch.h
 
 C:/Algorithms/Lab4/src/TabuSearch.h
 TSPInterface.h

@@ -14,12 +14,9 @@ if(structure==0)
  void Search::Execute(int src) {
     auto start_time = std::chrono::high_resolution_clock::now();
    //path=(p.*(p.PathAlgo))(src);
-    std::vector<int>path={2,3,4,5,6,7,8,9,10,11};
-//    TabuSearch t(src,10000,path,node_map);
-//    t.Execute(10000);
 
-    GeneticAlgorithm a(src,1000,path,node_map);
-        a.evolve(1000);
+
+  tsp->Run(1000);
 
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
@@ -79,7 +76,14 @@ void Search::Configure() {
 
 }
 void Search::Select(int i) {
-
+if(i==TABU)
+{
+    tsp=new TabuSearch(1,10000,path,node_map);
+}
+else if(i==GA)
+{
+    tsp=new GeneticAlgorithm(1,10000,path,node_map);
+}
 //    if(i==NBF)
 //    {
 //    p.PathAlgo=&PathFinders::NBF;

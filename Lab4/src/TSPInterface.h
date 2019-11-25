@@ -9,6 +9,7 @@
 class TSPInterface {
 //This class will use the strategy pattern to dynamically switch between GA techniques or Tabu techniques depending on the current
 //algorithm
+public:
 virtual void Run(int)=0;
 };
 

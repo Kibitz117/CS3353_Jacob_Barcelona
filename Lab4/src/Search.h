@@ -12,6 +12,7 @@
 #include "GeneticAlgorithm.h"
 #include "FileLoader.h"
 #include "TabuSearch.h"
+#include "TSPInterface.h"
 class Search: public Algorithm{
 public:
 virtual void  Load(std::string,int);
@@ -28,6 +29,7 @@ private:
     float cost;
     std::vector<int>path;
     StructureHandler* s;
+    TSPInterface* tsp;
     enum Algo{
         NBF=0,
         DP,

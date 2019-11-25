@@ -33,7 +33,7 @@ Tour TabuSearch::getBestNearby(Tour curr_best) {
     }
     return curr_best;
 }
-void TabuSearch::Execute(int num_times) {
+void TabuSearch::Run(int num_times) {
     tabuList.clear();
     Tour best;
     best.generateTour(path);
