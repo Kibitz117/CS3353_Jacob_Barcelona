@@ -43,6 +43,7 @@ public:
     //Mutation
         //Bit flip for binary encoded
         void swap_Mutation(Tour&);
+        void rotate_Mutation(Tour&);
         //Swap mutation two positions
 
         //Evolve population
@@ -53,6 +54,7 @@ private:
     Tour global_best;
    std::map<int,std::vector<float>>node_map;
    int src;
+   Tour abs_best;
 
 };
 

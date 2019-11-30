@@ -21,6 +21,7 @@ public:
     void operator=(const Tour&);
     bool operator ==(const Tour&)const;
     void swap(int,int,std::map<int,std::vector<float>>node_map);
+    void rotate(int,int,std::map<int,std::vector<float>>node_map);
 
 
 private:

@@ -17,7 +17,7 @@ public:
     virtual void Stats(int)=0;
     virtual void Select(int)=0;
     virtual void Save(std::string,int,std::string)=0;
-    virtual void Configure()=0;
+    virtual void Configure(int)=0;
 
 };
 #endif //SRC_ALGORITHM_H

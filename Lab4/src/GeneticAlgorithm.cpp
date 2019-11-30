@@ -247,17 +247,27 @@ void GeneticAlgorithm::swap_Mutation(Tour &child) {
 //    std::swap(parent2.getTour()[to_swap1],parent1.getTour()[to_swap2]);
 std::iter_swap(child.getTour().begin()+to_swap1,child.getTour().begin()+to_swap2);
 }
+void GeneticAlgorithm::rotate_Mutation(Tour &child) {
+    std::vector<int>temp=child.getTour();
+    int to_rotate=child.getTour()[child.getTour().size()-1];
+    for(int i=0;i<child.getTour().size();i++)
+    {
+        child.getTour()[i+1]=temp[i];
+    }
+    child.getTour()[0]=to_rotate;
+    child.calcFitness(1,node_map);
+}
 void GeneticAlgorithm::Run(int num_times) {
     //Update global best to see if getting better paths
     //Also make tours save cost so you can see evolution
     int run=0;
     while(run<num_times)
     {
-        for(int i=0;i<global_best.getTour().size();i++)
-        {
-            std::cout<<global_best.getTour()[i]<<" ";
-        }
-        std::cout<<"    "<<global_best.getCost()<<std::endl;
+//        for(int i=0;i<global_best.getTour().size();i++)
+//        {
+//            std::cout<<global_best.getTour()[i]<<" ";
+//        }
+//        std::cout<<"    "<<global_best.getCost()<<std::endl;
         std::vector<Tour>new_pop;
         new_pop.reserve(population.size());
         for(int i=0;i<population.size();i++)
@@ -268,21 +278,19 @@ void GeneticAlgorithm::Run(int num_times) {
             this->elitism(parent2);
             //Crossover to create children
             Tour child;
-            //child=this->one_Point_Crossover(parent1,parent2);
-            child=this->multi_Point_Crossover(parent1,parent2);
+            child=this->one_Point_Crossover(parent1,parent2);
+            //child=this->multi_Point_Crossover(parent1,parent2);
             //HIGH MUTATION RATE
             if(i%25==0)
             {
-                this->swap_Mutation(child);
+                //this->swap_Mutation(child);
+                this->rotate_Mutation(child);
             }
             //Add the children to new parents
             new_pop.push_back(child);
         }
         population.clear();
-//    for(int i=0;i<population.size();i++)
-//    {
-//        population.push_back(new_pop[i]);
-//    }
+
         population=new_pop;
 
 //    for(int i=0;i<new_pop.size();i++)
@@ -294,6 +302,11 @@ void GeneticAlgorithm::Run(int num_times) {
 //        std::cout<<new_pop[i].getFitness()<<std::endl;
 //    }
     }
+    for(int i=0;i<global_best.getTour().size();i++)
+    {
+        std::cout<<global_best.getTour()[i]<<" ";
+    }
+    std::cout<<std::endl<<global_best.getCost();
 
 
 

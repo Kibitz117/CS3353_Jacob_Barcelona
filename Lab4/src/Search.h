@@ -21,7 +21,7 @@ virtual void Display();
 virtual void Stats(int algo);
 virtual void Select(int);//Select active algorithm
 virtual void Save(std::string,int,std::string);
-virtual void Configure();
+virtual void Configure(int);
 
 
 private:

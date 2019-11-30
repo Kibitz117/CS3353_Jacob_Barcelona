@@ -8,6 +8,7 @@
 #include "TSPInterface.h"
 #include "Tour.h"
 #include <vector>
+//Make different neighborhood sizes "break them up"
 class TabuSearch:public TSPInterface {
     //initializes tabu list
     //Set some solution to current best
@@ -17,9 +18,11 @@ public:
     void resetList();
     void Execute(int num_times);
     bool has(Tour);
-    Tour getBestNearby(Tour);
+    Tour getBestSwap(Tour);
+    Tour getBestRotate(Tour);
 
 private:
+    Tour abs_best;
     std::vector<int>path;
     std::vector<Tour>solutions;
     std::vector<Tour>tabuList;
