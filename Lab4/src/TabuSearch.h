@@ -19,7 +19,7 @@ public:
     void Execute(int num_times);
     bool has(Tour);
     Tour getBestSwap(Tour);
-    Tour getBestRotate(Tour);
+    Tour getBestDoubleSwap(Tour);
 
 private:
     Tour abs_best;

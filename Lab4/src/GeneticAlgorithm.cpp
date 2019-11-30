@@ -162,8 +162,12 @@ Tour GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
 Tour GeneticAlgorithm::multi_Point_Crossover(Tour &parent1, Tour &parent2) {
     Tour child;
     srand(time(NULL));
-    int cross_index=(rand() % parent1.getTour().size()-2);
+    int cross_index=(rand() % parent1.getTour().size())+1;
     int cross_index2=(rand() % cross_index)+cross_index;
+    while(cross_index2>parent1.getTour().size())
+    {
+        cross_index2-=(cross_index/2);
+    }
     std::vector<int>new_parent1(parent1.getTour().size());
     std::vector<int> new_parent2(parent1.getTour().size());
     int p1_count=0;
@@ -268,7 +272,7 @@ void GeneticAlgorithm::Run(int num_times) {
 //        {
 //            std::cout<<global_best.getTour()[i]<<" ";
 //        }
-//        std::cout<<"    "<<global_best.getCost()<<std::endl;
+        std::cout<<run<<"    "<<global_best.getCost()<<std::endl;
         std::vector<Tour>new_pop;
         new_pop.reserve(population.size());
         for(int i=0;i<population.size();i++)
@@ -278,8 +282,8 @@ void GeneticAlgorithm::Run(int num_times) {
             this->rouletteWheel(parent1);
             this->elitism(parent2);
             //Crossover to create children
-           Tour child=this->one_Point_Crossover(parent1,parent2);
-            //child=this->multi_Point_Crossover(parent1,parent2);
+           //Tour child=this->one_Point_Crossover(parent1,parent2);
+            Tour child=this->multi_Point_Crossover(parent1,parent2);
             //HIGH MUTATION RATE
             if(i%25==0)
             {
@@ -293,14 +297,7 @@ void GeneticAlgorithm::Run(int num_times) {
 
         population=new_pop;
 
-//    for(int i=0;i<new_pop.size();i++)
-//    {
-//        for(int z=0;z<new_pop[i].getTour().size();z++)
-//        {
-//            std::cout<<new_pop[i].getTour()[z]<<" ";
-//        }
-//        std::cout<<new_pop[i].getFitness()<<std::endl;
-//    }
+
     }
     for(int i=0;i<global_best.getTour().size();i++)
     {
@@ -311,6 +308,7 @@ void GeneticAlgorithm::Run(int num_times) {
 
 
 }
-void GeneticAlgorithm::setMap(std::map<int, std::vector<float>> &node_map) {
+void GeneticAlgorithm::setMap(std::map<int, std::vector<float>> &node_map)
+{
     this->node_map=node_map;
 }

@@ -20,7 +20,7 @@ if(structure==0)
 
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
-    //delete(tsp);
+    delete(tsp);
 
 }
 void Search::Stats(int algo) {
@@ -29,12 +29,14 @@ void Search::Stats(int algo) {
         std::cout<<"Genetic Algorithm"<<std::endl;
         std::cout<<time<<" ns"<<std::endl;
         std::cout<<path.size()+1<<" nodes"<<std::endl;
+        path.clear();
     }
     else if(algo==TABU)
     {
         std::cout<<"Tabu Search"<<std::endl;
         std::cout<<time<<" ns"<<std::endl;
         std::cout<<path.size()+1<<" nodes"<<std::endl;
+        path.clear();
     }
 //if(algo==NBF)
 //{
@@ -82,7 +84,7 @@ if(i==TABU)
 }
 else if(i==GA)
 {
-    tsp=new GeneticAlgorithm(1,10,path,node_map);
+    tsp=new GeneticAlgorithm(1,100,path,node_map);
 }
 //    if(i==NBF)
 //    {
