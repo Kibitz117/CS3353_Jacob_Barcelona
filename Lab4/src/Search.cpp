@@ -16,11 +16,11 @@ if(structure==0)
    //path=(p.*(p.PathAlgo))(src);
 
 
-  tsp->Run(50);
+  tsp->Run(100);
 
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();
-    delete(tsp);
+    //delete(tsp);
 
 }
 void Search::Stats(int algo) {

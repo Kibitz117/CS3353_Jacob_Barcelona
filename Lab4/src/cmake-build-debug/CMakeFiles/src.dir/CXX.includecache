@@ -72,10 +72,6 @@ C:/Algorithms/Lab4/src/StructureHandler.h
 sstream
 -
 
-C:/Algorithms/Lab4/src/Search.cpp
-Search.h
-C:/Algorithms/Lab4/src/Search.h
-
 C:/Algorithms/Lab4/src/Search.h
 fstream
 -
@@ -121,4 +117,10 @@ vector
 -
 CostCalc.h
 C:/Algorithms/Lab4/src/CostCalc.h
+
+C:/Algorithms/Lab4/src/main.cpp
+iostream
+-
+Search.h
+C:/Algorithms/Lab4/src/Search.h
 

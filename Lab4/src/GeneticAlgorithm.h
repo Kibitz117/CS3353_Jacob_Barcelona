@@ -54,7 +54,6 @@ private:
     Tour global_best;
    std::map<int,std::vector<float>>node_map;
    int src;
-   Tour abs_best;
 
 };
 

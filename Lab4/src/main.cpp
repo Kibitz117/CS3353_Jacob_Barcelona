@@ -3,13 +3,18 @@
 int main() {
     Algorithm* a=new Search();
     a->Load("positions.txt",0);
-    for(int i=4;i<15;i++)
-    {
-        a->Configure(i);
+//    for(int i=4;i<15;i++)
+//    {
+//        a->Configure(i);
+//        a->Select(2);
+//        a->Execute(1);
+//        a->Stats(2);
+//    }
+    a->Configure(30);
         a->Select(2);
         a->Execute(1);
         a->Stats(2);
-    }
+
 
 //    for(int i=2;i<=3;i++)
 //    {

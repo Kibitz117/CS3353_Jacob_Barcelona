@@ -263,6 +263,7 @@ void GeneticAlgorithm::Run(int num_times) {
     int run=0;
     while(run<num_times)
     {
+        run++;
 //        for(int i=0;i<global_best.getTour().size();i++)
 //        {
 //            std::cout<<global_best.getTour()[i]<<" ";
@@ -277,8 +278,7 @@ void GeneticAlgorithm::Run(int num_times) {
             this->rouletteWheel(parent1);
             this->elitism(parent2);
             //Crossover to create children
-            Tour child;
-            child=this->one_Point_Crossover(parent1,parent2);
+           Tour child=this->one_Point_Crossover(parent1,parent2);
             //child=this->multi_Point_Crossover(parent1,parent2);
             //HIGH MUTATION RATE
             if(i%25==0)
