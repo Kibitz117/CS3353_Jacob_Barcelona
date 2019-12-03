@@ -267,12 +267,16 @@ void GeneticAlgorithm::Run(int num_times) {
     int run=0;
     while(run<num_times)
     {
+        if(global_best.getCost()==8)
+        {
+            break;
+        }
         run++;
 //        for(int i=0;i<global_best.getTour().size();i++)
 //        {
 //            std::cout<<global_best.getTour()[i]<<" ";
 //        }
-        std::cout<<run<<"    "<<global_best.getCost()<<std::endl;
+//        std::cout<<"    "<<global_best.getFitness()<<std::endl;
         std::vector<Tour>new_pop;
         new_pop.reserve(population.size());
         for(int i=0;i<population.size();i++)

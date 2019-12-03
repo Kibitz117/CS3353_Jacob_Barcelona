@@ -1,19 +1,20 @@
 #include <iostream>
 #include "Search.h"
+//ASK CLARK ABOUT DYNAMIC BRUTE FORCE VS TABU GA TIMING EG(STOP AT RIGHT COST?) HOW TO ALSO CHECK IF GRAPHS GOOD? LEARNING CURVES SUFFICIENT?
 int main() {
     Algorithm* a=new Search();
-    a->Load("largePositions.txt",0);
-//    for(int i=5;i<=40;i+=5)
+    a->Load("largePositions(2).txt",0);
+//    for(int i=4;i<=11;i++)
 //    {
 //        a->Configure(i);
-//        a->Select(2);
+//        a->Select(3);
 //        a->Execute(1);
-//        a->Stats(2);
+//        a->Stats(3);
 //    }
-    a->Configure(50);
-        a->Select(3);
+    a->Configure(100);
+        a->Select(2);
         a->Execute(1);
-        a->Stats(3);
+        a->Stats(2);
 
 
 

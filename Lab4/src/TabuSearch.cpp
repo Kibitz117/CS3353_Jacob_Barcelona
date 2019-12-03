@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include "TabuSearch.h"
+//711.339 4636 iterations
 TabuSearch::TabuSearch(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map) {
  this->path=path;
  this->node_map=node_map;
@@ -59,6 +60,7 @@ Tour TabuSearch::getBestSwap(Tour curr_best) {
     return neighborhood[count-1];
 
 }
+//Try random select index of tour to swap
 Tour TabuSearch::getBestDoubleSwap(Tour curr_best) {
     Tour curr=curr_best;
     std::vector<Tour>neighborhood;
@@ -69,6 +71,11 @@ Tour TabuSearch::getBestDoubleSwap(Tour curr_best) {
         for(int x=i+1;x<path.size();x+=2)
         {
             curr.swap(i,x,node_map);
+            if(i+1>=path.size()||x+1>=path.size())
+            {
+                curr.swap(0,1,node_map);
+            }
+            else
             curr.swap(i+1,x+1,node_map);
 
             neighborhood.push_back(curr);
@@ -113,8 +120,25 @@ void TabuSearch::Run(int num_times) {
     int run=0;
     while(run<num_times)
     {
+        if(abs_best.getCost()==8)
+        {
+            break;
+        }
         tabuList.clear();
-        best=getBestSwap(best);
+//        best=getBestSwap(best);
+        //Throw in random shuffle to get more diverse neighbors
+        if(run%25==0)
+        {
+            best.generateTour(path);
+            best.calcFitness(1,node_map);
+        }
+        else if(run%2==0)
+        {
+            best=getBestDoubleSwap(best);
+        }
+        else{
+            best=getBestSwap(best);
+        }
         if(best.getCost()<abs_best.getCost()&&!(best.getTour().empty()))
         {
             abs_best=best;
@@ -126,12 +150,13 @@ void TabuSearch::Run(int num_times) {
             tabuList.erase(tabuList.begin());
         }
         run++;
-        std::cout<<run<<"  "<<abs_best.getCost()<<std::endl;
+//        std::cout<<"  "<<abs_best.getFitness()<<std::endl;
 
     }
     for(int i=0;i<abs_best.getTour().size();i++)
     {
         std::cout<<abs_best.getTour()[i]<<" ";
     }
+    std::cout<<std::endl<<"  "<<abs_best.getCost()<<std::endl;
 
 }

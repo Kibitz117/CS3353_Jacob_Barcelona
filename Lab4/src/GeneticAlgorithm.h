@@ -33,7 +33,6 @@ public:
         //Top two
         void elitism(Tour&);
         //Tournament
-        Tour tournament();
     //Crossover
         //One-point
         Tour one_Point_Crossover(Tour&,Tour&);
@@ -46,8 +45,6 @@ public:
         void rotate_Mutation(Tour&);
         //Swap mutation two positions
 
-        //Evolve population
-        void evolve(int num_times);
 private:
     void setMap(std::map<int,std::vector<float>>&node_map);
     std::vector<Tour>population;

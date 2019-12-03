@@ -14,8 +14,6 @@ if(structure==0)
  void Search::Execute(int src) {
     auto start_time = std::chrono::high_resolution_clock::now();
    //path=(p.*(p.PathAlgo))(src);
-
-
   tsp->Run(100);
 
     auto end_time = std::chrono::high_resolution_clock::now();
@@ -80,7 +78,7 @@ for(int i=0;i<path.size();i++)
 void Search::Select(int i) {
 if(i==TABU)
 {
-    tsp=new TabuSearch(1,50,path,node_map);
+    tsp=new TabuSearch(1,200,path,node_map);
 }
 else if(i==GA)
 {
