@@ -119,19 +119,27 @@ void TabuSearch::Run(int num_times) {
     tabuList.push_back(best);
     int run=0;
     tabuList.clear();
+
     while(run<num_times)
     {
-//        if(abs_best.getCost()==8)
-//        {
-//            break;
-//        }
-//        best=getBestSwap(best);
-        //Throw in random shuffle to get more diverse neighbors
-//        Tour temp;
-//        temp=getBestDoubleSwap(best);
-//        best=temp;
-
-        if(run%2==0)
+        if(run==1)
+        {
+            std::cout<<"Initial: "<<std::endl;;
+            for(int i=0;i<best.getTour().size();i++)
+            {
+                std::cout<<best.getTour()[i]<<" ";
+            }
+            std::cout<<std::endl<<best.getCost()<<std::endl;
+        }
+        run++;
+if(run%25==0)
+{
+    Tour temp;
+    temp.generateTour(path);
+    temp.calcFitness(1,node_map);
+    best=temp;
+}
+       else if(run%2==0)
         {
             Tour temp;
             temp=getBestDoubleSwap(best);
@@ -152,9 +160,8 @@ void TabuSearch::Run(int num_times) {
         {
             tabuList.erase(tabuList.begin());
         }
-        run++;
 //        std::cout<<"  "<<abs_best.getCost()<<std::endl;
-        std::cout<<"  "<<best.getFitness()<<std::endl;
+//        std::cout<<"  "<<best.getFitness()<<std::endl;
 
     }
     for(int i=0;i<abs_best.getTour().size();i++)

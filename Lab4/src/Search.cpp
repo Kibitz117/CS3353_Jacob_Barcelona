@@ -14,7 +14,7 @@ if(structure==0)
  void Search::Execute(int src) {
     auto start_time = std::chrono::high_resolution_clock::now();
    //path=(p.*(p.PathAlgo))(src);
-  tsp->Run(700);
+  tsp->Run(src);
 
     auto end_time = std::chrono::high_resolution_clock::now();
     time=std::chrono::duration_cast<std::chrono::nanoseconds>(end_time-start_time).count();

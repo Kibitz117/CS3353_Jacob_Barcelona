@@ -278,8 +278,19 @@ void GeneticAlgorithm::Run(int num_times) {
         std::vector<Tour>new_pop;
         new_pop.reserve(population.size());
         Tour t;
+        if(run==1)
+        {
+            std::cout<<"Initial: "<<std::endl;
+            Tour best=this->getBestCost();
+            for(int i=0;i<best.getTour().size();i++)
+            {
+                std::cout<<best.getTour()[i]<<" ";
+            }
+            std::cout<<std::endl<<best.getCost();
+        }
         for(int i=0;i<population.size();i++)
         {
+
             Tour parent1;
             Tour parent2;
             this->elitism(parent2);
@@ -300,13 +311,15 @@ void GeneticAlgorithm::Run(int num_times) {
 
         population=new_pop;
 
-        std::cout<<this->getBestCost().getFitness()<<std::endl;
+//        std::cout<<this->getBestCost().getFitness()<<std::endl;
     }
+    std::cout<<std::endl;
     for(int i=0;i<global_best.getTour().size();i++)
     {
         std::cout<<global_best.getTour()[i]<<" ";
     }
     std::cout<<std::endl<<global_best.getCost();
+
 
 
 
@@ -320,7 +333,7 @@ Tour GeneticAlgorithm::getBestCost() {
     best_cost=population[0];
     for(int i=1;i<population.size();i++)
     {
-        if(population[i].getFitness()>best_cost.getFitness())
+        if(population[i].getCost()<best_cost.getCost())
         {
             best_cost=population[i];
         }

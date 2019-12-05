@@ -72,10 +72,6 @@ C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/StructureHandler.h
 sstream
 -
 
-C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.cpp
-Search.h
-C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.h
-
 C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.h
 fstream
 -
@@ -106,12 +102,6 @@ string
 
 C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TSPInterface.h
 
-C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.cpp
-iostream
--
-TabuSearch.h
-C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.h
-
 C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.h
 TSPInterface.h
 C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TSPInterface.h
@@ -127,4 +117,10 @@ vector
 -
 CostCalc.h
 C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/CostCalc.h
+
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/main.cpp
+iostream
+-
+Search.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.h
 

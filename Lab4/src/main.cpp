@@ -4,20 +4,18 @@
 int main() {
     Algorithm* a=new Search();
     a->Load("largePositions(2).txt",0);
-//    for(int i=4;i<=11;i++)
-//    {
-//        a->Configure(i);
-//        a->Select(2);
-//        a->Execute(1);
-//        a->Stats(2);
-//    }
+    //Size of graph
+        a->Configure(100);
+        a->Select(2);
+        //Number of iterations
+        a->Execute(40);
+        a->Stats(2);
+        //Size of graph
     a->Configure(100);
-        a->Select(3);
-        a->Execute(1);
-        a->Stats(3);
-
-
-
+    a->Select(3);
+    //Number of iterations
+    a->Execute(30);
+    a->Stats(3);
 //    for(int i=2;i<=3;i++)
 //    {
 //        a->Select(i);
