@@ -143,19 +143,20 @@ Tour GeneticAlgorithm::one_Point_Crossover(Tour &parent1,Tour& parent2) {
         }
 
     }
-    child.setTour(new_parent1);
-    child.calcFitness(src,node_map);
     parent1.setTour(new_parent1);
     parent2.setTour(new_parent2);
     parent1.calcFitness(src,node_map);
-    if(parent1.getCost()<global_best.getCost())
-    {
-        global_best=parent1;
-    }
     parent2.calcFitness(src,node_map);
-    if(parent2.getCost()<global_best.getCost())
+    if(parent1.getCost()<parent2.getCost())
     {
-        global_best=parent2;
+        child=parent1;
+    }
+    else{
+        child=parent2;
+    }
+    if(child.getCost()<global_best.getCost())
+    {
+        global_best=child;
     }
     return child;
 }
@@ -163,7 +164,7 @@ Tour GeneticAlgorithm::multi_Point_Crossover(Tour &parent1, Tour &parent2) {
     Tour child;
     srand(time(NULL));
     int cross_index=(rand() % parent1.getTour().size())+1;
-    int cross_index2=(rand() % cross_index)+cross_index;
+    int cross_index2=(rand() % parent1.getTour().size())+cross_index;
     while(cross_index2>parent1.getTour().size())
     {
         cross_index2-=(cross_index/2);
@@ -267,32 +268,30 @@ void GeneticAlgorithm::Run(int num_times) {
     int run=0;
     while(run<num_times)
     {
-        if(global_best.getCost()==8)
-        {
-            break;
-        }
         run++;
 //        for(int i=0;i<global_best.getTour().size();i++)
 //        {
 //            std::cout<<global_best.getTour()[i]<<" ";
 //        }
-//        std::cout<<"    "<<global_best.getFitness()<<std::endl;
+      // std::cout<<"    "<<global_best.getFitness()<<std::endl;
+   // std::cout<<global_best.getCost()<<std::endl;
         std::vector<Tour>new_pop;
         new_pop.reserve(population.size());
+        Tour t;
         for(int i=0;i<population.size();i++)
         {
             Tour parent1;
             Tour parent2;
-            this->rouletteWheel(parent1);
             this->elitism(parent2);
+            this->rouletteWheel(parent1);
             //Crossover to create children
-           //Tour child=this->one_Point_Crossover(parent1,parent2);
-            Tour child=this->multi_Point_Crossover(parent1,parent2);
+           Tour child=this->one_Point_Crossover(parent1,parent2);
+            //Tour child=this->multi_Point_Crossover(parent1,parent2);
             //HIGH MUTATION RATE
             if(i%25==0)
             {
-                //this->swap_Mutation(child);
-                this->rotate_Mutation(child);
+               this->swap_Mutation(child);
+                //this->rotate_Mutation(child);
             }
             //Add the children to new parents
             new_pop.push_back(child);
@@ -301,7 +300,7 @@ void GeneticAlgorithm::Run(int num_times) {
 
         population=new_pop;
 
-
+        std::cout<<this->getBestCost().getFitness()<<std::endl;
     }
     for(int i=0;i<global_best.getTour().size();i++)
     {
@@ -315,4 +314,16 @@ void GeneticAlgorithm::Run(int num_times) {
 void GeneticAlgorithm::setMap(std::map<int, std::vector<float>> &node_map)
 {
     this->node_map=node_map;
+}
+Tour GeneticAlgorithm::getBestCost() {
+    Tour best_cost;
+    best_cost=population[0];
+    for(int i=1;i<population.size();i++)
+    {
+        if(population[i].getFitness()>best_cost.getFitness())
+        {
+            best_cost=population[i];
+        }
+    }
+    return best_cost;
 }

@@ -25,6 +25,7 @@ class GeneticAlgorithm:public TSPInterface {
     //Look at better algos
 
 public:
+    Tour getBestCost();
     void Run(int);
     GeneticAlgorithm(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map);
     //Execute(int src,node_map/vector path,int generations)

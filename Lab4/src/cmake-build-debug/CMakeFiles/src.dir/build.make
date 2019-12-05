@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Algorithms\Lab4\src
+CMAKE_SOURCE_DIR = C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Algorithms\Lab4\src\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/src.dir/depend.make
@@ -58,120 +58,120 @@ include CMakeFiles/src.dir/flags.make
 
 CMakeFiles/src.dir/main.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/src.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\main.cpp.obj -c C:\Algorithms\Lab4\src\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/src.dir/main.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\main.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\main.cpp
 
 CMakeFiles/src.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\main.cpp > CMakeFiles\src.dir\main.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\main.cpp > CMakeFiles\src.dir\main.cpp.i
 
 CMakeFiles/src.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\main.cpp -o CMakeFiles\src.dir\main.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\main.cpp -o CMakeFiles\src.dir\main.cpp.s
 
 CMakeFiles/src.dir/CostCalc.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/CostCalc.cpp.obj: ../CostCalc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/src.dir/CostCalc.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\CostCalc.cpp.obj -c C:\Algorithms\Lab4\src\CostCalc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/src.dir/CostCalc.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\CostCalc.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\CostCalc.cpp
 
 CMakeFiles/src.dir/CostCalc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/CostCalc.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\CostCalc.cpp > CMakeFiles\src.dir\CostCalc.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\CostCalc.cpp > CMakeFiles\src.dir\CostCalc.cpp.i
 
 CMakeFiles/src.dir/CostCalc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/CostCalc.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\CostCalc.cpp -o CMakeFiles\src.dir\CostCalc.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\CostCalc.cpp -o CMakeFiles\src.dir\CostCalc.cpp.s
 
 CMakeFiles/src.dir/FileLoader.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/FileLoader.cpp.obj: ../FileLoader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/src.dir/FileLoader.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\FileLoader.cpp.obj -c C:\Algorithms\Lab4\src\FileLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/src.dir/FileLoader.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\FileLoader.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\FileLoader.cpp
 
 CMakeFiles/src.dir/FileLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/FileLoader.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\FileLoader.cpp > CMakeFiles\src.dir\FileLoader.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\FileLoader.cpp > CMakeFiles\src.dir\FileLoader.cpp.i
 
 CMakeFiles/src.dir/FileLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/FileLoader.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\FileLoader.cpp -o CMakeFiles\src.dir\FileLoader.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\FileLoader.cpp -o CMakeFiles\src.dir\FileLoader.cpp.s
 
 CMakeFiles/src.dir/Search.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/Search.cpp.obj: ../Search.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/src.dir/Search.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\Search.cpp.obj -c C:\Algorithms\Lab4\src\Search.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/src.dir/Search.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\Search.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\Search.cpp
 
 CMakeFiles/src.dir/Search.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/Search.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\Search.cpp > CMakeFiles\src.dir\Search.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\Search.cpp > CMakeFiles\src.dir\Search.cpp.i
 
 CMakeFiles/src.dir/Search.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Search.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\Search.cpp -o CMakeFiles\src.dir\Search.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\Search.cpp -o CMakeFiles\src.dir\Search.cpp.s
 
 CMakeFiles/src.dir/MapHandler.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/MapHandler.cpp.obj: ../MapHandler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/src.dir/MapHandler.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\MapHandler.cpp.obj -c C:\Algorithms\Lab4\src\MapHandler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/src.dir/MapHandler.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\MapHandler.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\MapHandler.cpp
 
 CMakeFiles/src.dir/MapHandler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/MapHandler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\MapHandler.cpp > CMakeFiles\src.dir\MapHandler.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\MapHandler.cpp > CMakeFiles\src.dir\MapHandler.cpp.i
 
 CMakeFiles/src.dir/MapHandler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/MapHandler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\MapHandler.cpp -o CMakeFiles\src.dir\MapHandler.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\MapHandler.cpp -o CMakeFiles\src.dir\MapHandler.cpp.s
 
 CMakeFiles/src.dir/StructureFactory.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/StructureFactory.cpp.obj: ../StructureFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/src.dir/StructureFactory.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\StructureFactory.cpp.obj -c C:\Algorithms\Lab4\src\StructureFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/src.dir/StructureFactory.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\StructureFactory.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\StructureFactory.cpp
 
 CMakeFiles/src.dir/StructureFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/StructureFactory.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\StructureFactory.cpp > CMakeFiles\src.dir\StructureFactory.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\StructureFactory.cpp > CMakeFiles\src.dir\StructureFactory.cpp.i
 
 CMakeFiles/src.dir/StructureFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/StructureFactory.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\StructureFactory.cpp -o CMakeFiles\src.dir\StructureFactory.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\StructureFactory.cpp -o CMakeFiles\src.dir\StructureFactory.cpp.s
 
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj: ../GeneticAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\GeneticAlgorithm.cpp.obj -c C:\Algorithms\Lab4\src\GeneticAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/src.dir/GeneticAlgorithm.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\GeneticAlgorithm.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\GeneticAlgorithm.cpp
 
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/GeneticAlgorithm.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\GeneticAlgorithm.cpp > CMakeFiles\src.dir\GeneticAlgorithm.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\GeneticAlgorithm.cpp > CMakeFiles\src.dir\GeneticAlgorithm.cpp.i
 
 CMakeFiles/src.dir/GeneticAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/GeneticAlgorithm.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\GeneticAlgorithm.cpp -o CMakeFiles\src.dir\GeneticAlgorithm.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\GeneticAlgorithm.cpp -o CMakeFiles\src.dir\GeneticAlgorithm.cpp.s
 
 CMakeFiles/src.dir/Tour.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/Tour.cpp.obj: ../Tour.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/src.dir/Tour.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\Tour.cpp.obj -c C:\Algorithms\Lab4\src\Tour.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/src.dir/Tour.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\Tour.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\Tour.cpp
 
 CMakeFiles/src.dir/Tour.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/Tour.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\Tour.cpp > CMakeFiles\src.dir\Tour.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\Tour.cpp > CMakeFiles\src.dir\Tour.cpp.i
 
 CMakeFiles/src.dir/Tour.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/Tour.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\Tour.cpp -o CMakeFiles\src.dir\Tour.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\Tour.cpp -o CMakeFiles\src.dir\Tour.cpp.s
 
 CMakeFiles/src.dir/TabuSearch.cpp.obj: CMakeFiles/src.dir/flags.make
 CMakeFiles/src.dir/TabuSearch.cpp.obj: ../TabuSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/src.dir/TabuSearch.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\TabuSearch.cpp.obj -c C:\Algorithms\Lab4\src\TabuSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/src.dir/TabuSearch.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\src.dir\TabuSearch.cpp.obj -c C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\TabuSearch.cpp
 
 CMakeFiles/src.dir/TabuSearch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/src.dir/TabuSearch.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\Lab4\src\TabuSearch.cpp > CMakeFiles\src.dir\TabuSearch.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\TabuSearch.cpp > CMakeFiles\src.dir\TabuSearch.cpp.i
 
 CMakeFiles/src.dir/TabuSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/src.dir/TabuSearch.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\Lab4\src\TabuSearch.cpp -o CMakeFiles\src.dir\TabuSearch.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\TabuSearch.cpp -o CMakeFiles\src.dir\TabuSearch.cpp.s
 
 # Object files for target src
 src_OBJECTS = \
@@ -201,7 +201,7 @@ src.exe: CMakeFiles/src.dir/build.make
 src.exe: CMakeFiles/src.dir/linklibs.rsp
 src.exe: CMakeFiles/src.dir/objects1.rsp
 src.exe: CMakeFiles/src.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable src.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable src.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\src.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -214,6 +214,6 @@ CMakeFiles/src.dir/clean:
 .PHONY : CMakeFiles/src.dir/clean
 
 CMakeFiles/src.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Algorithms\Lab4\src C:\Algorithms\Lab4\src C:\Algorithms\Lab4\src\cmake-build-debug C:\Algorithms\Lab4\src\cmake-build-debug C:\Algorithms\Lab4\src\cmake-build-debug\CMakeFiles\src.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug C:\Algorithms\CS3353_Jacob_Barcelona\Lab4\src\cmake-build-debug\CMakeFiles\src.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/src.dir/depend
 

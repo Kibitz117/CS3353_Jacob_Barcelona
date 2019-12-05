@@ -1,14 +1,14 @@
 //
 // Created by jakeb on 11/21/2019.
 //
-
+//FIX RANDOMNESS SEE IMPROVEMENT
 #include <iostream>
 #include "TabuSearch.h"
 //711.339 4636 iterations
 TabuSearch::TabuSearch(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map) {
- this->path=path;
- this->node_map=node_map;
- listSize=size;
+    this->path=path;
+    this->node_map=node_map;
+    listSize=size;
 }
 bool TabuSearch::has(Tour t) {
     if(std::find(tabuList.begin(),tabuList.end(),t)!=tabuList.end())
@@ -76,7 +76,7 @@ Tour TabuSearch::getBestDoubleSwap(Tour curr_best) {
                 curr.swap(0,1,node_map);
             }
             else
-            curr.swap(i+1,x+1,node_map);
+                curr.swap(i+1,x+1,node_map);
 
             neighborhood.push_back(curr);
             double score=curr.getFitness();
@@ -118,26 +118,29 @@ void TabuSearch::Run(int num_times) {
     abs_best=best;
     tabuList.push_back(best);
     int run=0;
+    tabuList.clear();
     while(run<num_times)
     {
-        if(abs_best.getCost()==8)
-        {
-            break;
-        }
-        tabuList.clear();
+//        if(abs_best.getCost()==8)
+//        {
+//            break;
+//        }
 //        best=getBestSwap(best);
         //Throw in random shuffle to get more diverse neighbors
-        if(run%25==0)
+//        Tour temp;
+//        temp=getBestDoubleSwap(best);
+//        best=temp;
+
+        if(run%2==0)
         {
-            best.generateTour(path);
-            best.calcFitness(1,node_map);
-        }
-        else if(run%2==0)
-        {
-            best=getBestDoubleSwap(best);
+            Tour temp;
+            temp=getBestDoubleSwap(best);
+            best=temp;
         }
         else{
-            best=getBestSwap(best);
+            Tour temp;
+            temp=getBestSwap(best);
+            best=temp;
         }
         if(best.getCost()<abs_best.getCost()&&!(best.getTour().empty()))
         {
@@ -150,7 +153,8 @@ void TabuSearch::Run(int num_times) {
             tabuList.erase(tabuList.begin());
         }
         run++;
-//        std::cout<<"  "<<abs_best.getFitness()<<std::endl;
+//        std::cout<<"  "<<abs_best.getCost()<<std::endl;
+        std::cout<<"  "<<best.getFitness()<<std::endl;
 
     }
     for(int i=0;i<abs_best.getTour().size();i++)

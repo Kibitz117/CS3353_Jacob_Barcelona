@@ -7,14 +7,14 @@ int main() {
 //    for(int i=4;i<=11;i++)
 //    {
 //        a->Configure(i);
-//        a->Select(3);
+//        a->Select(2);
 //        a->Execute(1);
-//        a->Stats(3);
+//        a->Stats(2);
 //    }
     a->Configure(100);
-        a->Select(2);
+        a->Select(3);
         a->Execute(1);
-        a->Stats(2);
+        a->Stats(3);
 
 
 

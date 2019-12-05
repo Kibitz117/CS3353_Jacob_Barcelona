@@ -15,8 +15,6 @@ class TabuSearch:public TSPInterface {
 public:
     void Run(int);
     TabuSearch(int src,int size,std::vector<int>path,std::map<int,std::vector<float>>&node_map);
-    void resetList();
-    void Execute(int num_times);
     bool has(Tour);
     Tour getBestSwap(Tour);
     Tour getBestDoubleSwap(Tour);
@@ -24,7 +22,6 @@ public:
 private:
     Tour abs_best;
     std::vector<int>path;
-    std::vector<Tour>solutions;
     std::vector<Tour>tabuList;
     int listSize;
     std::map<int,std::vector<float>>node_map;

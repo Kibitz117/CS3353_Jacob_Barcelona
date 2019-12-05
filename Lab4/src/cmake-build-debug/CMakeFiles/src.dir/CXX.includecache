@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Algorithms/Lab4/src/Algorithm.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Algorithm.h
 vector
 -
 iostream
@@ -16,7 +16,7 @@ algorithm
 chrono
 -
 
-C:/Algorithms/Lab4/src/CostCalc.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/CostCalc.h
 map
 -
 vector
@@ -24,7 +24,7 @@ vector
 cmath
 -
 
-C:/Algorithms/Lab4/src/FileLoader.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/FileLoader.h
 fstream
 -
 map
@@ -34,15 +34,11 @@ vector
 sstream
 -
 StructureFactory.h
-C:/Algorithms/Lab4/src/StructureFactory.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/StructureFactory.h
 
-C:/Algorithms/Lab4/src/GeneticAlgorithm.cpp
-GeneticAlgorithm.h
-C:/Algorithms/Lab4/src/GeneticAlgorithm.h
-
-C:/Algorithms/Lab4/src/GeneticAlgorithm.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/GeneticAlgorithm.h
 TSPInterface.h
-C:/Algorithms/Lab4/src/TSPInterface.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TSPInterface.h
 map
 -
 vector
@@ -54,37 +50,37 @@ algorithm
 cmath
 -
 CostCalc.h
-C:/Algorithms/Lab4/src/CostCalc.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/CostCalc.h
 iostream
 -
 StructureHandler.h
-C:/Algorithms/Lab4/src/StructureHandler.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/StructureHandler.h
 Tour.h
-C:/Algorithms/Lab4/src/Tour.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Tour.h
 cstdlib
 -
 ctime
 -
 
-C:/Algorithms/Lab4/src/MapHandler.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/MapHandler.h
 vector
 -
 map
 -
 StructureHandler.h
-C:/Algorithms/Lab4/src/StructureHandler.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/StructureHandler.h
 sstream
 -
 
-C:/Algorithms/Lab4/src/Search.cpp
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.cpp
 Search.h
-C:/Algorithms/Lab4/src/Search.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.h
 
-C:/Algorithms/Lab4/src/Search.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Search.h
 fstream
 -
 Algorithm.h
-C:/Algorithms/Lab4/src/Algorithm.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Algorithm.h
 vector
 -
 iostream
@@ -92,43 +88,43 @@ iostream
 sstream
 -
 GeneticAlgorithm.h
-C:/Algorithms/Lab4/src/GeneticAlgorithm.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/GeneticAlgorithm.h
 FileLoader.h
-C:/Algorithms/Lab4/src/FileLoader.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/FileLoader.h
 TabuSearch.h
-C:/Algorithms/Lab4/src/TabuSearch.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.h
 TSPInterface.h
-C:/Algorithms/Lab4/src/TSPInterface.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TSPInterface.h
 
-C:/Algorithms/Lab4/src/StructureFactory.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/StructureFactory.h
 MapHandler.h
-C:/Algorithms/Lab4/src/MapHandler.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/MapHandler.h
 
-C:/Algorithms/Lab4/src/StructureHandler.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/StructureHandler.h
 string
 -
 
-C:/Algorithms/Lab4/src/TSPInterface.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TSPInterface.h
 
-C:/Algorithms/Lab4/src/TabuSearch.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.cpp
+iostream
+-
+TabuSearch.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.h
+
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TabuSearch.h
 TSPInterface.h
-C:/Algorithms/Lab4/src/TSPInterface.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/TSPInterface.h
 Tour.h
-C:/Algorithms/Lab4/src/Tour.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Tour.h
 vector
 -
 
-C:/Algorithms/Lab4/src/Tour.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/Tour.h
 algorithm
 -
 vector
 -
 CostCalc.h
-C:/Algorithms/Lab4/src/CostCalc.h
-
-C:/Algorithms/Lab4/src/main.cpp
-iostream
--
-Search.h
-C:/Algorithms/Lab4/src/Search.h
+C:/Algorithms/CS3353_Jacob_Barcelona/Lab4/src/CostCalc.h
 
