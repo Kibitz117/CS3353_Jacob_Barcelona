@@ -1,4 +1,4 @@
-# Install script for directory: C:/Algorithms/Lab2/src
+# Install script for directory: C:/Users/Jake/CLionProjects/CS3353_Jacob_Barcelona/Lab2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Algorithms/Lab2/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Jake/CLionProjects/CS3353_Jacob_Barcelona/Lab2/src/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
